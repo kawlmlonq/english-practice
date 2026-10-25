@@ -1,0 +1,12663 @@
+// Original practice content aligned to CEFR reference materials; item difficulty still requires pilot calibration.
+const bank = [
+  {
+    "id": "v2-v-A1-apple",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "apple",
+    "meaning": "蘋果",
+    "q": "She packed a red ___ in her lunch box.",
+    "options": [
+      "apple",
+      "bread",
+      "water",
+      "milk"
+    ],
+    "answer": "apple",
+    "explanation": "apple：蘋果。完整句：She packed a red apple in her lunch box.",
+    "distractors": [
+      {
+        "word": "bread",
+        "meaning": "麵包"
+      },
+      {
+        "word": "water",
+        "meaning": "水"
+      },
+      {
+        "word": "milk",
+        "meaning": "牛奶"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-bread",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "bread",
+    "meaning": "麵包",
+    "q": "He spread butter on a slice of ___ for breakfast.",
+    "options": [
+      "bread",
+      "window",
+      "door",
+      "chair"
+    ],
+    "answer": "bread",
+    "explanation": "bread：麵包。完整句：He spread butter on a slice of bread for breakfast.",
+    "distractors": [
+      {
+        "word": "window",
+        "meaning": "窗戶"
+      },
+      {
+        "word": "door",
+        "meaning": "門"
+      },
+      {
+        "word": "chair",
+        "meaning": "椅子"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-water",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "water",
+    "meaning": "水",
+    "q": "After the run, I drank a glass of cold ___ .",
+    "options": [
+      "water",
+      "friend",
+      "school",
+      "hospital"
+    ],
+    "answer": "water",
+    "explanation": "water：水。完整句：After the run, I drank a glass of cold water.",
+    "distractors": [
+      {
+        "word": "friend",
+        "meaning": "朋友"
+      },
+      {
+        "word": "school",
+        "meaning": "學校"
+      },
+      {
+        "word": "hospital",
+        "meaning": "醫院"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-milk",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "milk",
+    "meaning": "牛奶",
+    "q": "The baby drinks ___ from a bottle.",
+    "options": [
+      "milk",
+      "coffee",
+      "banana",
+      "orange"
+    ],
+    "answer": "milk",
+    "explanation": "milk：牛奶。完整句：The baby drinks milk from a bottle.",
+    "distractors": [
+      {
+        "word": "coffee",
+        "meaning": "咖啡"
+      },
+      {
+        "word": "banana",
+        "meaning": "香蕉"
+      },
+      {
+        "word": "orange",
+        "meaning": "柳橙"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-egg",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "egg",
+    "meaning": "蛋",
+    "q": "The chicken laid an ___ this morning.",
+    "options": [
+      "egg",
+      "towel",
+      "teacher",
+      "student"
+    ],
+    "answer": "egg",
+    "explanation": "egg：蛋。完整句：The chicken laid an egg this morning.",
+    "distractors": [
+      {
+        "word": "towel",
+        "meaning": "毛巾"
+      },
+      {
+        "word": "teacher",
+        "meaning": "老師"
+      },
+      {
+        "word": "student",
+        "meaning": "學生"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-rice",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "rice",
+    "meaning": "米飯",
+    "q": "We eat steamed ___ with vegetables and fish.",
+    "options": [
+      "rice",
+      "airport",
+      "beach",
+      "park"
+    ],
+    "answer": "rice",
+    "explanation": "rice：米飯。完整句：We eat steamed rice with vegetables and fish.",
+    "distractors": [
+      {
+        "word": "airport",
+        "meaning": "機場"
+      },
+      {
+        "word": "beach",
+        "meaning": "海灘"
+      },
+      {
+        "word": "park",
+        "meaning": "公園"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-cheese",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "cheese",
+    "meaning": "起司",
+    "q": "Please put some ___ on my pizza before baking it.",
+    "options": [
+      "cheese",
+      "salt",
+      "kitchen",
+      "bedroom"
+    ],
+    "answer": "cheese",
+    "explanation": "cheese：起司。完整句：Please put some cheese on my pizza before baking it.",
+    "distractors": [
+      {
+        "word": "salt",
+        "meaning": "鹽"
+      },
+      {
+        "word": "kitchen",
+        "meaning": "廚房"
+      },
+      {
+        "word": "bedroom",
+        "meaning": "臥室"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-coffee",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "coffee",
+    "meaning": "咖啡",
+    "q": "She orders a cup of black ___ at the café every morning.",
+    "options": [
+      "coffee",
+      "farmer",
+      "sister",
+      "brother"
+    ],
+    "answer": "coffee",
+    "explanation": "coffee：咖啡。完整句：She orders a cup of black coffee at the café every morning.",
+    "distractors": [
+      {
+        "word": "farmer",
+        "meaning": "農夫"
+      },
+      {
+        "word": "sister",
+        "meaning": "姊妹"
+      },
+      {
+        "word": "brother",
+        "meaning": "兄弟"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-banana",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "banana",
+    "meaning": "香蕉",
+    "q": "A ___ is a long yellow fruit that you peel before eating.",
+    "options": [
+      "banana",
+      "bread",
+      "water",
+      "milk"
+    ],
+    "answer": "banana",
+    "explanation": "banana：香蕉。完整句：A banana is a long yellow fruit that you peel before eating.",
+    "distractors": [
+      {
+        "word": "bread",
+        "meaning": "麵包"
+      },
+      {
+        "word": "water",
+        "meaning": "水"
+      },
+      {
+        "word": "milk",
+        "meaning": "牛奶"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-orange",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "orange",
+    "meaning": "柳橙",
+    "q": "He squeezed an ___ to make fresh citrus juice.",
+    "options": [
+      "orange",
+      "door",
+      "chair",
+      "table"
+    ],
+    "answer": "orange",
+    "explanation": "orange：柳橙。完整句：He squeezed an orange to make fresh citrus juice.",
+    "distractors": [
+      {
+        "word": "door",
+        "meaning": "門"
+      },
+      {
+        "word": "chair",
+        "meaning": "椅子"
+      },
+      {
+        "word": "table",
+        "meaning": "桌子"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-carrot",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "carrot",
+    "meaning": "紅蘿蔔",
+    "q": "A rabbit was eating a long orange ___ .",
+    "options": [
+      "carrot",
+      "school",
+      "hospital",
+      "supermarket"
+    ],
+    "answer": "carrot",
+    "explanation": "carrot：紅蘿蔔。完整句：A rabbit was eating a long orange carrot.",
+    "distractors": [
+      {
+        "word": "school",
+        "meaning": "學校"
+      },
+      {
+        "word": "hospital",
+        "meaning": "醫院"
+      },
+      {
+        "word": "supermarket",
+        "meaning": "超市"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-potato",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "potato",
+    "meaning": "馬鈴薯",
+    "q": "We baked a ___ and served it with butter.",
+    "options": [
+      "potato",
+      "coffee",
+      "banana",
+      "orange"
+    ],
+    "answer": "potato",
+    "explanation": "potato：馬鈴薯。完整句：We baked a potato and served it with butter.",
+    "distractors": [
+      {
+        "word": "coffee",
+        "meaning": "咖啡"
+      },
+      {
+        "word": "banana",
+        "meaning": "香蕉"
+      },
+      {
+        "word": "orange",
+        "meaning": "柳橙"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-sugar",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "sugar",
+    "meaning": "糖",
+    "q": "This tea isn't sweet. Please add a spoonful of ___ .",
+    "options": [
+      "sugar",
+      "teacher",
+      "student",
+      "doctor"
+    ],
+    "answer": "sugar",
+    "explanation": "sugar：糖。完整句：This tea isn't sweet. Please add a spoonful of sugar.",
+    "distractors": [
+      {
+        "word": "teacher",
+        "meaning": "老師"
+      },
+      {
+        "word": "student",
+        "meaning": "學生"
+      },
+      {
+        "word": "doctor",
+        "meaning": "醫師"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-salt",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "salt",
+    "meaning": "鹽",
+    "q": "The soup tastes bland. Add a little ___ to make it salty.",
+    "options": [
+      "salt",
+      "beach",
+      "park",
+      "mountain"
+    ],
+    "answer": "salt",
+    "explanation": "salt：鹽。完整句：The soup tastes bland. Add a little salt to make it salty.",
+    "distractors": [
+      {
+        "word": "beach",
+        "meaning": "海灘"
+      },
+      {
+        "word": "park",
+        "meaning": "公園"
+      },
+      {
+        "word": "mountain",
+        "meaning": "山"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-kitchen",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "kitchen",
+    "meaning": "廚房",
+    "q": "Dad is cooking dinner in the ___ .",
+    "options": [
+      "kitchen",
+      "salt",
+      "bedroom",
+      "bathroom"
+    ],
+    "answer": "kitchen",
+    "explanation": "kitchen：廚房。完整句：Dad is cooking dinner in the kitchen.",
+    "distractors": [
+      {
+        "word": "salt",
+        "meaning": "鹽"
+      },
+      {
+        "word": "bedroom",
+        "meaning": "臥室"
+      },
+      {
+        "word": "bathroom",
+        "meaning": "浴室"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-bedroom",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "bedroom",
+    "meaning": "臥室",
+    "q": "She went to her ___ and got into bed.",
+    "options": [
+      "bedroom",
+      "sister",
+      "brother",
+      "daughter"
+    ],
+    "answer": "bedroom",
+    "explanation": "bedroom：臥室。完整句：She went to her bedroom and got into bed.",
+    "distractors": [
+      {
+        "word": "sister",
+        "meaning": "姊妹"
+      },
+      {
+        "word": "brother",
+        "meaning": "兄弟"
+      },
+      {
+        "word": "daughter",
+        "meaning": "女兒"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-bathroom",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "bathroom",
+    "meaning": "浴室",
+    "q": "The shower and toilet are in the ___ .",
+    "options": [
+      "bathroom",
+      "water",
+      "milk",
+      "egg"
+    ],
+    "answer": "bathroom",
+    "explanation": "bathroom：浴室。完整句：The shower and toilet are in the bathroom.",
+    "distractors": [
+      {
+        "word": "water",
+        "meaning": "水"
+      },
+      {
+        "word": "milk",
+        "meaning": "牛奶"
+      },
+      {
+        "word": "egg",
+        "meaning": "蛋"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-garden",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "garden",
+    "meaning": "花園",
+    "q": "They grow flowers in the ___ behind their house.",
+    "options": [
+      "garden",
+      "chair",
+      "table",
+      "clock"
+    ],
+    "answer": "garden",
+    "explanation": "garden：花園。完整句：They grow flowers in the garden behind their house.",
+    "distractors": [
+      {
+        "word": "chair",
+        "meaning": "椅子"
+      },
+      {
+        "word": "table",
+        "meaning": "桌子"
+      },
+      {
+        "word": "clock",
+        "meaning": "時鐘"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-window",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "window",
+    "meaning": "窗戶",
+    "q": "Open the ___ to let some fresh air into the room.",
+    "options": [
+      "window",
+      "hospital",
+      "supermarket",
+      "library"
+    ],
+    "answer": "window",
+    "explanation": "window：窗戶。完整句：Open the window to let some fresh air into the room.",
+    "distractors": [
+      {
+        "word": "hospital",
+        "meaning": "醫院"
+      },
+      {
+        "word": "supermarket",
+        "meaning": "超市"
+      },
+      {
+        "word": "library",
+        "meaning": "圖書館"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-door",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "door",
+    "meaning": "門",
+    "q": "Someone is knocking on the front ___ .",
+    "options": [
+      "door",
+      "banana",
+      "orange",
+      "carrot"
+    ],
+    "answer": "door",
+    "explanation": "door：門。完整句：Someone is knocking on the front door.",
+    "distractors": [
+      {
+        "word": "banana",
+        "meaning": "香蕉"
+      },
+      {
+        "word": "orange",
+        "meaning": "柳橙"
+      },
+      {
+        "word": "carrot",
+        "meaning": "紅蘿蔔"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-chair",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "chair",
+    "meaning": "椅子",
+    "q": "Pull up a ___ and sit beside me.",
+    "options": [
+      "chair",
+      "student",
+      "doctor",
+      "nurse"
+    ],
+    "answer": "chair",
+    "explanation": "chair：椅子。完整句：Pull up a chair and sit beside me.",
+    "distractors": [
+      {
+        "word": "student",
+        "meaning": "學生"
+      },
+      {
+        "word": "doctor",
+        "meaning": "醫師"
+      },
+      {
+        "word": "nurse",
+        "meaning": "護理師"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-table",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "table",
+    "meaning": "桌子",
+    "q": "Please put the dinner plates on the dining ___ .",
+    "options": [
+      "table",
+      "park",
+      "mountain",
+      "river"
+    ],
+    "answer": "table",
+    "explanation": "table：桌子。完整句：Please put the dinner plates on the dining table.",
+    "distractors": [
+      {
+        "word": "park",
+        "meaning": "公園"
+      },
+      {
+        "word": "mountain",
+        "meaning": "山"
+      },
+      {
+        "word": "river",
+        "meaning": "河流"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-clock",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "clock",
+    "meaning": "時鐘",
+    "q": "The ___ on the wall says it is three o'clock.",
+    "options": [
+      "clock",
+      "kitchen",
+      "bedroom",
+      "bathroom"
+    ],
+    "answer": "clock",
+    "explanation": "clock：時鐘。完整句：The clock on the wall says it is three o'clock.",
+    "distractors": [
+      {
+        "word": "kitchen",
+        "meaning": "廚房"
+      },
+      {
+        "word": "bedroom",
+        "meaning": "臥室"
+      },
+      {
+        "word": "bathroom",
+        "meaning": "浴室"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-mirror",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "mirror",
+    "meaning": "鏡子",
+    "q": "He looked at his face in the ___ while shaving.",
+    "options": [
+      "mirror",
+      "brother",
+      "daughter",
+      "son"
+    ],
+    "answer": "mirror",
+    "explanation": "mirror：鏡子。完整句：He looked at his face in the mirror while shaving.",
+    "distractors": [
+      {
+        "word": "brother",
+        "meaning": "兄弟"
+      },
+      {
+        "word": "daughter",
+        "meaning": "女兒"
+      },
+      {
+        "word": "son",
+        "meaning": "兒子"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-towel",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "towel",
+    "meaning": "毛巾",
+    "q": "Dry your hands with this clean ___ .",
+    "options": [
+      "towel",
+      "milk",
+      "egg",
+      "rice"
+    ],
+    "answer": "towel",
+    "explanation": "towel：毛巾。完整句：Dry your hands with this clean towel.",
+    "distractors": [
+      {
+        "word": "milk",
+        "meaning": "牛奶"
+      },
+      {
+        "word": "egg",
+        "meaning": "蛋"
+      },
+      {
+        "word": "rice",
+        "meaning": "米飯"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-teacher",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "teacher",
+    "meaning": "老師",
+    "q": "Our ___ explains the lesson and gives us homework.",
+    "options": [
+      "teacher",
+      "chair",
+      "table",
+      "clock"
+    ],
+    "answer": "teacher",
+    "explanation": "teacher：老師。完整句：Our teacher explains the lesson and gives us homework.",
+    "distractors": [
+      {
+        "word": "chair",
+        "meaning": "椅子"
+      },
+      {
+        "word": "table",
+        "meaning": "桌子"
+      },
+      {
+        "word": "clock",
+        "meaning": "時鐘"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-student",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "student",
+    "meaning": "學生",
+    "q": "Each ___ in the class needs a notebook.",
+    "options": [
+      "student",
+      "supermarket",
+      "library",
+      "station"
+    ],
+    "answer": "student",
+    "explanation": "student：學生。完整句：Each student in the class needs a notebook.",
+    "distractors": [
+      {
+        "word": "supermarket",
+        "meaning": "超市"
+      },
+      {
+        "word": "library",
+        "meaning": "圖書館"
+      },
+      {
+        "word": "station",
+        "meaning": "車站"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-doctor",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "doctor",
+    "meaning": "醫師",
+    "q": "The ___ examined my sore throat at the clinic.",
+    "options": [
+      "doctor",
+      "orange",
+      "carrot",
+      "potato"
+    ],
+    "answer": "doctor",
+    "explanation": "doctor：醫師。完整句：The doctor examined my sore throat at the clinic.",
+    "distractors": [
+      {
+        "word": "orange",
+        "meaning": "柳橙"
+      },
+      {
+        "word": "carrot",
+        "meaning": "紅蘿蔔"
+      },
+      {
+        "word": "potato",
+        "meaning": "馬鈴薯"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-nurse",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "nurse",
+    "meaning": "護理師",
+    "q": "The hospital ___ checked my temperature before the doctor arrived.",
+    "options": [
+      "nurse",
+      "student",
+      "doctor",
+      "driver"
+    ],
+    "answer": "nurse",
+    "explanation": "nurse：護理師。完整句：The hospital nurse checked my temperature before the doctor arrived.",
+    "distractors": [
+      {
+        "word": "student",
+        "meaning": "學生"
+      },
+      {
+        "word": "doctor",
+        "meaning": "醫師"
+      },
+      {
+        "word": "driver",
+        "meaning": "駕駛"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-driver",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "driver",
+    "meaning": "駕駛",
+    "q": "The bus ___ stopped to let us get on.",
+    "options": [
+      "driver",
+      "mountain",
+      "river",
+      "apple"
+    ],
+    "answer": "driver",
+    "explanation": "driver：駕駛。完整句：The bus driver stopped to let us get on.",
+    "distractors": [
+      {
+        "word": "mountain",
+        "meaning": "山"
+      },
+      {
+        "word": "river",
+        "meaning": "河流"
+      },
+      {
+        "word": "apple",
+        "meaning": "蘋果"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-farmer",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "farmer",
+    "meaning": "農夫",
+    "q": "The ___ grows rice and keeps chickens on his land.",
+    "options": [
+      "farmer",
+      "bedroom",
+      "bathroom",
+      "garden"
+    ],
+    "answer": "farmer",
+    "explanation": "farmer：農夫。完整句：The farmer grows rice and keeps chickens on his land.",
+    "distractors": [
+      {
+        "word": "bedroom",
+        "meaning": "臥室"
+      },
+      {
+        "word": "bathroom",
+        "meaning": "浴室"
+      },
+      {
+        "word": "garden",
+        "meaning": "花園"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-sister",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "sister",
+    "meaning": "姊妹",
+    "q": "My parents have two children: me and my ___ , Anna.",
+    "options": [
+      "sister",
+      "daughter",
+      "son",
+      "friend"
+    ],
+    "answer": "sister",
+    "explanation": "sister：姊妹。完整句：My parents have two children: me and my sister , Anna.",
+    "distractors": [
+      {
+        "word": "daughter",
+        "meaning": "女兒"
+      },
+      {
+        "word": "son",
+        "meaning": "兒子"
+      },
+      {
+        "word": "friend",
+        "meaning": "朋友"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-brother",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "brother",
+    "meaning": "兄弟",
+    "q": "My mother's only son is my ___ , Leo; I am her daughter.",
+    "options": [
+      "brother",
+      "egg",
+      "rice",
+      "cheese"
+    ],
+    "answer": "brother",
+    "explanation": "brother：兄弟。完整句：My mother's only son is my brother , Leo; I am her daughter.",
+    "distractors": [
+      {
+        "word": "egg",
+        "meaning": "蛋"
+      },
+      {
+        "word": "rice",
+        "meaning": "米飯"
+      },
+      {
+        "word": "cheese",
+        "meaning": "起司"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-daughter",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "daughter",
+    "meaning": "女兒",
+    "q": "Their only child is a girl. She is their ___ .",
+    "options": [
+      "daughter",
+      "table",
+      "clock",
+      "mirror"
+    ],
+    "answer": "daughter",
+    "explanation": "daughter：女兒。完整句：Their only child is a girl. She is their daughter.",
+    "distractors": [
+      {
+        "word": "table",
+        "meaning": "桌子"
+      },
+      {
+        "word": "clock",
+        "meaning": "時鐘"
+      },
+      {
+        "word": "mirror",
+        "meaning": "鏡子"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-son",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "son",
+    "meaning": "兒子",
+    "q": "Their only child is a boy. He is their ___ .",
+    "options": [
+      "son",
+      "library",
+      "station",
+      "airport"
+    ],
+    "answer": "son",
+    "explanation": "son：兒子。完整句：Their only child is a boy. He is their son.",
+    "distractors": [
+      {
+        "word": "library",
+        "meaning": "圖書館"
+      },
+      {
+        "word": "station",
+        "meaning": "車站"
+      },
+      {
+        "word": "airport",
+        "meaning": "機場"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-friend",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "friend",
+    "meaning": "朋友",
+    "q": "Mia is my best ___ ; we enjoy spending time together.",
+    "options": [
+      "friend",
+      "carrot",
+      "potato",
+      "sugar"
+    ],
+    "answer": "friend",
+    "explanation": "friend：朋友。完整句：Mia is my best friend ; we enjoy spending time together.",
+    "distractors": [
+      {
+        "word": "carrot",
+        "meaning": "紅蘿蔔"
+      },
+      {
+        "word": "potato",
+        "meaning": "馬鈴薯"
+      },
+      {
+        "word": "sugar",
+        "meaning": "糖"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-school",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "school",
+    "meaning": "學校",
+    "q": "The children go to ___ to attend classes every weekday.",
+    "options": [
+      "school",
+      "doctor",
+      "nurse",
+      "driver"
+    ],
+    "answer": "school",
+    "explanation": "school：學校。完整句：The children go to school to attend classes every weekday.",
+    "distractors": [
+      {
+        "word": "doctor",
+        "meaning": "醫師"
+      },
+      {
+        "word": "nurse",
+        "meaning": "護理師"
+      },
+      {
+        "word": "driver",
+        "meaning": "駕駛"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-hospital",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "hospital",
+    "meaning": "醫院",
+    "q": "The ambulance took the injured man to the ___ .",
+    "options": [
+      "hospital",
+      "river",
+      "apple",
+      "bread"
+    ],
+    "answer": "hospital",
+    "explanation": "hospital：醫院。完整句：The ambulance took the injured man to the hospital.",
+    "distractors": [
+      {
+        "word": "river",
+        "meaning": "河流"
+      },
+      {
+        "word": "apple",
+        "meaning": "蘋果"
+      },
+      {
+        "word": "bread",
+        "meaning": "麵包"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-supermarket",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "supermarket",
+    "meaning": "超市",
+    "q": "We buy groceries at the large ___ near our home.",
+    "options": [
+      "supermarket",
+      "bathroom",
+      "garden",
+      "window"
+    ],
+    "answer": "supermarket",
+    "explanation": "supermarket：超市。完整句：We buy groceries at the large supermarket near our home.",
+    "distractors": [
+      {
+        "word": "bathroom",
+        "meaning": "浴室"
+      },
+      {
+        "word": "garden",
+        "meaning": "花園"
+      },
+      {
+        "word": "window",
+        "meaning": "窗戶"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-library",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "library",
+    "meaning": "圖書館",
+    "q": "You can borrow books for free from the public ___ .",
+    "options": [
+      "library",
+      "daughter",
+      "son",
+      "friend"
+    ],
+    "answer": "library",
+    "explanation": "library：圖書館。完整句：You can borrow books for free from the public library.",
+    "distractors": [
+      {
+        "word": "daughter",
+        "meaning": "女兒"
+      },
+      {
+        "word": "son",
+        "meaning": "兒子"
+      },
+      {
+        "word": "friend",
+        "meaning": "朋友"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-station",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "station",
+    "meaning": "車站",
+    "q": "We waited for our train at the ___ .",
+    "options": [
+      "station",
+      "rice",
+      "cheese",
+      "coffee"
+    ],
+    "answer": "station",
+    "explanation": "station：車站。完整句：We waited for our train at the station.",
+    "distractors": [
+      {
+        "word": "rice",
+        "meaning": "米飯"
+      },
+      {
+        "word": "cheese",
+        "meaning": "起司"
+      },
+      {
+        "word": "coffee",
+        "meaning": "咖啡"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-airport",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "airport",
+    "meaning": "機場",
+    "q": "Our flight leaves from the international ___ at noon.",
+    "options": [
+      "airport",
+      "clock",
+      "mirror",
+      "towel"
+    ],
+    "answer": "airport",
+    "explanation": "airport：機場。完整句：Our flight leaves from the international airport at noon.",
+    "distractors": [
+      {
+        "word": "clock",
+        "meaning": "時鐘"
+      },
+      {
+        "word": "mirror",
+        "meaning": "鏡子"
+      },
+      {
+        "word": "towel",
+        "meaning": "毛巾"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-beach",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "beach",
+    "meaning": "海灘",
+    "q": "We built sandcastles on the ___ beside the sea.",
+    "options": [
+      "beach",
+      "library",
+      "station",
+      "airport"
+    ],
+    "answer": "beach",
+    "explanation": "beach：海灘。完整句：We built sandcastles on the beach beside the sea.",
+    "distractors": [
+      {
+        "word": "library",
+        "meaning": "圖書館"
+      },
+      {
+        "word": "station",
+        "meaning": "車站"
+      },
+      {
+        "word": "airport",
+        "meaning": "機場"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-park",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "park",
+    "meaning": "公園",
+    "q": "We walk our dog in the public ___ with trees and playgrounds.",
+    "options": [
+      "park",
+      "potato",
+      "sugar",
+      "salt"
+    ],
+    "answer": "park",
+    "explanation": "park：公園。完整句：We walk our dog in the public park with trees and playgrounds.",
+    "distractors": [
+      {
+        "word": "potato",
+        "meaning": "馬鈴薯"
+      },
+      {
+        "word": "sugar",
+        "meaning": "糖"
+      },
+      {
+        "word": "salt",
+        "meaning": "鹽"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-mountain",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "mountain",
+    "meaning": "山",
+    "q": "Snow covered the top of the high ___ .",
+    "options": [
+      "mountain",
+      "nurse",
+      "driver",
+      "farmer"
+    ],
+    "answer": "mountain",
+    "explanation": "mountain：山。完整句：Snow covered the top of the high mountain.",
+    "distractors": [
+      {
+        "word": "nurse",
+        "meaning": "護理師"
+      },
+      {
+        "word": "driver",
+        "meaning": "駕駛"
+      },
+      {
+        "word": "farmer",
+        "meaning": "農夫"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-river",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "river",
+    "meaning": "河流",
+    "q": "The ___ flows through the city and into the sea.",
+    "options": [
+      "river",
+      "apple",
+      "bread",
+      "water"
+    ],
+    "answer": "river",
+    "explanation": "river：河流。完整句：The river flows through the city and into the sea.",
+    "distractors": [
+      {
+        "word": "apple",
+        "meaning": "蘋果"
+      },
+      {
+        "word": "bread",
+        "meaning": "麵包"
+      },
+      {
+        "word": "water",
+        "meaning": "水"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-sunny",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "sunny",
+    "meaning": "晴朗的",
+    "q": "There are no clouds today. It is warm and ___ .",
+    "options": [
+      "sunny",
+      "expensive",
+      "cheap",
+      "clean"
+    ],
+    "answer": "sunny",
+    "explanation": "sunny：晴朗的。完整句：There are no clouds today. It is warm and sunny.",
+    "distractors": [
+      {
+        "word": "expensive",
+        "meaning": "昂貴的"
+      },
+      {
+        "word": "cheap",
+        "meaning": "便宜的"
+      },
+      {
+        "word": "clean",
+        "meaning": "乾淨的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-rainy",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "rainy",
+    "meaning": "下雨的",
+    "q": "Take an umbrella; it will be ___ all afternoon.",
+    "options": [
+      "rainy",
+      "thirsty",
+      "expensive",
+      "cheap"
+    ],
+    "answer": "rainy",
+    "explanation": "rainy：下雨的。完整句：Take an umbrella; it will be rainy all afternoon.",
+    "distractors": [
+      {
+        "word": "thirsty",
+        "meaning": "口渴的"
+      },
+      {
+        "word": "expensive",
+        "meaning": "昂貴的"
+      },
+      {
+        "word": "cheap",
+        "meaning": "便宜的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-cold",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "cold",
+    "meaning": "寒冷的",
+    "q": "It is so ___ outside that the water has turned to ice.",
+    "options": [
+      "cold",
+      "hungry",
+      "thirsty",
+      "expensive"
+    ],
+    "answer": "cold",
+    "explanation": "cold：寒冷的。完整句：It is so cold outside that the water has turned to ice.",
+    "distractors": [
+      {
+        "word": "hungry",
+        "meaning": "飢餓的"
+      },
+      {
+        "word": "thirsty",
+        "meaning": "口渴的"
+      },
+      {
+        "word": "expensive",
+        "meaning": "昂貴的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-hot",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "hot",
+    "meaning": "炎熱的",
+    "q": "It is extremely ___ today, with temperatures above 35 degrees.",
+    "options": [
+      "hot",
+      "tired",
+      "hungry",
+      "thirsty"
+    ],
+    "answer": "hot",
+    "explanation": "hot：炎熱的。完整句：It is extremely hot today, with temperatures above 35 degrees.",
+    "distractors": [
+      {
+        "word": "tired",
+        "meaning": "疲倦的"
+      },
+      {
+        "word": "hungry",
+        "meaning": "飢餓的"
+      },
+      {
+        "word": "thirsty",
+        "meaning": "口渴的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-happy",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "happy",
+    "meaning": "開心的",
+    "q": "She felt ___ when she received the wonderful news.",
+    "options": [
+      "happy",
+      "sad",
+      "tired",
+      "hungry"
+    ],
+    "answer": "happy",
+    "explanation": "happy：開心的。完整句：She felt happy when she received the wonderful news.",
+    "distractors": [
+      {
+        "word": "sad",
+        "meaning": "難過的"
+      },
+      {
+        "word": "tired",
+        "meaning": "疲倦的"
+      },
+      {
+        "word": "hungry",
+        "meaning": "飢餓的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-sad",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "sad",
+    "meaning": "難過的",
+    "q": "He felt ___ and cried when his pet died.",
+    "options": [
+      "sad",
+      "young",
+      "beautiful",
+      "quiet"
+    ],
+    "answer": "sad",
+    "explanation": "sad：難過的。完整句：He felt sad and cried when his pet died.",
+    "distractors": [
+      {
+        "word": "young",
+        "meaning": "年輕的"
+      },
+      {
+        "word": "beautiful",
+        "meaning": "美麗的"
+      },
+      {
+        "word": "quiet",
+        "meaning": "安靜的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-tired",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "tired",
+    "meaning": "疲倦的",
+    "q": "After working all night, she felt too ___ to stay awake.",
+    "options": [
+      "tired",
+      "quiet",
+      "sunny",
+      "rainy"
+    ],
+    "answer": "tired",
+    "explanation": "tired：疲倦的。完整句：After working all night, she felt too tired to stay awake.",
+    "distractors": [
+      {
+        "word": "quiet",
+        "meaning": "安靜的"
+      },
+      {
+        "word": "sunny",
+        "meaning": "晴朗的"
+      },
+      {
+        "word": "rainy",
+        "meaning": "下雨的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-hungry",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "hungry",
+    "meaning": "飢餓的",
+    "q": "I haven't eaten all day, so I am very ___ .",
+    "options": [
+      "hungry",
+      "rainy",
+      "cold",
+      "hot"
+    ],
+    "answer": "hungry",
+    "explanation": "hungry：飢餓的。完整句：I haven't eaten all day, so I am very hungry.",
+    "distractors": [
+      {
+        "word": "rainy",
+        "meaning": "下雨的"
+      },
+      {
+        "word": "cold",
+        "meaning": "寒冷的"
+      },
+      {
+        "word": "hot",
+        "meaning": "炎熱的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-thirsty",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "thirsty",
+    "meaning": "口渴的",
+    "q": "After walking in the heat, I was ___ and needed a drink.",
+    "options": [
+      "thirsty",
+      "hot",
+      "happy",
+      "expensive"
+    ],
+    "answer": "thirsty",
+    "explanation": "thirsty：口渴的。完整句：After walking in the heat, I was thirsty and needed a drink.",
+    "distractors": [
+      {
+        "word": "hot",
+        "meaning": "炎熱的"
+      },
+      {
+        "word": "happy",
+        "meaning": "開心的"
+      },
+      {
+        "word": "expensive",
+        "meaning": "昂貴的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-expensive",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "expensive",
+    "meaning": "昂貴的",
+    "q": "This watch costs more than my monthly salary. It is too ___ for me.",
+    "options": [
+      "expensive",
+      "quiet",
+      "sunny",
+      "rainy"
+    ],
+    "answer": "expensive",
+    "explanation": "expensive：昂貴的。完整句：This watch costs more than my monthly salary. It is too expensive for me.",
+    "distractors": [
+      {
+        "word": "quiet",
+        "meaning": "安靜的"
+      },
+      {
+        "word": "sunny",
+        "meaning": "晴朗的"
+      },
+      {
+        "word": "rainy",
+        "meaning": "下雨的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-cheap",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "cheap",
+    "meaning": "便宜的",
+    "q": "The tickets cost only one dollar each. They were very ___ .",
+    "options": [
+      "cheap",
+      "beautiful",
+      "quiet",
+      "sunny"
+    ],
+    "answer": "cheap",
+    "explanation": "cheap：便宜的。完整句：The tickets cost only one dollar each. They were very cheap.",
+    "distractors": [
+      {
+        "word": "beautiful",
+        "meaning": "美麗的"
+      },
+      {
+        "word": "quiet",
+        "meaning": "安靜的"
+      },
+      {
+        "word": "sunny",
+        "meaning": "晴朗的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-clean",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "clean",
+    "meaning": "乾淨的",
+    "q": "I washed the dishes, and now they are ___ .",
+    "options": [
+      "clean",
+      "sunny",
+      "rainy",
+      "cold"
+    ],
+    "answer": "clean",
+    "explanation": "clean：乾淨的。完整句：I washed the dishes, and now they are clean.",
+    "distractors": [
+      {
+        "word": "sunny",
+        "meaning": "晴朗的"
+      },
+      {
+        "word": "rainy",
+        "meaning": "下雨的"
+      },
+      {
+        "word": "cold",
+        "meaning": "寒冷的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-dirty",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "dirty",
+    "meaning": "髒的",
+    "q": "His shoes are ___ because he walked through mud.",
+    "options": [
+      "dirty",
+      "small",
+      "young",
+      "beautiful"
+    ],
+    "answer": "dirty",
+    "explanation": "dirty：髒的。完整句：His shoes are dirty because he walked through mud.",
+    "distractors": [
+      {
+        "word": "small",
+        "meaning": "小的"
+      },
+      {
+        "word": "young",
+        "meaning": "年輕的"
+      },
+      {
+        "word": "beautiful",
+        "meaning": "美麗的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-early",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "early",
+    "meaning": "提早的",
+    "q": "We arrived thirty minutes before the event, so we were ___ .",
+    "options": [
+      "early",
+      "late",
+      "small",
+      "young"
+    ],
+    "answer": "early",
+    "explanation": "early：提早的。完整句：We arrived thirty minutes before the event, so we were early.",
+    "distractors": [
+      {
+        "word": "late",
+        "meaning": "遲到的"
+      },
+      {
+        "word": "small",
+        "meaning": "小的"
+      },
+      {
+        "word": "young",
+        "meaning": "年輕的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-late",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "late",
+    "meaning": "遲到的",
+    "q": "The class began at nine, but I arrived at ten. I was ___ .",
+    "options": [
+      "late",
+      "dirty",
+      "early",
+      "small"
+    ],
+    "answer": "late",
+    "explanation": "late：遲到的。完整句：The class began at nine, but I arrived at ten. I was late.",
+    "distractors": [
+      {
+        "word": "dirty",
+        "meaning": "髒的"
+      },
+      {
+        "word": "early",
+        "meaning": "提早的"
+      },
+      {
+        "word": "small",
+        "meaning": "小的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-small",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "small",
+    "meaning": "小的",
+    "q": "The box is too ___ to hold this large television.",
+    "options": [
+      "small",
+      "clean",
+      "dirty",
+      "early"
+    ],
+    "answer": "small",
+    "explanation": "small：小的。完整句：The box is too small to hold this large television.",
+    "distractors": [
+      {
+        "word": "clean",
+        "meaning": "乾淨的"
+      },
+      {
+        "word": "dirty",
+        "meaning": "髒的"
+      },
+      {
+        "word": "early",
+        "meaning": "提早的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-young",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "young",
+    "meaning": "年輕的",
+    "q": "The puppy is only six weeks old and still very ___ .",
+    "options": [
+      "young",
+      "cheap",
+      "clean",
+      "dirty"
+    ],
+    "answer": "young",
+    "explanation": "young：年輕的。完整句：The puppy is only six weeks old and still very young.",
+    "distractors": [
+      {
+        "word": "cheap",
+        "meaning": "便宜的"
+      },
+      {
+        "word": "clean",
+        "meaning": "乾淨的"
+      },
+      {
+        "word": "dirty",
+        "meaning": "髒的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-beautiful",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "beautiful",
+    "meaning": "美麗的",
+    "q": "We stopped to admire the ___ flowers and their lovely colours.",
+    "options": [
+      "beautiful",
+      "sunny",
+      "rainy",
+      "cold"
+    ],
+    "answer": "beautiful",
+    "explanation": "beautiful：美麗的。完整句：We stopped to admire the beautiful flowers and their lovely colours.",
+    "distractors": [
+      {
+        "word": "sunny",
+        "meaning": "晴朗的"
+      },
+      {
+        "word": "rainy",
+        "meaning": "下雨的"
+      },
+      {
+        "word": "cold",
+        "meaning": "寒冷的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A1-quiet",
+    "level": "A1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "quiet",
+    "meaning": "安靜的",
+    "q": "Please keep the room ___ ; the baby is sleeping.",
+    "options": [
+      "quiet",
+      "thirsty",
+      "expensive",
+      "cheap"
+    ],
+    "answer": "quiet",
+    "explanation": "quiet：安靜的。完整句：Please keep the room quiet ; the baby is sleeping.",
+    "distractors": [
+      {
+        "word": "thirsty",
+        "meaning": "口渴的"
+      },
+      {
+        "word": "expensive",
+        "meaning": "昂貴的"
+      },
+      {
+        "word": "cheap",
+        "meaning": "便宜的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; Cambridge A2 Key vocabulary list used as a lower-level lexical reference",
+    "cefrFocus": "basic concrete words in familiar personal and everyday contexts"
+  },
+  {
+    "id": "v2-v-A2-appointment",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "appointment",
+    "meaning": "預約",
+    "q": "I have a dental ___ at ten tomorrow morning.",
+    "options": [
+      "appointment",
+      "temperature",
+      "forecast",
+      "season"
+    ],
+    "answer": "appointment",
+    "explanation": "appointment：預約。完整句：I have a dental appointment at ten tomorrow morning.",
+    "distractors": [
+      {
+        "word": "temperature",
+        "meaning": "溫度"
+      },
+      {
+        "word": "forecast",
+        "meaning": "預報"
+      },
+      {
+        "word": "season",
+        "meaning": "季節"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-receipt",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "receipt",
+    "meaning": "收據",
+    "q": "Keep your ___ as proof that you paid for the shoes.",
+    "options": [
+      "receipt",
+      "neighbour",
+      "passenger",
+      "tourist"
+    ],
+    "answer": "receipt",
+    "explanation": "receipt：收據。完整句：Keep your receipt as proof that you paid for the shoes.",
+    "distractors": [
+      {
+        "word": "neighbour",
+        "meaning": "鄰居"
+      },
+      {
+        "word": "passenger",
+        "meaning": "乘客"
+      },
+      {
+        "word": "tourist",
+        "meaning": "觀光客"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-refund",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "refund",
+    "meaning": "退款",
+    "q": "The shop returned my money and gave me a full ___ .",
+    "options": [
+      "refund",
+      "storm",
+      "medicine",
+      "headache"
+    ],
+    "answer": "refund",
+    "explanation": "refund：退款。完整句：The shop returned my money and gave me a full refund.",
+    "distractors": [
+      {
+        "word": "storm",
+        "meaning": "暴風雨"
+      },
+      {
+        "word": "medicine",
+        "meaning": "藥物"
+      },
+      {
+        "word": "headache",
+        "meaning": "頭痛"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-discount",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "discount",
+    "meaning": "折扣",
+    "q": "With a 20 percent ___ , the jacket costs less than usual.",
+    "options": [
+      "discount",
+      "luggage",
+      "passport",
+      "platform"
+    ],
+    "answer": "discount",
+    "explanation": "discount：折扣。完整句：With a 20 percent discount , the jacket costs less than usual.",
+    "distractors": [
+      {
+        "word": "luggage",
+        "meaning": "行李"
+      },
+      {
+        "word": "passport",
+        "meaning": "護照"
+      },
+      {
+        "word": "platform",
+        "meaning": "月臺"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-customer",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "customer",
+    "meaning": "顧客",
+    "q": "The shop assistant helped a ___ choose a pair of shoes.",
+    "options": [
+      "customer",
+      "fever",
+      "exercise",
+      "recipe"
+    ],
+    "answer": "customer",
+    "explanation": "customer：顧客。完整句：The shop assistant helped a customer choose a pair of shoes.",
+    "distractors": [
+      {
+        "word": "fever",
+        "meaning": "發燒"
+      },
+      {
+        "word": "exercise",
+        "meaning": "運動"
+      },
+      {
+        "word": "recipe",
+        "meaning": "食譜"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-cashier",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "cashier",
+    "meaning": "收銀員",
+    "q": "The ___ at the checkout scanned my groceries and took my payment.",
+    "options": [
+      "cashier",
+      "journey",
+      "traffic",
+      "entrance"
+    ],
+    "answer": "cashier",
+    "explanation": "cashier：收銀員。完整句：The cashier at the checkout scanned my groceries and took my payment.",
+    "distractors": [
+      {
+        "word": "journey",
+        "meaning": "旅程"
+      },
+      {
+        "word": "traffic",
+        "meaning": "交通車流"
+      },
+      {
+        "word": "entrance",
+        "meaning": "入口"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-colleague",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "colleague",
+    "meaning": "同事",
+    "q": "My ___ and I work in the same office.",
+    "options": [
+      "colleague",
+      "ingredient",
+      "oven",
+      "appointment"
+    ],
+    "answer": "colleague",
+    "explanation": "colleague：同事。完整句：My colleague and I work in the same office.",
+    "distractors": [
+      {
+        "word": "ingredient",
+        "meaning": "食材；成分"
+      },
+      {
+        "word": "oven",
+        "meaning": "烤箱"
+      },
+      {
+        "word": "appointment",
+        "meaning": "預約"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-neighbour",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "neighbour",
+    "meaning": "鄰居",
+    "q": "Our next-door ___ lives in the house beside ours.",
+    "options": [
+      "neighbour",
+      "exit",
+      "corner",
+      "crossroads"
+    ],
+    "answer": "neighbour",
+    "explanation": "neighbour：鄰居。完整句：Our next-door neighbour lives in the house beside ours.",
+    "distractors": [
+      {
+        "word": "exit",
+        "meaning": "出口"
+      },
+      {
+        "word": "corner",
+        "meaning": "街角；角落"
+      },
+      {
+        "word": "crossroads",
+        "meaning": "十字路口"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-passenger",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "passenger",
+    "meaning": "乘客",
+    "q": "Each bus ___ must show a valid ticket.",
+    "options": [
+      "passenger",
+      "receipt",
+      "refund",
+      "discount"
+    ],
+    "answer": "passenger",
+    "explanation": "passenger：乘客。完整句：Each bus passenger must show a valid ticket.",
+    "distractors": [
+      {
+        "word": "receipt",
+        "meaning": "收據"
+      },
+      {
+        "word": "refund",
+        "meaning": "退款"
+      },
+      {
+        "word": "discount",
+        "meaning": "折扣"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-tourist",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "tourist",
+    "meaning": "觀光客",
+    "q": "The ___ visited the city's museums during her holiday.",
+    "options": [
+      "tourist",
+      "distance",
+      "direction",
+      "temperature"
+    ],
+    "answer": "tourist",
+    "explanation": "tourist：觀光客。完整句：The tourist visited the city's museums during her holiday.",
+    "distractors": [
+      {
+        "word": "distance",
+        "meaning": "距離"
+      },
+      {
+        "word": "direction",
+        "meaning": "方向"
+      },
+      {
+        "word": "temperature",
+        "meaning": "溫度"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-luggage",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "luggage",
+    "meaning": "行李",
+    "q": "We checked in our suitcases and collected our ___ after the flight.",
+    "options": [
+      "luggage",
+      "customer",
+      "cashier",
+      "colleague"
+    ],
+    "answer": "luggage",
+    "explanation": "luggage：行李。完整句：We checked in our suitcases and collected our luggage after the flight.",
+    "distractors": [
+      {
+        "word": "customer",
+        "meaning": "顧客"
+      },
+      {
+        "word": "cashier",
+        "meaning": "收銀員"
+      },
+      {
+        "word": "colleague",
+        "meaning": "同事"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-passport",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "passport",
+    "meaning": "護照",
+    "q": "Show your ___ to the immigration officer when entering the country.",
+    "options": [
+      "passport",
+      "forecast",
+      "season",
+      "storm"
+    ],
+    "answer": "passport",
+    "explanation": "passport：護照。完整句：Show your passport to the immigration officer when entering the country.",
+    "distractors": [
+      {
+        "word": "forecast",
+        "meaning": "預報"
+      },
+      {
+        "word": "season",
+        "meaning": "季節"
+      },
+      {
+        "word": "storm",
+        "meaning": "暴風雨"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-platform",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "platform",
+    "meaning": "月臺",
+    "q": "The train to Oxford leaves from ___ six.",
+    "options": [
+      "platform",
+      "neighbour",
+      "passenger",
+      "tourist"
+    ],
+    "answer": "platform",
+    "explanation": "platform：月臺。完整句：The train to Oxford leaves from platform six.",
+    "distractors": [
+      {
+        "word": "neighbour",
+        "meaning": "鄰居"
+      },
+      {
+        "word": "passenger",
+        "meaning": "乘客"
+      },
+      {
+        "word": "tourist",
+        "meaning": "觀光客"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-journey",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "journey",
+    "meaning": "旅程",
+    "q": "The train ___ from our town to the capital takes three hours.",
+    "options": [
+      "journey",
+      "medicine",
+      "headache",
+      "fever"
+    ],
+    "answer": "journey",
+    "explanation": "journey：旅程。完整句：The train journey from our town to the capital takes three hours.",
+    "distractors": [
+      {
+        "word": "medicine",
+        "meaning": "藥物"
+      },
+      {
+        "word": "headache",
+        "meaning": "頭痛"
+      },
+      {
+        "word": "fever",
+        "meaning": "發燒"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-traffic",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "traffic",
+    "meaning": "交通車流",
+    "q": "Heavy ___ made the drive much slower during rush hour.",
+    "options": [
+      "traffic",
+      "luggage",
+      "passport",
+      "platform"
+    ],
+    "answer": "traffic",
+    "explanation": "traffic：交通車流。完整句：Heavy traffic made the drive much slower during rush hour.",
+    "distractors": [
+      {
+        "word": "luggage",
+        "meaning": "行李"
+      },
+      {
+        "word": "passport",
+        "meaning": "護照"
+      },
+      {
+        "word": "platform",
+        "meaning": "月臺"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-entrance",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "entrance",
+    "meaning": "入口",
+    "q": "Buy your ticket at the ___ before going into the museum.",
+    "options": [
+      "entrance",
+      "exercise",
+      "recipe",
+      "ingredient"
+    ],
+    "answer": "entrance",
+    "explanation": "entrance：入口。完整句：Buy your ticket at the entrance before going into the museum.",
+    "distractors": [
+      {
+        "word": "exercise",
+        "meaning": "運動"
+      },
+      {
+        "word": "recipe",
+        "meaning": "食譜"
+      },
+      {
+        "word": "ingredient",
+        "meaning": "食材；成分"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-exit",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "exit",
+    "meaning": "出口",
+    "q": "In an emergency, leave through the nearest ___ .",
+    "options": [
+      "exit",
+      "journey",
+      "traffic",
+      "entrance"
+    ],
+    "answer": "exit",
+    "explanation": "exit：出口。完整句：In an emergency, leave through the nearest exit.",
+    "distractors": [
+      {
+        "word": "journey",
+        "meaning": "旅程"
+      },
+      {
+        "word": "traffic",
+        "meaning": "交通車流"
+      },
+      {
+        "word": "entrance",
+        "meaning": "入口"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-corner",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "corner",
+    "meaning": "街角；角落",
+    "q": "Turn left at the street ___ where the two roads meet.",
+    "options": [
+      "corner",
+      "oven",
+      "appointment",
+      "receipt"
+    ],
+    "answer": "corner",
+    "explanation": "corner：街角；角落。完整句：Turn left at the street corner where the two roads meet.",
+    "distractors": [
+      {
+        "word": "oven",
+        "meaning": "烤箱"
+      },
+      {
+        "word": "appointment",
+        "meaning": "預約"
+      },
+      {
+        "word": "receipt",
+        "meaning": "收據"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-crossroads",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "crossroads",
+    "meaning": "十字路口",
+    "q": "The four roads meet at a busy ___ with traffic lights.",
+    "options": [
+      "crossroads",
+      "exit",
+      "corner",
+      "distance"
+    ],
+    "answer": "crossroads",
+    "explanation": "crossroads：十字路口。完整句：The four roads meet at a busy crossroads with traffic lights.",
+    "distractors": [
+      {
+        "word": "exit",
+        "meaning": "出口"
+      },
+      {
+        "word": "corner",
+        "meaning": "街角；角落"
+      },
+      {
+        "word": "distance",
+        "meaning": "距離"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-distance",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "distance",
+    "meaning": "距離",
+    "q": "What is the ___ in kilometres between Taipei and Kaohsiung?",
+    "options": [
+      "distance",
+      "refund",
+      "discount",
+      "customer"
+    ],
+    "answer": "distance",
+    "explanation": "distance：距離。完整句：What is the distance in kilometres between Taipei and Kaohsiung?",
+    "distractors": [
+      {
+        "word": "refund",
+        "meaning": "退款"
+      },
+      {
+        "word": "discount",
+        "meaning": "折扣"
+      },
+      {
+        "word": "customer",
+        "meaning": "顧客"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-direction",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "direction",
+    "meaning": "方向",
+    "q": "We were walking north, but the hotel was south; we had the wrong ___ .",
+    "options": [
+      "direction",
+      "distance",
+      "temperature",
+      "forecast"
+    ],
+    "answer": "direction",
+    "explanation": "direction：方向。完整句：We were walking north, but the hotel was south; we had the wrong direction.",
+    "distractors": [
+      {
+        "word": "distance",
+        "meaning": "距離"
+      },
+      {
+        "word": "temperature",
+        "meaning": "溫度"
+      },
+      {
+        "word": "forecast",
+        "meaning": "預報"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-temperature",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "temperature",
+    "meaning": "溫度",
+    "q": "The thermometer shows that the water's ___ is 40 degrees.",
+    "options": [
+      "temperature",
+      "cashier",
+      "colleague",
+      "neighbour"
+    ],
+    "answer": "temperature",
+    "explanation": "temperature：溫度。完整句：The thermometer shows that the water's temperature is 40 degrees.",
+    "distractors": [
+      {
+        "word": "cashier",
+        "meaning": "收銀員"
+      },
+      {
+        "word": "colleague",
+        "meaning": "同事"
+      },
+      {
+        "word": "neighbour",
+        "meaning": "鄰居"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-forecast",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "forecast",
+    "meaning": "預報",
+    "q": "The weather ___ says it will rain tomorrow.",
+    "options": [
+      "forecast",
+      "season",
+      "storm",
+      "medicine"
+    ],
+    "answer": "forecast",
+    "explanation": "forecast：預報。完整句：The weather forecast says it will rain tomorrow.",
+    "distractors": [
+      {
+        "word": "season",
+        "meaning": "季節"
+      },
+      {
+        "word": "storm",
+        "meaning": "暴風雨"
+      },
+      {
+        "word": "medicine",
+        "meaning": "藥物"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-season",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "season",
+    "meaning": "季節",
+    "q": "Spring is my favourite ___ because the flowers bloom.",
+    "options": [
+      "season",
+      "passenger",
+      "tourist",
+      "luggage"
+    ],
+    "answer": "season",
+    "explanation": "season：季節。完整句：Spring is my favourite season because the flowers bloom.",
+    "distractors": [
+      {
+        "word": "passenger",
+        "meaning": "乘客"
+      },
+      {
+        "word": "tourist",
+        "meaning": "觀光客"
+      },
+      {
+        "word": "luggage",
+        "meaning": "行李"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-storm",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "storm",
+    "meaning": "暴風雨",
+    "q": "A violent ___ brought strong winds, thunder and heavy rain.",
+    "options": [
+      "storm",
+      "headache",
+      "fever",
+      "exercise"
+    ],
+    "answer": "storm",
+    "explanation": "storm：暴風雨。完整句：A violent storm brought strong winds, thunder and heavy rain.",
+    "distractors": [
+      {
+        "word": "headache",
+        "meaning": "頭痛"
+      },
+      {
+        "word": "fever",
+        "meaning": "發燒"
+      },
+      {
+        "word": "exercise",
+        "meaning": "運動"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-medicine",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "medicine",
+    "meaning": "藥物",
+    "q": "The pharmacist told me to take this ___ twice a day.",
+    "options": [
+      "medicine",
+      "passport",
+      "platform",
+      "journey"
+    ],
+    "answer": "medicine",
+    "explanation": "medicine：藥物。完整句：The pharmacist told me to take this medicine twice a day.",
+    "distractors": [
+      {
+        "word": "passport",
+        "meaning": "護照"
+      },
+      {
+        "word": "platform",
+        "meaning": "月臺"
+      },
+      {
+        "word": "journey",
+        "meaning": "旅程"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-headache",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "headache",
+    "meaning": "頭痛",
+    "q": "My head hurts badly. I have a ___ .",
+    "options": [
+      "headache",
+      "recipe",
+      "ingredient",
+      "oven"
+    ],
+    "answer": "headache",
+    "explanation": "headache：頭痛。完整句：My head hurts badly. I have a headache.",
+    "distractors": [
+      {
+        "word": "recipe",
+        "meaning": "食譜"
+      },
+      {
+        "word": "ingredient",
+        "meaning": "食材；成分"
+      },
+      {
+        "word": "oven",
+        "meaning": "烤箱"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-fever",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "fever",
+    "meaning": "發燒",
+    "q": "Her body temperature is 39 degrees, so she has a ___ .",
+    "options": [
+      "fever",
+      "traffic",
+      "entrance",
+      "exit"
+    ],
+    "answer": "fever",
+    "explanation": "fever：發燒。完整句：Her body temperature is 39 degrees, so she has a fever.",
+    "distractors": [
+      {
+        "word": "traffic",
+        "meaning": "交通車流"
+      },
+      {
+        "word": "entrance",
+        "meaning": "入口"
+      },
+      {
+        "word": "exit",
+        "meaning": "出口"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-exercise",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "exercise",
+    "meaning": "運動",
+    "q": "Walking and swimming are good forms of ___ .",
+    "options": [
+      "exercise",
+      "appointment",
+      "receipt",
+      "refund"
+    ],
+    "answer": "exercise",
+    "explanation": "exercise：運動。完整句：Walking and swimming are good forms of exercise.",
+    "distractors": [
+      {
+        "word": "appointment",
+        "meaning": "預約"
+      },
+      {
+        "word": "receipt",
+        "meaning": "收據"
+      },
+      {
+        "word": "refund",
+        "meaning": "退款"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-healthy",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "healthy",
+    "meaning": "健康的",
+    "q": "A balanced diet and regular exercise help you stay ___ .",
+    "options": [
+      "healthy",
+      "surprised",
+      "boring",
+      "delicious"
+    ],
+    "answer": "healthy",
+    "explanation": "healthy：健康的。完整句：A balanced diet and regular exercise help you stay healthy.",
+    "distractors": [
+      {
+        "word": "surprised",
+        "meaning": "驚訝的"
+      },
+      {
+        "word": "boring",
+        "meaning": "無聊的"
+      },
+      {
+        "word": "delicious",
+        "meaning": "美味的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-recipe",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "recipe",
+    "meaning": "食譜",
+    "q": "Follow this ___ to make the chocolate cake.",
+    "options": [
+      "recipe",
+      "discount",
+      "customer",
+      "cashier"
+    ],
+    "answer": "recipe",
+    "explanation": "recipe：食譜。完整句：Follow this recipe to make the chocolate cake.",
+    "distractors": [
+      {
+        "word": "discount",
+        "meaning": "折扣"
+      },
+      {
+        "word": "customer",
+        "meaning": "顧客"
+      },
+      {
+        "word": "cashier",
+        "meaning": "收銀員"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-ingredient",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "ingredient",
+    "meaning": "食材；成分",
+    "q": "Flour is an essential ___ in this bread.",
+    "options": [
+      "ingredient",
+      "direction",
+      "temperature",
+      "forecast"
+    ],
+    "answer": "ingredient",
+    "explanation": "ingredient：食材；成分。完整句：Flour is an essential ingredient in this bread.",
+    "distractors": [
+      {
+        "word": "direction",
+        "meaning": "方向"
+      },
+      {
+        "word": "temperature",
+        "meaning": "溫度"
+      },
+      {
+        "word": "forecast",
+        "meaning": "預報"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-oven",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "oven",
+    "meaning": "烤箱",
+    "q": "Bake the bread in the ___ at 180 degrees.",
+    "options": [
+      "oven",
+      "colleague",
+      "neighbour",
+      "passenger"
+    ],
+    "answer": "oven",
+    "explanation": "oven：烤箱。完整句：Bake the bread in the oven at 180 degrees.",
+    "distractors": [
+      {
+        "word": "colleague",
+        "meaning": "同事"
+      },
+      {
+        "word": "neighbour",
+        "meaning": "鄰居"
+      },
+      {
+        "word": "passenger",
+        "meaning": "乘客"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-boil",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "boil",
+    "meaning": "煮沸",
+    "q": "Heat the water until bubbles form and it starts to ___ .",
+    "options": [
+      "boil",
+      "repair",
+      "replace",
+      "cancel"
+    ],
+    "answer": "boil",
+    "explanation": "boil：煮沸。完整句：Heat the water until bubbles form and it starts to boil.",
+    "distractors": [
+      {
+        "word": "repair",
+        "meaning": "修理"
+      },
+      {
+        "word": "replace",
+        "meaning": "更換；取代"
+      },
+      {
+        "word": "cancel",
+        "meaning": "取消"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-fry",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "fry",
+    "meaning": "油煎；油炸",
+    "q": "Use a pan and a little oil to ___ the eggs.",
+    "options": [
+      "fry",
+      "lend",
+      "repair",
+      "replace"
+    ],
+    "answer": "fry",
+    "explanation": "fry：油煎；油炸。完整句：Use a pan and a little oil to fry the eggs.",
+    "distractors": [
+      {
+        "word": "lend",
+        "meaning": "借出"
+      },
+      {
+        "word": "repair",
+        "meaning": "修理"
+      },
+      {
+        "word": "replace",
+        "meaning": "更換；取代"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-slice",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "slice",
+    "meaning": "切片",
+    "q": "Use a knife to ___ the loaf into thin pieces.",
+    "options": [
+      "slice",
+      "borrow",
+      "lend",
+      "repair"
+    ],
+    "answer": "slice",
+    "explanation": "slice：切片。完整句：Use a knife to slice the loaf into thin pieces.",
+    "distractors": [
+      {
+        "word": "borrow",
+        "meaning": "借入"
+      },
+      {
+        "word": "lend",
+        "meaning": "借出"
+      },
+      {
+        "word": "repair",
+        "meaning": "修理"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-stir",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "stir",
+    "meaning": "攪拌",
+    "q": "Use a spoon to ___ the soup so the ingredients mix evenly.",
+    "options": [
+      "stir",
+      "promise",
+      "borrow",
+      "lend"
+    ],
+    "answer": "stir",
+    "explanation": "stir：攪拌。完整句：Use a spoon to stir the soup so the ingredients mix evenly.",
+    "distractors": [
+      {
+        "word": "promise",
+        "meaning": "承諾"
+      },
+      {
+        "word": "borrow",
+        "meaning": "借入"
+      },
+      {
+        "word": "lend",
+        "meaning": "借出"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-delicious",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "delicious",
+    "meaning": "美味的",
+    "q": "This cake tastes wonderful. It is absolutely ___ .",
+    "options": [
+      "delicious",
+      "polite",
+      "friendly",
+      "nervous"
+    ],
+    "answer": "delicious",
+    "explanation": "delicious：美味的。完整句：This cake tastes wonderful. It is absolutely delicious.",
+    "distractors": [
+      {
+        "word": "polite",
+        "meaning": "有禮貌的"
+      },
+      {
+        "word": "friendly",
+        "meaning": "友善的"
+      },
+      {
+        "word": "nervous",
+        "meaning": "緊張的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-fresh",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "fresh",
+    "meaning": "新鮮的",
+    "q": "The fish was caught this morning, so it is very ___ .",
+    "options": [
+      "fresh",
+      "surprised",
+      "boring",
+      "dangerous"
+    ],
+    "answer": "fresh",
+    "explanation": "fresh：新鮮的。完整句：The fish was caught this morning, so it is very fresh.",
+    "distractors": [
+      {
+        "word": "surprised",
+        "meaning": "驚訝的"
+      },
+      {
+        "word": "boring",
+        "meaning": "無聊的"
+      },
+      {
+        "word": "dangerous",
+        "meaning": "危險的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-spicy",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "spicy",
+    "meaning": "辛辣的",
+    "q": "This curry contains many chillies and is too ___ for me.",
+    "options": [
+      "spicy",
+      "healthy",
+      "delicious",
+      "fresh"
+    ],
+    "answer": "spicy",
+    "explanation": "spicy：辛辣的。完整句：This curry contains many chillies and is too spicy for me.",
+    "distractors": [
+      {
+        "word": "healthy",
+        "meaning": "健康的"
+      },
+      {
+        "word": "delicious",
+        "meaning": "美味的"
+      },
+      {
+        "word": "fresh",
+        "meaning": "新鮮的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-comfortable",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "comfortable",
+    "meaning": "舒適的",
+    "q": "This soft chair is so ___ that I could sit here for hours.",
+    "options": [
+      "comfortable",
+      "friendly",
+      "nervous",
+      "excited"
+    ],
+    "answer": "comfortable",
+    "explanation": "comfortable：舒適的。完整句：This soft chair is so comfortable that I could sit here for hours.",
+    "distractors": [
+      {
+        "word": "friendly",
+        "meaning": "友善的"
+      },
+      {
+        "word": "nervous",
+        "meaning": "緊張的"
+      },
+      {
+        "word": "excited",
+        "meaning": "興奮的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-crowded",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "crowded",
+    "meaning": "擁擠的",
+    "q": "The bus was so ___ that there was no room for another passenger.",
+    "options": [
+      "crowded",
+      "excited",
+      "surprised",
+      "boring"
+    ],
+    "answer": "crowded",
+    "explanation": "crowded：擁擠的。完整句：The bus was so crowded that there was no room for another passenger.",
+    "distractors": [
+      {
+        "word": "excited",
+        "meaning": "興奮的"
+      },
+      {
+        "word": "surprised",
+        "meaning": "驚訝的"
+      },
+      {
+        "word": "boring",
+        "meaning": "無聊的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-polite",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "polite",
+    "meaning": "有禮貌的",
+    "q": "Saying please and thank you is a ___ way to speak.",
+    "options": [
+      "polite",
+      "careful",
+      "healthy",
+      "delicious"
+    ],
+    "answer": "polite",
+    "explanation": "polite：有禮貌的。完整句：Saying please and thank you is a polite way to speak.",
+    "distractors": [
+      {
+        "word": "careful",
+        "meaning": "小心的"
+      },
+      {
+        "word": "healthy",
+        "meaning": "健康的"
+      },
+      {
+        "word": "delicious",
+        "meaning": "美味的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-friendly",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "friendly",
+    "meaning": "友善的",
+    "q": "The staff were warm and ___ , making us feel welcome.",
+    "options": [
+      "friendly",
+      "nervous",
+      "boring",
+      "dangerous"
+    ],
+    "answer": "friendly",
+    "explanation": "friendly：友善的。完整句：The staff were warm and friendly , making us feel welcome.",
+    "distractors": [
+      {
+        "word": "nervous",
+        "meaning": "緊張的"
+      },
+      {
+        "word": "boring",
+        "meaning": "無聊的"
+      },
+      {
+        "word": "dangerous",
+        "meaning": "危險的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-nervous",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "nervous",
+    "meaning": "緊張的",
+    "q": "Before my first speech, I felt ___ and my hands shook.",
+    "options": [
+      "nervous",
+      "friendly",
+      "excited",
+      "surprised"
+    ],
+    "answer": "nervous",
+    "explanation": "nervous：緊張的。完整句：Before my first speech, I felt nervous and my hands shook.",
+    "distractors": [
+      {
+        "word": "friendly",
+        "meaning": "友善的"
+      },
+      {
+        "word": "excited",
+        "meaning": "興奮的"
+      },
+      {
+        "word": "surprised",
+        "meaning": "驚訝的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-excited",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "excited",
+    "meaning": "興奮的",
+    "q": "The children were ___ and couldn't wait to open their presents.",
+    "options": [
+      "excited",
+      "healthy",
+      "delicious",
+      "fresh"
+    ],
+    "answer": "excited",
+    "explanation": "excited：興奮的。完整句：The children were excited and couldn't wait to open their presents.",
+    "distractors": [
+      {
+        "word": "healthy",
+        "meaning": "健康的"
+      },
+      {
+        "word": "delicious",
+        "meaning": "美味的"
+      },
+      {
+        "word": "fresh",
+        "meaning": "新鮮的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-surprised",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "surprised",
+    "meaning": "驚訝的",
+    "q": "I didn't expect a party, so I was ___ when everyone appeared.",
+    "options": [
+      "surprised",
+      "boring",
+      "dangerous",
+      "careful"
+    ],
+    "answer": "surprised",
+    "explanation": "surprised：驚訝的。完整句：I didn't expect a party, so I was surprised when everyone appeared.",
+    "distractors": [
+      {
+        "word": "boring",
+        "meaning": "無聊的"
+      },
+      {
+        "word": "dangerous",
+        "meaning": "危險的"
+      },
+      {
+        "word": "careful",
+        "meaning": "小心的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-boring",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "boring",
+    "meaning": "無聊的",
+    "q": "The film was so ___ that I nearly fell asleep.",
+    "options": [
+      "boring",
+      "polite",
+      "friendly",
+      "nervous"
+    ],
+    "answer": "boring",
+    "explanation": "boring：無聊的。完整句：The film was so boring that I nearly fell asleep.",
+    "distractors": [
+      {
+        "word": "polite",
+        "meaning": "有禮貌的"
+      },
+      {
+        "word": "friendly",
+        "meaning": "友善的"
+      },
+      {
+        "word": "nervous",
+        "meaning": "緊張的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-dangerous",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "dangerous",
+    "meaning": "危險的",
+    "q": "Swimming here is ___ because of the strong currents.",
+    "options": [
+      "dangerous",
+      "fresh",
+      "spicy",
+      "crowded"
+    ],
+    "answer": "dangerous",
+    "explanation": "dangerous：危險的。完整句：Swimming here is dangerous because of the strong currents.",
+    "distractors": [
+      {
+        "word": "fresh",
+        "meaning": "新鮮的"
+      },
+      {
+        "word": "spicy",
+        "meaning": "辛辣的"
+      },
+      {
+        "word": "crowded",
+        "meaning": "擁擠的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-careful",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "careful",
+    "meaning": "小心的",
+    "q": "Be ___ with that sharp knife so you don't cut yourself.",
+    "options": [
+      "careful",
+      "surprised",
+      "boring",
+      "delicious"
+    ],
+    "answer": "careful",
+    "explanation": "careful：小心的。完整句：Be careful with that sharp knife so you don't cut yourself.",
+    "distractors": [
+      {
+        "word": "surprised",
+        "meaning": "驚訝的"
+      },
+      {
+        "word": "boring",
+        "meaning": "無聊的"
+      },
+      {
+        "word": "delicious",
+        "meaning": "美味的"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-improve",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "improve",
+    "meaning": "改善；進步",
+    "q": "I practise daily because I want to ___ my English.",
+    "options": [
+      "improve",
+      "stir",
+      "explain",
+      "invite"
+    ],
+    "answer": "improve",
+    "explanation": "improve：改善；進步。完整句：I practise daily because I want to improve my English.",
+    "distractors": [
+      {
+        "word": "stir",
+        "meaning": "攪拌"
+      },
+      {
+        "word": "explain",
+        "meaning": "解釋"
+      },
+      {
+        "word": "invite",
+        "meaning": "邀請"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-explain",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "explain",
+    "meaning": "解釋",
+    "q": "Could you ___ this rule so I can understand it?",
+    "options": [
+      "explain",
+      "improve",
+      "invite",
+      "promise"
+    ],
+    "answer": "explain",
+    "explanation": "explain：解釋。完整句：Could you explain this rule so I can understand it?",
+    "distractors": [
+      {
+        "word": "improve",
+        "meaning": "改善；進步"
+      },
+      {
+        "word": "invite",
+        "meaning": "邀請"
+      },
+      {
+        "word": "promise",
+        "meaning": "承諾"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-invite",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "invite",
+    "meaning": "邀請",
+    "q": "We plan to ___ our friends to dinner next Saturday.",
+    "options": [
+      "invite",
+      "lend",
+      "repair",
+      "replace"
+    ],
+    "answer": "invite",
+    "explanation": "invite：邀請。完整句：We plan to invite our friends to dinner next Saturday.",
+    "distractors": [
+      {
+        "word": "lend",
+        "meaning": "借出"
+      },
+      {
+        "word": "repair",
+        "meaning": "修理"
+      },
+      {
+        "word": "replace",
+        "meaning": "更換；取代"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-decide",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "decide",
+    "meaning": "決定",
+    "q": "I can't ___ which course to take; both look interesting.",
+    "options": [
+      "decide",
+      "promise",
+      "borrow",
+      "lend"
+    ],
+    "answer": "decide",
+    "explanation": "decide：決定。完整句：I can't decide which course to take; both look interesting.",
+    "distractors": [
+      {
+        "word": "promise",
+        "meaning": "承諾"
+      },
+      {
+        "word": "borrow",
+        "meaning": "借入"
+      },
+      {
+        "word": "lend",
+        "meaning": "借出"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-promise",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "promise",
+    "meaning": "承諾",
+    "q": "I ___ I will return your book tomorrow; you have my word.",
+    "options": [
+      "promise",
+      "decide",
+      "borrow",
+      "lend"
+    ],
+    "answer": "promise",
+    "explanation": "promise：承諾。完整句：I promise I will return your book tomorrow; you have my word.",
+    "distractors": [
+      {
+        "word": "decide",
+        "meaning": "決定"
+      },
+      {
+        "word": "borrow",
+        "meaning": "借入"
+      },
+      {
+        "word": "lend",
+        "meaning": "借出"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-borrow",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "borrow",
+    "meaning": "借入",
+    "q": "Could I ___ your pen? I'll give it back in a minute.",
+    "options": [
+      "borrow",
+      "invite",
+      "decide",
+      "promise"
+    ],
+    "answer": "borrow",
+    "explanation": "borrow：借入。完整句：Could I borrow your pen? I'll give it back in a minute.",
+    "distractors": [
+      {
+        "word": "invite",
+        "meaning": "邀請"
+      },
+      {
+        "word": "decide",
+        "meaning": "決定"
+      },
+      {
+        "word": "promise",
+        "meaning": "承諾"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-lend",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "lend",
+    "meaning": "借出",
+    "q": "Could you ___ me your pen? I'll return it shortly.",
+    "options": [
+      "lend",
+      "explain",
+      "invite",
+      "decide"
+    ],
+    "answer": "lend",
+    "explanation": "lend：借出。完整句：Could you lend me your pen? I'll return it shortly.",
+    "distractors": [
+      {
+        "word": "explain",
+        "meaning": "解釋"
+      },
+      {
+        "word": "invite",
+        "meaning": "邀請"
+      },
+      {
+        "word": "decide",
+        "meaning": "決定"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-repair",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "repair",
+    "meaning": "修理",
+    "q": "A mechanic will ___ the broken engine.",
+    "options": [
+      "repair",
+      "cancel",
+      "collect",
+      "prepare"
+    ],
+    "answer": "repair",
+    "explanation": "repair：修理。完整句：A mechanic will repair the broken engine.",
+    "distractors": [
+      {
+        "word": "cancel",
+        "meaning": "取消"
+      },
+      {
+        "word": "collect",
+        "meaning": "收集"
+      },
+      {
+        "word": "prepare",
+        "meaning": "準備"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-replace",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "replace",
+    "meaning": "更換；取代",
+    "q": "The battery is completely dead, so we need to ___ it with a new one.",
+    "options": [
+      "replace",
+      "collect",
+      "prepare",
+      "arrive"
+    ],
+    "answer": "replace",
+    "explanation": "replace：更換；取代。完整句：The battery is completely dead, so we need to replace it with a new one.",
+    "distractors": [
+      {
+        "word": "collect",
+        "meaning": "收集"
+      },
+      {
+        "word": "prepare",
+        "meaning": "準備"
+      },
+      {
+        "word": "arrive",
+        "meaning": "抵達"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-cancel",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "cancel",
+    "meaning": "取消",
+    "q": "They decided to ___ the match, so it will not take place.",
+    "options": [
+      "cancel",
+      "promise",
+      "borrow",
+      "lend"
+    ],
+    "answer": "cancel",
+    "explanation": "cancel：取消。完整句：They decided to cancel the match, so it will not take place.",
+    "distractors": [
+      {
+        "word": "promise",
+        "meaning": "承諾"
+      },
+      {
+        "word": "borrow",
+        "meaning": "借入"
+      },
+      {
+        "word": "lend",
+        "meaning": "借出"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-collect",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "collect",
+    "meaning": "收集",
+    "q": "My hobby is to ___ stamps from different countries.",
+    "options": [
+      "collect",
+      "fry",
+      "slice",
+      "stir"
+    ],
+    "answer": "collect",
+    "explanation": "collect：收集。完整句：My hobby is to collect stamps from different countries.",
+    "distractors": [
+      {
+        "word": "fry",
+        "meaning": "油煎；油炸"
+      },
+      {
+        "word": "slice",
+        "meaning": "切片"
+      },
+      {
+        "word": "stir",
+        "meaning": "攪拌"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-prepare",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "prepare",
+    "meaning": "準備",
+    "q": "We need to ___ the meeting room before everyone arrives.",
+    "options": [
+      "prepare",
+      "replace",
+      "collect",
+      "choose"
+    ],
+    "answer": "prepare",
+    "explanation": "prepare：準備。完整句：We need to prepare the meeting room before everyone arrives.",
+    "distractors": [
+      {
+        "word": "replace",
+        "meaning": "更換；取代"
+      },
+      {
+        "word": "collect",
+        "meaning": "收集"
+      },
+      {
+        "word": "choose",
+        "meaning": "選擇"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-arrive",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "arrive",
+    "meaning": "抵達",
+    "q": "Our plane will ___ in Auckland at six in the morning.",
+    "options": [
+      "arrive",
+      "choose",
+      "boil",
+      "fry"
+    ],
+    "answer": "arrive",
+    "explanation": "arrive：抵達。完整句：Our plane will arrive in Auckland at six in the morning.",
+    "distractors": [
+      {
+        "word": "choose",
+        "meaning": "選擇"
+      },
+      {
+        "word": "boil",
+        "meaning": "煮沸"
+      },
+      {
+        "word": "fry",
+        "meaning": "油煎；油炸"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-leave",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "leave",
+    "meaning": "離開",
+    "q": "We must ___ home by seven to catch the train.",
+    "options": [
+      "leave",
+      "fry",
+      "slice",
+      "stir"
+    ],
+    "answer": "leave",
+    "explanation": "leave：離開。完整句：We must leave home by seven to catch the train.",
+    "distractors": [
+      {
+        "word": "fry",
+        "meaning": "油煎；油炸"
+      },
+      {
+        "word": "slice",
+        "meaning": "切片"
+      },
+      {
+        "word": "stir",
+        "meaning": "攪拌"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-A2-choose",
+    "level": "A2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "choose",
+    "meaning": "選擇",
+    "q": "You may ___ either tea or coffee, but not both.",
+    "options": [
+      "choose",
+      "fry",
+      "slice",
+      "stir"
+    ],
+    "answer": "choose",
+    "explanation": "choose：選擇。完整句：You may choose either tea or coffee, but not both.",
+    "distractors": [
+      {
+        "word": "fry",
+        "meaning": "油煎；油炸"
+      },
+      {
+        "word": "slice",
+        "meaning": "切片"
+      },
+      {
+        "word": "stir",
+        "meaning": "攪拌"
+      }
+    ],
+    "sourceBasis": "Cambridge English A2 Key vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "routine transactions, travel, work and daily-life language"
+  },
+  {
+    "id": "v2-v-B1-achievement",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "achievement",
+    "meaning": "成就",
+    "q": "Winning the national award was her greatest professional ___ .",
+    "options": [
+      "achievement",
+      "evidence",
+      "research",
+      "survey"
+    ],
+    "answer": "achievement",
+    "explanation": "achievement：成就。完整句：Winning the national award was her greatest professional achievement.",
+    "distractors": [
+      {
+        "word": "evidence",
+        "meaning": "證據"
+      },
+      {
+        "word": "research",
+        "meaning": "研究"
+      },
+      {
+        "word": "survey",
+        "meaning": "調查"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-advantage",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "advantage",
+    "meaning": "優勢",
+    "q": "Speaking two languages gives you an ___ when applying for this job.",
+    "options": [
+      "advantage",
+      "progress",
+      "effort",
+      "behaviour"
+    ],
+    "answer": "advantage",
+    "explanation": "advantage：優勢。完整句：Speaking two languages gives you an advantage when applying for this job.",
+    "distractors": [
+      {
+        "word": "progress",
+        "meaning": "進展；進步"
+      },
+      {
+        "word": "effort",
+        "meaning": "努力"
+      },
+      {
+        "word": "behaviour",
+        "meaning": "行為"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-disadvantage",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "disadvantage",
+    "meaning": "劣勢；缺點",
+    "q": "A major ___ of this flat is its distance from public transport.",
+    "options": [
+      "disadvantage",
+      "deadline",
+      "schedule",
+      "delay"
+    ],
+    "answer": "disadvantage",
+    "explanation": "disadvantage：劣勢；缺點。完整句：A major disadvantage of this flat is its distance from public transport.",
+    "distractors": [
+      {
+        "word": "deadline",
+        "meaning": "截止期限"
+      },
+      {
+        "word": "schedule",
+        "meaning": "時程表"
+      },
+      {
+        "word": "delay",
+        "meaning": "延誤"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-opportunity",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "opportunity",
+    "meaning": "機會",
+    "q": "The internship gave me an ___ to gain practical experience.",
+    "options": [
+      "opportunity",
+      "research",
+      "survey",
+      "result"
+    ],
+    "answer": "opportunity",
+    "explanation": "opportunity：機會。完整句：The internship gave me an opportunity to gain practical experience.",
+    "distractors": [
+      {
+        "word": "research",
+        "meaning": "研究"
+      },
+      {
+        "word": "survey",
+        "meaning": "調查"
+      },
+      {
+        "word": "result",
+        "meaning": "結果"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-challenge",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "challenge",
+    "meaning": "挑戰",
+    "q": "Finishing the difficult project in one week was a real ___ .",
+    "options": [
+      "challenge",
+      "relationship",
+      "community",
+      "environment"
+    ],
+    "answer": "challenge",
+    "explanation": "challenge：挑戰。完整句：Finishing the difficult project in one week was a real challenge.",
+    "distractors": [
+      {
+        "word": "relationship",
+        "meaning": "關係"
+      },
+      {
+        "word": "community",
+        "meaning": "社區；社群"
+      },
+      {
+        "word": "environment",
+        "meaning": "環境"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-solution",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "solution",
+    "meaning": "解決方法",
+    "q": "We finally found a ___ to the problem and fixed it.",
+    "options": [
+      "solution",
+      "qualification",
+      "interview",
+      "salary"
+    ],
+    "answer": "solution",
+    "explanation": "solution：解決方法。完整句：We finally found a solution to the problem and fixed it.",
+    "distractors": [
+      {
+        "word": "qualification",
+        "meaning": "資格；學歷"
+      },
+      {
+        "word": "interview",
+        "meaning": "面試"
+      },
+      {
+        "word": "salary",
+        "meaning": "薪資"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-evidence",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "evidence",
+    "meaning": "證據",
+    "q": "The police found fingerprints as ___ linking the suspect to the scene.",
+    "options": [
+      "evidence",
+      "purpose",
+      "decision",
+      "suggestion"
+    ],
+    "answer": "evidence",
+    "explanation": "evidence：證據。完整句：The police found fingerprints as evidence linking the suspect to the scene.",
+    "distractors": [
+      {
+        "word": "purpose",
+        "meaning": "目的"
+      },
+      {
+        "word": "decision",
+        "meaning": "決定"
+      },
+      {
+        "word": "suggestion",
+        "meaning": "建議"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-research",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "research",
+    "meaning": "研究",
+    "q": "The scientists carried out ___ to understand the disease.",
+    "options": [
+      "research",
+      "pollution",
+      "wildlife",
+      "climate"
+    ],
+    "answer": "research",
+    "explanation": "research：研究。完整句：The scientists carried out research to understand the disease.",
+    "distractors": [
+      {
+        "word": "pollution",
+        "meaning": "污染"
+      },
+      {
+        "word": "wildlife",
+        "meaning": "野生動物"
+      },
+      {
+        "word": "climate",
+        "meaning": "氣候"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-survey",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "survey",
+    "meaning": "調查",
+    "q": "We asked 500 customers to complete a ___ about our service.",
+    "options": [
+      "survey",
+      "application",
+      "qualification",
+      "interview"
+    ],
+    "answer": "survey",
+    "explanation": "survey：調查。完整句：We asked 500 customers to complete a survey about our service.",
+    "distractors": [
+      {
+        "word": "application",
+        "meaning": "申請"
+      },
+      {
+        "word": "qualification",
+        "meaning": "資格；學歷"
+      },
+      {
+        "word": "interview",
+        "meaning": "面試"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-result",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "result",
+    "meaning": "結果",
+    "q": "The test ___ showed that her blood sugar was normal.",
+    "options": [
+      "result",
+      "suggestion",
+      "recommendation",
+      "permission"
+    ],
+    "answer": "result",
+    "explanation": "result：結果。完整句：The test result showed that her blood sugar was normal.",
+    "distractors": [
+      {
+        "word": "suggestion",
+        "meaning": "建議"
+      },
+      {
+        "word": "recommendation",
+        "meaning": "推薦；建議"
+      },
+      {
+        "word": "permission",
+        "meaning": "許可"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-purpose",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "purpose",
+    "meaning": "目的",
+    "q": "The main ___ of the meeting is to agree on a timetable.",
+    "options": [
+      "purpose",
+      "resource",
+      "waste",
+      "benefit"
+    ],
+    "answer": "purpose",
+    "explanation": "purpose：目的。完整句：The main purpose of the meeting is to agree on a timetable.",
+    "distractors": [
+      {
+        "word": "resource",
+        "meaning": "資源"
+      },
+      {
+        "word": "waste",
+        "meaning": "浪費"
+      },
+      {
+        "word": "benefit",
+        "meaning": "益處"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-decision",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "decision",
+    "meaning": "決定",
+    "q": "After considering both offers, she made a ___ to accept the first.",
+    "options": [
+      "decision",
+      "evidence",
+      "research",
+      "survey"
+    ],
+    "answer": "decision",
+    "explanation": "decision：決定。完整句：After considering both offers, she made a decision to accept the first.",
+    "distractors": [
+      {
+        "word": "evidence",
+        "meaning": "證據"
+      },
+      {
+        "word": "research",
+        "meaning": "研究"
+      },
+      {
+        "word": "survey",
+        "meaning": "調查"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-suggestion",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "suggestion",
+    "meaning": "建議",
+    "q": "Your ___ to start earlier was useful, so we followed it.",
+    "options": [
+      "suggestion",
+      "environment",
+      "pollution",
+      "wildlife"
+    ],
+    "answer": "suggestion",
+    "explanation": "suggestion：建議。完整句：Your suggestion to start earlier was useful, so we followed it.",
+    "distractors": [
+      {
+        "word": "environment",
+        "meaning": "環境"
+      },
+      {
+        "word": "pollution",
+        "meaning": "污染"
+      },
+      {
+        "word": "wildlife",
+        "meaning": "野生動物"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-recommendation",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "recommendation",
+    "meaning": "推薦；建議",
+    "q": "I booked the hotel on my friend's ___ because she loved staying there.",
+    "options": [
+      "recommendation",
+      "arrangement",
+      "application",
+      "qualification"
+    ],
+    "answer": "recommendation",
+    "explanation": "recommendation：推薦；建議。完整句：I booked the hotel on my friend's recommendation because she loved staying there.",
+    "distractors": [
+      {
+        "word": "arrangement",
+        "meaning": "安排"
+      },
+      {
+        "word": "application",
+        "meaning": "申請"
+      },
+      {
+        "word": "qualification",
+        "meaning": "資格；學歷"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-permission",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "permission",
+    "meaning": "許可",
+    "q": "You need your manager's ___ before taking a day off.",
+    "options": [
+      "permission",
+      "income",
+      "expense",
+      "achievement"
+    ],
+    "answer": "permission",
+    "explanation": "permission：許可。完整句：You need your manager's permission before taking a day off.",
+    "distractors": [
+      {
+        "word": "income",
+        "meaning": "收入"
+      },
+      {
+        "word": "expense",
+        "meaning": "支出；費用"
+      },
+      {
+        "word": "achievement",
+        "meaning": "成就"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-responsibility",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "responsibility",
+    "meaning": "責任",
+    "q": "Checking that the doors are locked is your ___ tonight.",
+    "options": [
+      "responsibility",
+      "confidence",
+      "progress",
+      "effort"
+    ],
+    "answer": "responsibility",
+    "explanation": "responsibility：責任。完整句：Checking that the doors are locked is your responsibility tonight.",
+    "distractors": [
+      {
+        "word": "confidence",
+        "meaning": "信心"
+      },
+      {
+        "word": "progress",
+        "meaning": "進展；進步"
+      },
+      {
+        "word": "effort",
+        "meaning": "努力"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-experience",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "experience",
+    "meaning": "經驗",
+    "q": "The job requires three years of practical ___ in software development.",
+    "options": [
+      "experience",
+      "income",
+      "expense",
+      "achievement"
+    ],
+    "answer": "experience",
+    "explanation": "experience：經驗。完整句：The job requires three years of practical experience in software development.",
+    "distractors": [
+      {
+        "word": "income",
+        "meaning": "收入"
+      },
+      {
+        "word": "expense",
+        "meaning": "支出；費用"
+      },
+      {
+        "word": "achievement",
+        "meaning": "成就"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-knowledge",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "knowledge",
+    "meaning": "知識",
+    "q": "Reading widely has increased her ___ of world history.",
+    "options": [
+      "knowledge",
+      "responsibility",
+      "confidence",
+      "progress"
+    ],
+    "answer": "knowledge",
+    "explanation": "knowledge：知識。完整句：Reading widely has increased her knowledge of world history.",
+    "distractors": [
+      {
+        "word": "responsibility",
+        "meaning": "責任"
+      },
+      {
+        "word": "confidence",
+        "meaning": "信心"
+      },
+      {
+        "word": "progress",
+        "meaning": "進展；進步"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-skill",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "skill",
+    "meaning": "技能",
+    "q": "Clear communication is an important ___ for a project manager.",
+    "options": [
+      "skill",
+      "quality",
+      "quantity",
+      "budget"
+    ],
+    "answer": "skill",
+    "explanation": "skill：技能。完整句：Clear communication is an important skill for a project manager.",
+    "distractors": [
+      {
+        "word": "quality",
+        "meaning": "品質"
+      },
+      {
+        "word": "quantity",
+        "meaning": "數量"
+      },
+      {
+        "word": "budget",
+        "meaning": "預算"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-confidence",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "confidence",
+    "meaning": "信心",
+    "q": "Regular speaking practice has given me more ___ in my English ability.",
+    "options": [
+      "confidence",
+      "quality",
+      "quantity",
+      "budget"
+    ],
+    "answer": "confidence",
+    "explanation": "confidence：信心。完整句：Regular speaking practice has given me more confidence in my English ability.",
+    "distractors": [
+      {
+        "word": "quality",
+        "meaning": "品質"
+      },
+      {
+        "word": "quantity",
+        "meaning": "數量"
+      },
+      {
+        "word": "budget",
+        "meaning": "預算"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-progress",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "progress",
+    "meaning": "進展；進步",
+    "q": "Your pronunciation is getting better; you are making good ___ .",
+    "options": [
+      "progress",
+      "disadvantage",
+      "opportunity",
+      "challenge"
+    ],
+    "answer": "progress",
+    "explanation": "progress：進展；進步。完整句：Your pronunciation is getting better; you are making good progress.",
+    "distractors": [
+      {
+        "word": "disadvantage",
+        "meaning": "劣勢；缺點"
+      },
+      {
+        "word": "opportunity",
+        "meaning": "機會"
+      },
+      {
+        "word": "challenge",
+        "meaning": "挑戰"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-effort",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "effort",
+    "meaning": "努力",
+    "q": "Learning a language takes time and ___ ; improvement is not automatic.",
+    "options": [
+      "effort",
+      "confidence",
+      "progress",
+      "behaviour"
+    ],
+    "answer": "effort",
+    "explanation": "effort：努力。完整句：Learning a language takes time and effort ; improvement is not automatic.",
+    "distractors": [
+      {
+        "word": "confidence",
+        "meaning": "信心"
+      },
+      {
+        "word": "progress",
+        "meaning": "進展；進步"
+      },
+      {
+        "word": "behaviour",
+        "meaning": "行為"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-behaviour",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "behaviour",
+    "meaning": "行為",
+    "q": "The teacher praised the class for its polite ___ during the visit.",
+    "options": [
+      "behaviour",
+      "budget",
+      "deadline",
+      "schedule"
+    ],
+    "answer": "behaviour",
+    "explanation": "behaviour：行為。完整句：The teacher praised the class for its polite behaviour during the visit.",
+    "distractors": [
+      {
+        "word": "budget",
+        "meaning": "預算"
+      },
+      {
+        "word": "deadline",
+        "meaning": "截止期限"
+      },
+      {
+        "word": "schedule",
+        "meaning": "時程表"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-attitude",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "attitude",
+    "meaning": "態度",
+    "q": "Her positive ___ helps her remain optimistic when problems arise.",
+    "options": [
+      "attitude",
+      "challenge",
+      "solution",
+      "evidence"
+    ],
+    "answer": "attitude",
+    "explanation": "attitude：態度。完整句：Her positive attitude helps her remain optimistic when problems arise.",
+    "distractors": [
+      {
+        "word": "challenge",
+        "meaning": "挑戰"
+      },
+      {
+        "word": "solution",
+        "meaning": "解決方法"
+      },
+      {
+        "word": "evidence",
+        "meaning": "證據"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-relationship",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "relationship",
+    "meaning": "關係",
+    "q": "Trust is important in the ___ between a manager and a team.",
+    "options": [
+      "relationship",
+      "effort",
+      "behaviour",
+      "attitude"
+    ],
+    "answer": "relationship",
+    "explanation": "relationship：關係。完整句：Trust is important in the relationship between a manager and a team.",
+    "distractors": [
+      {
+        "word": "effort",
+        "meaning": "努力"
+      },
+      {
+        "word": "behaviour",
+        "meaning": "行為"
+      },
+      {
+        "word": "attitude",
+        "meaning": "態度"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-community",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "community",
+    "meaning": "社區；社群",
+    "q": "People in our local ___ work together to keep the neighbourhood clean.",
+    "options": [
+      "community",
+      "schedule",
+      "delay",
+      "complaint"
+    ],
+    "answer": "community",
+    "explanation": "community：社區；社群。完整句：People in our local community work together to keep the neighbourhood clean.",
+    "distractors": [
+      {
+        "word": "schedule",
+        "meaning": "時程表"
+      },
+      {
+        "word": "delay",
+        "meaning": "延誤"
+      },
+      {
+        "word": "complaint",
+        "meaning": "抱怨；申訴"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-environment",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "environment",
+    "meaning": "環境",
+    "q": "Recycling can help protect the natural ___ from pollution.",
+    "options": [
+      "environment",
+      "suggestion",
+      "recommendation",
+      "permission"
+    ],
+    "answer": "environment",
+    "explanation": "environment：環境。完整句：Recycling can help protect the natural environment from pollution.",
+    "distractors": [
+      {
+        "word": "suggestion",
+        "meaning": "建議"
+      },
+      {
+        "word": "recommendation",
+        "meaning": "推薦；建議"
+      },
+      {
+        "word": "permission",
+        "meaning": "許可"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-pollution",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "pollution",
+    "meaning": "污染",
+    "q": "Factory smoke is a major source of air ___ .",
+    "options": [
+      "pollution",
+      "attitude",
+      "relationship",
+      "community"
+    ],
+    "answer": "pollution",
+    "explanation": "pollution：污染。完整句：Factory smoke is a major source of air pollution.",
+    "distractors": [
+      {
+        "word": "attitude",
+        "meaning": "態度"
+      },
+      {
+        "word": "relationship",
+        "meaning": "關係"
+      },
+      {
+        "word": "community",
+        "meaning": "社區；社群"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-wildlife",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "wildlife",
+    "meaning": "野生動物",
+    "q": "The reserve protects local ___ , including birds and deer.",
+    "options": [
+      "wildlife",
+      "income",
+      "expense",
+      "achievement"
+    ],
+    "answer": "wildlife",
+    "explanation": "wildlife：野生動物。完整句：The reserve protects local wildlife , including birds and deer.",
+    "distractors": [
+      {
+        "word": "income",
+        "meaning": "收入"
+      },
+      {
+        "word": "expense",
+        "meaning": "支出；費用"
+      },
+      {
+        "word": "achievement",
+        "meaning": "成就"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-climate",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "climate",
+    "meaning": "氣候",
+    "q": "The region has a warm, dry ___ throughout much of the year.",
+    "options": [
+      "climate",
+      "survey",
+      "result",
+      "purpose"
+    ],
+    "answer": "climate",
+    "explanation": "climate：氣候。完整句：The region has a warm, dry climate throughout much of the year.",
+    "distractors": [
+      {
+        "word": "survey",
+        "meaning": "調查"
+      },
+      {
+        "word": "result",
+        "meaning": "結果"
+      },
+      {
+        "word": "purpose",
+        "meaning": "目的"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-resource",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "resource",
+    "meaning": "資源",
+    "q": "Fresh water is a valuable natural ___ that we must conserve.",
+    "options": [
+      "resource",
+      "risk",
+      "safety",
+      "quality"
+    ],
+    "answer": "resource",
+    "explanation": "resource：資源。完整句：Fresh water is a valuable natural resource that we must conserve.",
+    "distractors": [
+      {
+        "word": "risk",
+        "meaning": "風險"
+      },
+      {
+        "word": "safety",
+        "meaning": "安全"
+      },
+      {
+        "word": "quality",
+        "meaning": "品質"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-waste",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "waste",
+    "meaning": "浪費",
+    "q": "Throwing away edible food is a terrible ___ of money and resources.",
+    "options": [
+      "waste",
+      "arrangement",
+      "application",
+      "qualification"
+    ],
+    "answer": "waste",
+    "explanation": "waste：浪費。完整句：Throwing away edible food is a terrible waste of money and resources.",
+    "distractors": [
+      {
+        "word": "arrangement",
+        "meaning": "安排"
+      },
+      {
+        "word": "application",
+        "meaning": "申請"
+      },
+      {
+        "word": "qualification",
+        "meaning": "資格；學歷"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-benefit",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "benefit",
+    "meaning": "益處",
+    "q": "Better sleep is one ___ of regular exercise.",
+    "options": [
+      "benefit",
+      "resource",
+      "waste",
+      "risk"
+    ],
+    "answer": "benefit",
+    "explanation": "benefit：益處。完整句：Better sleep is one benefit of regular exercise.",
+    "distractors": [
+      {
+        "word": "resource",
+        "meaning": "資源"
+      },
+      {
+        "word": "waste",
+        "meaning": "浪費"
+      },
+      {
+        "word": "risk",
+        "meaning": "風險"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-risk",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "risk",
+    "meaning": "風險",
+    "q": "Driving too fast increases the ___ of an accident.",
+    "options": [
+      "risk",
+      "income",
+      "expense",
+      "achievement"
+    ],
+    "answer": "risk",
+    "explanation": "risk：風險。完整句：Driving too fast increases the risk of an accident.",
+    "distractors": [
+      {
+        "word": "income",
+        "meaning": "收入"
+      },
+      {
+        "word": "expense",
+        "meaning": "支出；費用"
+      },
+      {
+        "word": "achievement",
+        "meaning": "成就"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-safety",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "safety",
+    "meaning": "安全",
+    "q": "Everyone must wear a helmet for their own ___ .",
+    "options": [
+      "safety",
+      "qualification",
+      "interview",
+      "salary"
+    ],
+    "answer": "safety",
+    "explanation": "safety：安全。完整句：Everyone must wear a helmet for their own safety.",
+    "distractors": [
+      {
+        "word": "qualification",
+        "meaning": "資格；學歷"
+      },
+      {
+        "word": "interview",
+        "meaning": "面試"
+      },
+      {
+        "word": "salary",
+        "meaning": "薪資"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-quality",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "quality",
+    "meaning": "品質",
+    "q": "The company checks every product to maintain high ___ .",
+    "options": [
+      "quality",
+      "suggestion",
+      "recommendation",
+      "permission"
+    ],
+    "answer": "quality",
+    "explanation": "quality：品質。完整句：The company checks every product to maintain high quality.",
+    "distractors": [
+      {
+        "word": "suggestion",
+        "meaning": "建議"
+      },
+      {
+        "word": "recommendation",
+        "meaning": "推薦；建議"
+      },
+      {
+        "word": "permission",
+        "meaning": "許可"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-quantity",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "quantity",
+    "meaning": "數量",
+    "q": "The recipe gives the exact ___ of flour needed in grams.",
+    "options": [
+      "quantity",
+      "delay",
+      "complaint",
+      "apology"
+    ],
+    "answer": "quantity",
+    "explanation": "quantity：數量。完整句：The recipe gives the exact quantity of flour needed in grams.",
+    "distractors": [
+      {
+        "word": "delay",
+        "meaning": "延誤"
+      },
+      {
+        "word": "complaint",
+        "meaning": "抱怨；申訴"
+      },
+      {
+        "word": "apology",
+        "meaning": "道歉"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-budget",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "budget",
+    "meaning": "預算",
+    "q": "Our spending ___ is limited to 50,000 dollars this month.",
+    "options": [
+      "budget",
+      "risk",
+      "safety",
+      "quality"
+    ],
+    "answer": "budget",
+    "explanation": "budget：預算。完整句：Our spending budget is limited to 50,000 dollars this month.",
+    "distractors": [
+      {
+        "word": "risk",
+        "meaning": "風險"
+      },
+      {
+        "word": "safety",
+        "meaning": "安全"
+      },
+      {
+        "word": "quality",
+        "meaning": "品質"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-deadline",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "deadline",
+    "meaning": "截止期限",
+    "q": "Friday is the final ___ for submitting the application.",
+    "options": [
+      "deadline",
+      "permission",
+      "responsibility",
+      "experience"
+    ],
+    "answer": "deadline",
+    "explanation": "deadline：截止期限。完整句：Friday is the final deadline for submitting the application.",
+    "distractors": [
+      {
+        "word": "permission",
+        "meaning": "許可"
+      },
+      {
+        "word": "responsibility",
+        "meaning": "責任"
+      },
+      {
+        "word": "experience",
+        "meaning": "經驗"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-schedule",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "schedule",
+    "meaning": "時程表",
+    "q": "The timetable lists our full daily ___ of meetings and activities.",
+    "options": [
+      "schedule",
+      "waste",
+      "benefit",
+      "risk"
+    ],
+    "answer": "schedule",
+    "explanation": "schedule：時程表。完整句：The timetable lists our full daily schedule of meetings and activities.",
+    "distractors": [
+      {
+        "word": "waste",
+        "meaning": "浪費"
+      },
+      {
+        "word": "benefit",
+        "meaning": "益處"
+      },
+      {
+        "word": "risk",
+        "meaning": "風險"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-delay",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "delay",
+    "meaning": "延誤",
+    "q": "A technical fault caused a two-hour ___ to our flight.",
+    "options": [
+      "delay",
+      "expense",
+      "achievement",
+      "advantage"
+    ],
+    "answer": "delay",
+    "explanation": "delay：延誤。完整句：A technical fault caused a two-hour delay to our flight.",
+    "distractors": [
+      {
+        "word": "expense",
+        "meaning": "支出；費用"
+      },
+      {
+        "word": "achievement",
+        "meaning": "成就"
+      },
+      {
+        "word": "advantage",
+        "meaning": "優勢"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-complaint",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "complaint",
+    "meaning": "抱怨；申訴",
+    "q": "The guest made a formal ___ about the noisy room.",
+    "options": [
+      "complaint",
+      "experience",
+      "knowledge",
+      "skill"
+    ],
+    "answer": "complaint",
+    "explanation": "complaint：抱怨；申訴。完整句：The guest made a formal complaint about the noisy room.",
+    "distractors": [
+      {
+        "word": "experience",
+        "meaning": "經驗"
+      },
+      {
+        "word": "knowledge",
+        "meaning": "知識"
+      },
+      {
+        "word": "skill",
+        "meaning": "技能"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-apology",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "apology",
+    "meaning": "道歉",
+    "q": "He offered a sincere ___ for arriving late.",
+    "options": [
+      "apology",
+      "risk",
+      "safety",
+      "quality"
+    ],
+    "answer": "apology",
+    "explanation": "apology：道歉。完整句：He offered a sincere apology for arriving late.",
+    "distractors": [
+      {
+        "word": "risk",
+        "meaning": "風險"
+      },
+      {
+        "word": "safety",
+        "meaning": "安全"
+      },
+      {
+        "word": "quality",
+        "meaning": "品質"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-arrangement",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "arrangement",
+    "meaning": "安排",
+    "q": "We have made an ___ for someone to collect you from the airport.",
+    "options": [
+      "arrangement",
+      "advantage",
+      "disadvantage",
+      "opportunity"
+    ],
+    "answer": "arrangement",
+    "explanation": "arrangement：安排。完整句：We have made an arrangement for someone to collect you from the airport.",
+    "distractors": [
+      {
+        "word": "advantage",
+        "meaning": "優勢"
+      },
+      {
+        "word": "disadvantage",
+        "meaning": "劣勢；缺點"
+      },
+      {
+        "word": "opportunity",
+        "meaning": "機會"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-application",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "application",
+    "meaning": "申請",
+    "q": "Please submit your job ___ with a CV and covering letter.",
+    "options": [
+      "application",
+      "skill",
+      "confidence",
+      "progress"
+    ],
+    "answer": "application",
+    "explanation": "application：申請。完整句：Please submit your job application with a CV and covering letter.",
+    "distractors": [
+      {
+        "word": "skill",
+        "meaning": "技能"
+      },
+      {
+        "word": "confidence",
+        "meaning": "信心"
+      },
+      {
+        "word": "progress",
+        "meaning": "進展；進步"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-qualification",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "qualification",
+    "meaning": "資格；學歷",
+    "q": "A teaching certificate is a required ___ for this position.",
+    "options": [
+      "qualification",
+      "safety",
+      "quality",
+      "quantity"
+    ],
+    "answer": "qualification",
+    "explanation": "qualification：資格；學歷。完整句：A teaching certificate is a required qualification for this position.",
+    "distractors": [
+      {
+        "word": "safety",
+        "meaning": "安全"
+      },
+      {
+        "word": "quality",
+        "meaning": "品質"
+      },
+      {
+        "word": "quantity",
+        "meaning": "數量"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-interview",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "interview",
+    "meaning": "面試",
+    "q": "The employer invited me to an ___ to discuss my application.",
+    "options": [
+      "interview",
+      "opportunity",
+      "challenge",
+      "solution"
+    ],
+    "answer": "interview",
+    "explanation": "interview：面試。完整句：The employer invited me to an interview to discuss my application.",
+    "distractors": [
+      {
+        "word": "opportunity",
+        "meaning": "機會"
+      },
+      {
+        "word": "challenge",
+        "meaning": "挑戰"
+      },
+      {
+        "word": "solution",
+        "meaning": "解決方法"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-salary",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "salary",
+    "meaning": "薪資",
+    "q": "The company pays my monthly ___ into my bank account.",
+    "options": [
+      "salary",
+      "confidence",
+      "progress",
+      "effort"
+    ],
+    "answer": "salary",
+    "explanation": "salary：薪資。完整句：The company pays my monthly salary into my bank account.",
+    "distractors": [
+      {
+        "word": "confidence",
+        "meaning": "信心"
+      },
+      {
+        "word": "progress",
+        "meaning": "進展；進步"
+      },
+      {
+        "word": "effort",
+        "meaning": "努力"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-income",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "income",
+    "meaning": "收入",
+    "q": "Her total ___ includes her salary and rent from a flat she owns.",
+    "options": [
+      "income",
+      "quantity",
+      "deadline",
+      "schedule"
+    ],
+    "answer": "income",
+    "explanation": "income：收入。完整句：Her total income includes her salary and rent from a flat she owns.",
+    "distractors": [
+      {
+        "word": "quantity",
+        "meaning": "數量"
+      },
+      {
+        "word": "deadline",
+        "meaning": "截止期限"
+      },
+      {
+        "word": "schedule",
+        "meaning": "時程表"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-expense",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "expense",
+    "meaning": "支出；費用",
+    "q": "Rent is our largest monthly ___ .",
+    "options": [
+      "expense",
+      "research",
+      "survey",
+      "result"
+    ],
+    "answer": "expense",
+    "explanation": "expense：支出；費用。完整句：Rent is our largest monthly expense.",
+    "distractors": [
+      {
+        "word": "research",
+        "meaning": "研究"
+      },
+      {
+        "word": "survey",
+        "meaning": "調查"
+      },
+      {
+        "word": "result",
+        "meaning": "結果"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-afford",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "afford",
+    "meaning": "負擔得起",
+    "q": "We don't have enough money to ___ a new car.",
+    "options": [
+      "afford",
+      "support",
+      "suggest",
+      "depend"
+    ],
+    "answer": "afford",
+    "explanation": "afford：負擔得起。完整句：We don't have enough money to afford a new car.",
+    "distractors": [
+      {
+        "word": "support",
+        "meaning": "支持；支援"
+      },
+      {
+        "word": "suggest",
+        "meaning": "建議"
+      },
+      {
+        "word": "depend",
+        "meaning": "依賴；取決於"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-achieve",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "achieve",
+    "meaning": "達成",
+    "q": "With regular practice, you can ___ your learning goals.",
+    "options": [
+      "achieve",
+      "involve",
+      "provide",
+      "develop"
+    ],
+    "answer": "achieve",
+    "explanation": "achieve：達成。完整句：With regular practice, you can achieve your learning goals.",
+    "distractors": [
+      {
+        "word": "involve",
+        "meaning": "涉及；包含"
+      },
+      {
+        "word": "provide",
+        "meaning": "提供"
+      },
+      {
+        "word": "develop",
+        "meaning": "發展；開發"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-avoid",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "avoid",
+    "meaning": "避免",
+    "q": "Leave early to ___ getting stuck in rush-hour traffic.",
+    "options": [
+      "avoid",
+      "afford",
+      "achieve",
+      "consider"
+    ],
+    "answer": "avoid",
+    "explanation": "avoid：避免。完整句：Leave early to avoid getting stuck in rush-hour traffic.",
+    "distractors": [
+      {
+        "word": "afford",
+        "meaning": "負擔得起"
+      },
+      {
+        "word": "achieve",
+        "meaning": "達成"
+      },
+      {
+        "word": "consider",
+        "meaning": "考慮"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-consider",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "consider",
+    "meaning": "考慮",
+    "q": "Please ___ both the price and the quality before buying.",
+    "options": [
+      "consider",
+      "manage",
+      "prevent",
+      "reduce"
+    ],
+    "answer": "consider",
+    "explanation": "consider：考慮。完整句：Please consider both the price and the quality before buying.",
+    "distractors": [
+      {
+        "word": "manage",
+        "meaning": "設法做到"
+      },
+      {
+        "word": "prevent",
+        "meaning": "預防；阻止"
+      },
+      {
+        "word": "reduce",
+        "meaning": "減少"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-encourage",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "encourage",
+    "meaning": "鼓勵",
+    "q": "Teachers should ___ students to keep trying after mistakes.",
+    "options": [
+      "encourage",
+      "manage",
+      "prevent",
+      "reduce"
+    ],
+    "answer": "encourage",
+    "explanation": "encourage：鼓勵。完整句：Teachers should encourage students to keep trying after mistakes.",
+    "distractors": [
+      {
+        "word": "manage",
+        "meaning": "設法做到"
+      },
+      {
+        "word": "prevent",
+        "meaning": "預防；阻止"
+      },
+      {
+        "word": "reduce",
+        "meaning": "減少"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-manage",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "manage",
+    "meaning": "設法做到",
+    "q": "Despite the heavy rain, we did ___ to finish the work on time.",
+    "options": [
+      "manage",
+      "suggest",
+      "depend",
+      "involve"
+    ],
+    "answer": "manage",
+    "explanation": "manage：設法做到。完整句：Despite the heavy rain, we did manage to finish the work on time.",
+    "distractors": [
+      {
+        "word": "suggest",
+        "meaning": "建議"
+      },
+      {
+        "word": "depend",
+        "meaning": "依賴；取決於"
+      },
+      {
+        "word": "involve",
+        "meaning": "涉及；包含"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-prevent",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "prevent",
+    "meaning": "預防；阻止",
+    "q": "Regular checks can ___ small faults from becoming serious problems.",
+    "options": [
+      "prevent",
+      "provide",
+      "develop",
+      "afford"
+    ],
+    "answer": "prevent",
+    "explanation": "prevent：預防；阻止。完整句：Regular checks can prevent small faults from becoming serious problems.",
+    "distractors": [
+      {
+        "word": "provide",
+        "meaning": "提供"
+      },
+      {
+        "word": "develop",
+        "meaning": "發展；開發"
+      },
+      {
+        "word": "afford",
+        "meaning": "負擔得起"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-reduce",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "reduce",
+    "meaning": "減少",
+    "q": "Turning off unused lights helps ___ electricity consumption.",
+    "options": [
+      "reduce",
+      "achieve",
+      "avoid",
+      "consider"
+    ],
+    "answer": "reduce",
+    "explanation": "reduce：減少。完整句：Turning off unused lights helps reduce electricity consumption.",
+    "distractors": [
+      {
+        "word": "achieve",
+        "meaning": "達成"
+      },
+      {
+        "word": "avoid",
+        "meaning": "避免"
+      },
+      {
+        "word": "consider",
+        "meaning": "考慮"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-require",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "require",
+    "meaning": "需要；要求",
+    "q": "All visitors must show ID because the rules ___ it.",
+    "options": [
+      "require",
+      "reduce",
+      "suggest",
+      "depend"
+    ],
+    "answer": "require",
+    "explanation": "require：需要；要求。完整句：All visitors must show ID because the rules require it.",
+    "distractors": [
+      {
+        "word": "reduce",
+        "meaning": "減少"
+      },
+      {
+        "word": "suggest",
+        "meaning": "建議"
+      },
+      {
+        "word": "depend",
+        "meaning": "依賴；取決於"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-support",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "support",
+    "meaning": "支持；支援",
+    "q": "My family will ___ me and stand by my decision.",
+    "options": [
+      "support",
+      "achieve",
+      "avoid",
+      "consider"
+    ],
+    "answer": "support",
+    "explanation": "support：支持；支援。完整句：My family will support me and stand by my decision.",
+    "distractors": [
+      {
+        "word": "achieve",
+        "meaning": "達成"
+      },
+      {
+        "word": "avoid",
+        "meaning": "避免"
+      },
+      {
+        "word": "consider",
+        "meaning": "考慮"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-suggest",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "suggest",
+    "meaning": "建議",
+    "q": "I ___ taking the train; it is faster than driving.",
+    "options": [
+      "suggest",
+      "reduce",
+      "require",
+      "support"
+    ],
+    "answer": "suggest",
+    "explanation": "suggest：建議。完整句：I suggest taking the train; it is faster than driving.",
+    "distractors": [
+      {
+        "word": "reduce",
+        "meaning": "減少"
+      },
+      {
+        "word": "require",
+        "meaning": "需要；要求"
+      },
+      {
+        "word": "support",
+        "meaning": "支持；支援"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-depend",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "depend",
+    "meaning": "依賴；取決於",
+    "q": "Whether we go hiking will ___ on the weather.",
+    "options": [
+      "depend",
+      "develop",
+      "afford",
+      "achieve"
+    ],
+    "answer": "depend",
+    "explanation": "depend：依賴；取決於。完整句：Whether we go hiking will depend on the weather.",
+    "distractors": [
+      {
+        "word": "develop",
+        "meaning": "發展；開發"
+      },
+      {
+        "word": "afford",
+        "meaning": "負擔得起"
+      },
+      {
+        "word": "achieve",
+        "meaning": "達成"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-involve",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "involve",
+    "meaning": "涉及；包含",
+    "q": "The role will ___ travelling abroad several times a year.",
+    "options": [
+      "involve",
+      "avoid",
+      "consider",
+      "encourage"
+    ],
+    "answer": "involve",
+    "explanation": "involve：涉及；包含。完整句：The role will involve travelling abroad several times a year.",
+    "distractors": [
+      {
+        "word": "avoid",
+        "meaning": "避免"
+      },
+      {
+        "word": "consider",
+        "meaning": "考慮"
+      },
+      {
+        "word": "encourage",
+        "meaning": "鼓勵"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-provide",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "provide",
+    "meaning": "提供",
+    "q": "The hotel will ___ breakfast at no extra charge.",
+    "options": [
+      "provide",
+      "consider",
+      "manage",
+      "prevent"
+    ],
+    "answer": "provide",
+    "explanation": "provide：提供。完整句：The hotel will provide breakfast at no extra charge.",
+    "distractors": [
+      {
+        "word": "consider",
+        "meaning": "考慮"
+      },
+      {
+        "word": "manage",
+        "meaning": "設法做到"
+      },
+      {
+        "word": "prevent",
+        "meaning": "預防；阻止"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B1-develop",
+    "level": "B1",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "develop",
+    "meaning": "發展；開發",
+    "q": "The engineers plan to ___ a new water-monitoring system from scratch.",
+    "options": [
+      "develop",
+      "require",
+      "support",
+      "suggest"
+    ],
+    "answer": "develop",
+    "explanation": "develop：發展；開發。完整句：The engineers plan to develop a new water-monitoring system from scratch.",
+    "distractors": [
+      {
+        "word": "require",
+        "meaning": "需要；要求"
+      },
+      {
+        "word": "support",
+        "meaning": "支持；支援"
+      },
+      {
+        "word": "suggest",
+        "meaning": "建議"
+      }
+    ],
+    "sourceBasis": "Cambridge English B1 Preliminary vocabulary list (August 2025); CEFR Companion Volume 2020",
+    "cefrFocus": "familiar work, study and social topics with simple reasons and explanations"
+  },
+  {
+    "id": "v2-v-B2-assumption",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "assumption",
+    "meaning": "假設",
+    "q": "We planned on the ___ that everyone would attend, although no one had confirmed.",
+    "options": [
+      "assumption",
+      "efficiency",
+      "flexibility",
+      "feasibility"
+    ],
+    "answer": "assumption",
+    "explanation": "assumption：假設。完整句：We planned on the assumption that everyone would attend, although no one had confirmed.",
+    "distractors": [
+      {
+        "word": "efficiency",
+        "meaning": "效率"
+      },
+      {
+        "word": "flexibility",
+        "meaning": "彈性"
+      },
+      {
+        "word": "feasibility",
+        "meaning": "可行性"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-implication",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "implication",
+    "meaning": "可能影響；含意",
+    "q": "One serious ___ of the policy is that smaller firms may face higher costs.",
+    "options": [
+      "implication",
+      "compromise",
+      "negotiation",
+      "obstacle"
+    ],
+    "answer": "implication",
+    "explanation": "implication：可能影響；含意。完整句：One serious implication of the policy is that smaller firms may face higher costs.",
+    "distractors": [
+      {
+        "word": "compromise",
+        "meaning": "折衷；妥協"
+      },
+      {
+        "word": "negotiation",
+        "meaning": "協商；談判"
+      },
+      {
+        "word": "obstacle",
+        "meaning": "障礙"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-perspective",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "perspective",
+    "meaning": "觀點",
+    "q": "Try looking at the disagreement from your colleague's ___ .",
+    "options": [
+      "perspective",
+      "assessment",
+      "evaluation",
+      "implementation"
+    ],
+    "answer": "perspective",
+    "explanation": "perspective：觀點。完整句：Try looking at the disagreement from your colleague's perspective.",
+    "distractors": [
+      {
+        "word": "assessment",
+        "meaning": "評估"
+      },
+      {
+        "word": "evaluation",
+        "meaning": "成效評量"
+      },
+      {
+        "word": "implementation",
+        "meaning": "實施；落實"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-priority",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "priority",
+    "meaning": "優先事項",
+    "q": "Patient safety is our top ___ and comes before everything else.",
+    "options": [
+      "priority",
+      "criterion",
+      "assessment",
+      "evaluation"
+    ],
+    "answer": "priority",
+    "explanation": "priority：優先事項。完整句：Patient safety is our top priority and comes before everything else.",
+    "distractors": [
+      {
+        "word": "criterion",
+        "meaning": "標準"
+      },
+      {
+        "word": "assessment",
+        "meaning": "評估"
+      },
+      {
+        "word": "evaluation",
+        "meaning": "成效評量"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-constraint",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "constraint",
+    "meaning": "限制條件",
+    "q": "A lack of funding is the main ___ limiting how much we can build.",
+    "options": [
+      "constraint",
+      "adaptation",
+      "distribution",
+      "allocation"
+    ],
+    "answer": "constraint",
+    "explanation": "constraint：限制條件。完整句：A lack of funding is the main constraint limiting how much we can build.",
+    "distractors": [
+      {
+        "word": "adaptation",
+        "meaning": "適應；調適"
+      },
+      {
+        "word": "distribution",
+        "meaning": "分配；配送"
+      },
+      {
+        "word": "allocation",
+        "meaning": "配置；分配"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-criterion",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "criterion",
+    "meaning": "標準",
+    "q": "Cost is only one ___ ; we also judge each supplier on quality and reliability.",
+    "options": [
+      "criterion",
+      "consistency",
+      "accuracy",
+      "reliability"
+    ],
+    "answer": "criterion",
+    "explanation": "criterion：標準。完整句：Cost is only one criterion ; we also judge each supplier on quality and reliability.",
+    "distractors": [
+      {
+        "word": "consistency",
+        "meaning": "一致性"
+      },
+      {
+        "word": "accuracy",
+        "meaning": "準確性"
+      },
+      {
+        "word": "reliability",
+        "meaning": "可靠性"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-assessment",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "assessment",
+    "meaning": "評估",
+    "q": "The engineer's ___ of the damage concluded that repairs were necessary.",
+    "options": [
+      "assessment",
+      "efficiency",
+      "flexibility",
+      "feasibility"
+    ],
+    "answer": "assessment",
+    "explanation": "assessment：評估。完整句：The engineer's assessment of the damage concluded that repairs were necessary.",
+    "distractors": [
+      {
+        "word": "efficiency",
+        "meaning": "效率"
+      },
+      {
+        "word": "flexibility",
+        "meaning": "彈性"
+      },
+      {
+        "word": "feasibility",
+        "meaning": "可行性"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-evaluation",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "evaluation",
+    "meaning": "成效評量",
+    "q": "After the programme ended, an independent ___ examined how effective it had been.",
+    "options": [
+      "evaluation",
+      "allocation",
+      "consumption",
+      "emission"
+    ],
+    "answer": "evaluation",
+    "explanation": "evaluation：成效評量。完整句：After the programme ended, an independent evaluation examined how effective it had been.",
+    "distractors": [
+      {
+        "word": "allocation",
+        "meaning": "配置；分配"
+      },
+      {
+        "word": "consumption",
+        "meaning": "消耗；消費"
+      },
+      {
+        "word": "emission",
+        "meaning": "排放物；排放"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-implementation",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "implementation",
+    "meaning": "實施；落實",
+    "q": "The design is approved; the next stage is its practical ___ across all offices.",
+    "options": [
+      "implementation",
+      "consequence",
+      "discrepancy",
+      "consensus"
+    ],
+    "answer": "implementation",
+    "explanation": "implementation：實施；落實。完整句：The design is approved; the next stage is its practical implementation across all offices.",
+    "distractors": [
+      {
+        "word": "consequence",
+        "meaning": "後果"
+      },
+      {
+        "word": "discrepancy",
+        "meaning": "差異；不一致"
+      },
+      {
+        "word": "consensus",
+        "meaning": "共識"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-innovation",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "innovation",
+    "meaning": "創新",
+    "q": "The award recognises technological ___ and genuinely new ideas.",
+    "options": [
+      "innovation",
+      "biodiversity",
+      "infrastructure",
+      "capacity"
+    ],
+    "answer": "innovation",
+    "explanation": "innovation：創新。完整句：The award recognises technological innovation and genuinely new ideas.",
+    "distractors": [
+      {
+        "word": "biodiversity",
+        "meaning": "生物多樣性"
+      },
+      {
+        "word": "infrastructure",
+        "meaning": "基礎設施"
+      },
+      {
+        "word": "capacity",
+        "meaning": "容量；產能"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-sustainability",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "sustainability",
+    "meaning": "永續性",
+    "q": "Using resources without exhausting them is central to environmental ___ .",
+    "options": [
+      "sustainability",
+      "forecast",
+      "assumption",
+      "implication"
+    ],
+    "answer": "sustainability",
+    "explanation": "sustainability：永續性。完整句：Using resources without exhausting them is central to environmental sustainability.",
+    "distractors": [
+      {
+        "word": "forecast",
+        "meaning": "預測"
+      },
+      {
+        "word": "assumption",
+        "meaning": "假設"
+      },
+      {
+        "word": "implication",
+        "meaning": "可能影響；含意"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-accountability",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "accountability",
+    "meaning": "課責；負責機制",
+    "q": "Public ___ means officials must explain their decisions and accept responsibility.",
+    "options": [
+      "accountability",
+      "relevance",
+      "consequence",
+      "discrepancy"
+    ],
+    "answer": "accountability",
+    "explanation": "accountability：課責；負責機制。完整句：Public accountability means officials must explain their decisions and accept responsibility.",
+    "distractors": [
+      {
+        "word": "relevance",
+        "meaning": "關聯性；切題程度"
+      },
+      {
+        "word": "consequence",
+        "meaning": "後果"
+      },
+      {
+        "word": "discrepancy",
+        "meaning": "差異；不一致"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-transparency",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "transparency",
+    "meaning": "透明度",
+    "q": "Publishing the full spending records improves financial ___ .",
+    "options": [
+      "transparency",
+      "forecast",
+      "assumption",
+      "implication"
+    ],
+    "answer": "transparency",
+    "explanation": "transparency：透明度。完整句：Publishing the full spending records improves financial transparency.",
+    "distractors": [
+      {
+        "word": "forecast",
+        "meaning": "預測"
+      },
+      {
+        "word": "assumption",
+        "meaning": "假設"
+      },
+      {
+        "word": "implication",
+        "meaning": "可能影響；含意"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-consistency",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "consistency",
+    "meaning": "一致性",
+    "q": "Using the same rules in every case helps maintain ___ .",
+    "options": [
+      "consistency",
+      "discrepancy",
+      "consensus",
+      "compromise"
+    ],
+    "answer": "consistency",
+    "explanation": "consistency：一致性。完整句：Using the same rules in every case helps maintain consistency.",
+    "distractors": [
+      {
+        "word": "discrepancy",
+        "meaning": "差異；不一致"
+      },
+      {
+        "word": "consensus",
+        "meaning": "共識"
+      },
+      {
+        "word": "compromise",
+        "meaning": "折衷；妥協"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-accuracy",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "accuracy",
+    "meaning": "準確性",
+    "q": "We checked every figure to ensure the ___ of the report.",
+    "options": [
+      "accuracy",
+      "infrastructure",
+      "capacity",
+      "proportion"
+    ],
+    "answer": "accuracy",
+    "explanation": "accuracy：準確性。完整句：We checked every figure to ensure the accuracy of the report.",
+    "distractors": [
+      {
+        "word": "infrastructure",
+        "meaning": "基礎設施"
+      },
+      {
+        "word": "capacity",
+        "meaning": "容量；產能"
+      },
+      {
+        "word": "proportion",
+        "meaning": "比例"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-reliability",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "reliability",
+    "meaning": "可靠性",
+    "q": "The machine rarely breaks down and is known for its ___ .",
+    "options": [
+      "reliability",
+      "sustainability",
+      "accountability",
+      "transparency"
+    ],
+    "answer": "reliability",
+    "explanation": "reliability：可靠性。完整句：The machine rarely breaks down and is known for its reliability.",
+    "distractors": [
+      {
+        "word": "sustainability",
+        "meaning": "永續性"
+      },
+      {
+        "word": "accountability",
+        "meaning": "課責；負責機制"
+      },
+      {
+        "word": "transparency",
+        "meaning": "透明度"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-efficiency",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "efficiency",
+    "meaning": "效率",
+    "q": "The new process uses less time and energy, improving operational ___ .",
+    "options": [
+      "efficiency",
+      "distribution",
+      "allocation",
+      "consumption"
+    ],
+    "answer": "efficiency",
+    "explanation": "efficiency：效率。完整句：The new process uses less time and energy, improving operational efficiency.",
+    "distractors": [
+      {
+        "word": "distribution",
+        "meaning": "分配；配送"
+      },
+      {
+        "word": "allocation",
+        "meaning": "配置；分配"
+      },
+      {
+        "word": "consumption",
+        "meaning": "消耗；消費"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-flexibility",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "flexibility",
+    "meaning": "彈性",
+    "q": "Remote working gives staff more ___ to choose when and where they work.",
+    "options": [
+      "flexibility",
+      "constraint",
+      "criterion",
+      "assessment"
+    ],
+    "answer": "flexibility",
+    "explanation": "flexibility：彈性。完整句：Remote working gives staff more flexibility to choose when and where they work.",
+    "distractors": [
+      {
+        "word": "constraint",
+        "meaning": "限制條件"
+      },
+      {
+        "word": "criterion",
+        "meaning": "標準"
+      },
+      {
+        "word": "assessment",
+        "meaning": "評估"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-feasibility",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "feasibility",
+    "meaning": "可行性",
+    "q": "Before investing, we must assess the technical ___ of building it with existing tools.",
+    "options": [
+      "feasibility",
+      "consistency",
+      "accuracy",
+      "reliability"
+    ],
+    "answer": "feasibility",
+    "explanation": "feasibility：可行性。完整句：Before investing, we must assess the technical feasibility of building it with existing tools.",
+    "distractors": [
+      {
+        "word": "consistency",
+        "meaning": "一致性"
+      },
+      {
+        "word": "accuracy",
+        "meaning": "準確性"
+      },
+      {
+        "word": "reliability",
+        "meaning": "可靠性"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-relevance",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "relevance",
+    "meaning": "關聯性；切題程度",
+    "q": "The panel questioned the ___ of his example because it did not relate to the topic.",
+    "options": [
+      "relevance",
+      "adaptation",
+      "distribution",
+      "allocation"
+    ],
+    "answer": "relevance",
+    "explanation": "relevance：關聯性；切題程度。完整句：The panel questioned the relevance of his example because it did not relate to the topic.",
+    "distractors": [
+      {
+        "word": "adaptation",
+        "meaning": "適應；調適"
+      },
+      {
+        "word": "distribution",
+        "meaning": "分配；配送"
+      },
+      {
+        "word": "allocation",
+        "meaning": "配置；分配"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-consequence",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "consequence",
+    "meaning": "後果",
+    "q": "A possible ___ of missing the deadline is losing the contract.",
+    "options": [
+      "consequence",
+      "assumption",
+      "perspective",
+      "priority"
+    ],
+    "answer": "consequence",
+    "explanation": "consequence：後果。完整句：A possible consequence of missing the deadline is losing the contract.",
+    "distractors": [
+      {
+        "word": "assumption",
+        "meaning": "假設"
+      },
+      {
+        "word": "perspective",
+        "meaning": "觀點"
+      },
+      {
+        "word": "priority",
+        "meaning": "優先事項"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-discrepancy",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "discrepancy",
+    "meaning": "差異；不一致",
+    "q": "We found a ___ between the invoice total and the amount actually paid.",
+    "options": [
+      "discrepancy",
+      "consequence",
+      "consensus",
+      "compromise"
+    ],
+    "answer": "discrepancy",
+    "explanation": "discrepancy：差異；不一致。完整句：We found a discrepancy between the invoice total and the amount actually paid.",
+    "distractors": [
+      {
+        "word": "consequence",
+        "meaning": "後果"
+      },
+      {
+        "word": "consensus",
+        "meaning": "共識"
+      },
+      {
+        "word": "compromise",
+        "meaning": "折衷；妥協"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-consensus",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "consensus",
+    "meaning": "共識",
+    "q": "After hours of discussion, the group reached a ___ that all members accepted.",
+    "options": [
+      "consensus",
+      "infrastructure",
+      "capacity",
+      "proportion"
+    ],
+    "answer": "consensus",
+    "explanation": "consensus：共識。完整句：After hours of discussion, the group reached a consensus that all members accepted.",
+    "distractors": [
+      {
+        "word": "infrastructure",
+        "meaning": "基礎設施"
+      },
+      {
+        "word": "capacity",
+        "meaning": "容量；產能"
+      },
+      {
+        "word": "proportion",
+        "meaning": "比例"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-compromise",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "compromise",
+    "meaning": "折衷；妥協",
+    "q": "Both sides accepted a ___ , giving up some demands to reach an agreement.",
+    "options": [
+      "compromise",
+      "sustainability",
+      "accountability",
+      "transparency"
+    ],
+    "answer": "compromise",
+    "explanation": "compromise：折衷；妥協。完整句：Both sides accepted a compromise , giving up some demands to reach an agreement.",
+    "distractors": [
+      {
+        "word": "sustainability",
+        "meaning": "永續性"
+      },
+      {
+        "word": "accountability",
+        "meaning": "課責；負責機制"
+      },
+      {
+        "word": "transparency",
+        "meaning": "透明度"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-negotiation",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "negotiation",
+    "meaning": "協商；談判",
+    "q": "The two companies began a ___ to agree on the contract price.",
+    "options": [
+      "negotiation",
+      "commitment",
+      "resilience",
+      "awareness"
+    ],
+    "answer": "negotiation",
+    "explanation": "negotiation：協商；談判。完整句：The two companies began a negotiation to agree on the contract price.",
+    "distractors": [
+      {
+        "word": "commitment",
+        "meaning": "承諾；投入"
+      },
+      {
+        "word": "resilience",
+        "meaning": "韌性；復原力"
+      },
+      {
+        "word": "awareness",
+        "meaning": "意識；認知"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-obstacle",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "obstacle",
+    "meaning": "障礙",
+    "q": "The locked gate was a physical ___ blocking the path.",
+    "options": [
+      "obstacle",
+      "forecast",
+      "assumption",
+      "implication"
+    ],
+    "answer": "obstacle",
+    "explanation": "obstacle：障礙。完整句：The locked gate was a physical obstacle blocking the path.",
+    "distractors": [
+      {
+        "word": "forecast",
+        "meaning": "預測"
+      },
+      {
+        "word": "assumption",
+        "meaning": "假設"
+      },
+      {
+        "word": "implication",
+        "meaning": "可能影響；含意"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-incentive",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "incentive",
+    "meaning": "誘因",
+    "q": "The company offers a cash bonus as an ___ to improve performance.",
+    "options": [
+      "incentive",
+      "flexibility",
+      "feasibility",
+      "relevance"
+    ],
+    "answer": "incentive",
+    "explanation": "incentive：誘因。完整句：The company offers a cash bonus as an incentive to improve performance.",
+    "distractors": [
+      {
+        "word": "flexibility",
+        "meaning": "彈性"
+      },
+      {
+        "word": "feasibility",
+        "meaning": "可行性"
+      },
+      {
+        "word": "relevance",
+        "meaning": "關聯性；切題程度"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-initiative",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "initiative",
+    "meaning": "主動性",
+    "q": "She showed ___ by solving the problem without being asked.",
+    "options": [
+      "initiative",
+      "perspective",
+      "constraint",
+      "criterion"
+    ],
+    "answer": "initiative",
+    "explanation": "initiative：主動性。完整句：She showed initiative by solving the problem without being asked.",
+    "distractors": [
+      {
+        "word": "perspective",
+        "meaning": "觀點"
+      },
+      {
+        "word": "constraint",
+        "meaning": "限制條件"
+      },
+      {
+        "word": "criterion",
+        "meaning": "標準"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-commitment",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "commitment",
+    "meaning": "承諾；投入",
+    "q": "Training every day shows her strong ___ to achieving her goal.",
+    "options": [
+      "commitment",
+      "discrepancy",
+      "consensus",
+      "compromise"
+    ],
+    "answer": "commitment",
+    "explanation": "commitment：承諾；投入。完整句：Training every day shows her strong commitment to achieving her goal.",
+    "distractors": [
+      {
+        "word": "discrepancy",
+        "meaning": "差異；不一致"
+      },
+      {
+        "word": "consensus",
+        "meaning": "共識"
+      },
+      {
+        "word": "compromise",
+        "meaning": "折衷；妥協"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-resilience",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "resilience",
+    "meaning": "韌性；復原力",
+    "q": "Her ___ helped her recover quickly after several professional setbacks.",
+    "options": [
+      "resilience",
+      "negotiation",
+      "obstacle",
+      "incentive"
+    ],
+    "answer": "resilience",
+    "explanation": "resilience：韌性；復原力。完整句：Her resilience helped her recover quickly after several professional setbacks.",
+    "distractors": [
+      {
+        "word": "negotiation",
+        "meaning": "協商；談判"
+      },
+      {
+        "word": "obstacle",
+        "meaning": "障礙"
+      },
+      {
+        "word": "incentive",
+        "meaning": "誘因"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-awareness",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "awareness",
+    "meaning": "意識；認知",
+    "q": "The campaign aims to raise public ___ of the dangers of smoking.",
+    "options": [
+      "awareness",
+      "fluctuation",
+      "estimate",
+      "forecast"
+    ],
+    "answer": "awareness",
+    "explanation": "awareness：意識；認知。完整句：The campaign aims to raise public awareness of the dangers of smoking.",
+    "distractors": [
+      {
+        "word": "fluctuation",
+        "meaning": "波動"
+      },
+      {
+        "word": "estimate",
+        "meaning": "估計值"
+      },
+      {
+        "word": "forecast",
+        "meaning": "預測"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-adaptation",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "adaptation",
+    "meaning": "適應；調適",
+    "q": "Moving to a very different climate required a period of ___ .",
+    "options": [
+      "adaptation",
+      "accuracy",
+      "reliability",
+      "efficiency"
+    ],
+    "answer": "adaptation",
+    "explanation": "adaptation：適應；調適。完整句：Moving to a very different climate required a period of adaptation.",
+    "distractors": [
+      {
+        "word": "accuracy",
+        "meaning": "準確性"
+      },
+      {
+        "word": "reliability",
+        "meaning": "可靠性"
+      },
+      {
+        "word": "efficiency",
+        "meaning": "效率"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-distribution",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "distribution",
+    "meaning": "分配；配送",
+    "q": "The charity organised the ___ of food parcels to families across the region.",
+    "options": [
+      "distribution",
+      "consumption",
+      "emission",
+      "conservation"
+    ],
+    "answer": "distribution",
+    "explanation": "distribution：分配；配送。完整句：The charity organised the distribution of food parcels to families across the region.",
+    "distractors": [
+      {
+        "word": "consumption",
+        "meaning": "消耗；消費"
+      },
+      {
+        "word": "emission",
+        "meaning": "排放物；排放"
+      },
+      {
+        "word": "conservation",
+        "meaning": "保育；保存"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-allocation",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "allocation",
+    "meaning": "配置；分配",
+    "q": "The manager approved the ___ of two extra engineers to this project.",
+    "options": [
+      "allocation",
+      "assessment",
+      "evaluation",
+      "implementation"
+    ],
+    "answer": "allocation",
+    "explanation": "allocation：配置；分配。完整句：The manager approved the allocation of two extra engineers to this project.",
+    "distractors": [
+      {
+        "word": "assessment",
+        "meaning": "評估"
+      },
+      {
+        "word": "evaluation",
+        "meaning": "成效評量"
+      },
+      {
+        "word": "implementation",
+        "meaning": "實施；落實"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-consumption",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "consumption",
+    "meaning": "消耗；消費",
+    "q": "The chart shows household electricity ___ in kilowatt-hours.",
+    "options": [
+      "consumption",
+      "discrepancy",
+      "consensus",
+      "compromise"
+    ],
+    "answer": "consumption",
+    "explanation": "consumption：消耗；消費。完整句：The chart shows household electricity consumption in kilowatt-hours.",
+    "distractors": [
+      {
+        "word": "discrepancy",
+        "meaning": "差異；不一致"
+      },
+      {
+        "word": "consensus",
+        "meaning": "共識"
+      },
+      {
+        "word": "compromise",
+        "meaning": "折衷；妥協"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-emission",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "emission",
+    "meaning": "排放物；排放",
+    "q": "The new filter reduces the ___ of harmful gases from the factory.",
+    "options": [
+      "emission",
+      "capacity",
+      "proportion",
+      "trend"
+    ],
+    "answer": "emission",
+    "explanation": "emission：排放物；排放。完整句：The new filter reduces the emission of harmful gases from the factory.",
+    "distractors": [
+      {
+        "word": "capacity",
+        "meaning": "容量；產能"
+      },
+      {
+        "word": "proportion",
+        "meaning": "比例"
+      },
+      {
+        "word": "trend",
+        "meaning": "趨勢"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-conservation",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "conservation",
+    "meaning": "保育；保存",
+    "q": "The protection of endangered species is a major goal of wildlife ___ .",
+    "options": [
+      "conservation",
+      "consensus",
+      "compromise",
+      "negotiation"
+    ],
+    "answer": "conservation",
+    "explanation": "conservation：保育；保存。完整句：The protection of endangered species is a major goal of wildlife conservation.",
+    "distractors": [
+      {
+        "word": "consensus",
+        "meaning": "共識"
+      },
+      {
+        "word": "compromise",
+        "meaning": "折衷；妥協"
+      },
+      {
+        "word": "negotiation",
+        "meaning": "協商；談判"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-biodiversity",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "biodiversity",
+    "meaning": "生物多樣性",
+    "q": "A forest with many different plant and animal species has rich ___ .",
+    "options": [
+      "biodiversity",
+      "trend",
+      "fluctuation",
+      "estimate"
+    ],
+    "answer": "biodiversity",
+    "explanation": "biodiversity：生物多樣性。完整句：A forest with many different plant and animal species has rich biodiversity.",
+    "distractors": [
+      {
+        "word": "trend",
+        "meaning": "趨勢"
+      },
+      {
+        "word": "fluctuation",
+        "meaning": "波動"
+      },
+      {
+        "word": "estimate",
+        "meaning": "估計值"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-infrastructure",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "infrastructure",
+    "meaning": "基礎設施",
+    "q": "Roads, bridges and water networks are essential public ___ .",
+    "options": [
+      "infrastructure",
+      "implication",
+      "perspective",
+      "priority"
+    ],
+    "answer": "infrastructure",
+    "explanation": "infrastructure：基礎設施。完整句：Roads, bridges and water networks are essential public infrastructure.",
+    "distractors": [
+      {
+        "word": "implication",
+        "meaning": "可能影響；含意"
+      },
+      {
+        "word": "perspective",
+        "meaning": "觀點"
+      },
+      {
+        "word": "priority",
+        "meaning": "優先事項"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-capacity",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "capacity",
+    "meaning": "容量；產能",
+    "q": "The hall has a maximum seating ___ of 600 people.",
+    "options": [
+      "capacity",
+      "consensus",
+      "compromise",
+      "negotiation"
+    ],
+    "answer": "capacity",
+    "explanation": "capacity：容量；產能。完整句：The hall has a maximum seating capacity of 600 people.",
+    "distractors": [
+      {
+        "word": "consensus",
+        "meaning": "共識"
+      },
+      {
+        "word": "compromise",
+        "meaning": "折衷；妥協"
+      },
+      {
+        "word": "negotiation",
+        "meaning": "協商；談判"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-proportion",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "proportion",
+    "meaning": "比例",
+    "q": "What ___ of the total budget is spent on staff salaries?",
+    "options": [
+      "proportion",
+      "trend",
+      "fluctuation",
+      "estimate"
+    ],
+    "answer": "proportion",
+    "explanation": "proportion：比例。完整句：What proportion of the total budget is spent on staff salaries?",
+    "distractors": [
+      {
+        "word": "trend",
+        "meaning": "趨勢"
+      },
+      {
+        "word": "fluctuation",
+        "meaning": "波動"
+      },
+      {
+        "word": "estimate",
+        "meaning": "估計值"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-trend",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "trend",
+    "meaning": "趨勢",
+    "q": "Sales have risen steadily for five years, showing a clear upward ___ .",
+    "options": [
+      "trend",
+      "implementation",
+      "innovation",
+      "sustainability"
+    ],
+    "answer": "trend",
+    "explanation": "trend：趨勢。完整句：Sales have risen steadily for five years, showing a clear upward trend.",
+    "distractors": [
+      {
+        "word": "implementation",
+        "meaning": "實施；落實"
+      },
+      {
+        "word": "innovation",
+        "meaning": "創新"
+      },
+      {
+        "word": "sustainability",
+        "meaning": "永續性"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-fluctuation",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "fluctuation",
+    "meaning": "波動",
+    "q": "The graph shows a sharp ___ in prices, with repeated rises and falls.",
+    "options": [
+      "fluctuation",
+      "obstacle",
+      "incentive",
+      "initiative"
+    ],
+    "answer": "fluctuation",
+    "explanation": "fluctuation：波動。完整句：The graph shows a sharp fluctuation in prices, with repeated rises and falls.",
+    "distractors": [
+      {
+        "word": "obstacle",
+        "meaning": "障礙"
+      },
+      {
+        "word": "incentive",
+        "meaning": "誘因"
+      },
+      {
+        "word": "initiative",
+        "meaning": "主動性"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-estimate",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "estimate",
+    "meaning": "估計值",
+    "q": "We do not have an exact figure, but our rough ___ is about 200 guests.",
+    "options": [
+      "estimate",
+      "awareness",
+      "adaptation",
+      "distribution"
+    ],
+    "answer": "estimate",
+    "explanation": "estimate：估計值。完整句：We do not have an exact figure, but our rough estimate is about 200 guests.",
+    "distractors": [
+      {
+        "word": "awareness",
+        "meaning": "意識；認知"
+      },
+      {
+        "word": "adaptation",
+        "meaning": "適應；調適"
+      },
+      {
+        "word": "distribution",
+        "meaning": "分配；配送"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-forecast",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "forecast",
+    "meaning": "預測",
+    "q": "The economic ___ predicts slower growth next year.",
+    "options": [
+      "forecast",
+      "constraint",
+      "criterion",
+      "implementation"
+    ],
+    "answer": "forecast",
+    "explanation": "forecast：預測。完整句：The economic forecast predicts slower growth next year.",
+    "distractors": [
+      {
+        "word": "constraint",
+        "meaning": "限制條件"
+      },
+      {
+        "word": "criterion",
+        "meaning": "標準"
+      },
+      {
+        "word": "implementation",
+        "meaning": "實施；落實"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-valid",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "valid",
+    "meaning": "有效的；有根據的",
+    "q": "Your ticket is ___ until midnight; after that it cannot be used.",
+    "options": [
+      "valid",
+      "sustainable",
+      "potential",
+      "inevitable"
+    ],
+    "answer": "valid",
+    "explanation": "valid：有效的；有根據的。完整句：Your ticket is valid until midnight; after that it cannot be used.",
+    "distractors": [
+      {
+        "word": "sustainable",
+        "meaning": "可持續的；永續的"
+      },
+      {
+        "word": "potential",
+        "meaning": "潛在的"
+      },
+      {
+        "word": "inevitable",
+        "meaning": "不可避免的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-relevant",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "relevant",
+    "meaning": "相關的",
+    "q": "Please include only information ___ to this application, leaving out unrelated details.",
+    "options": [
+      "relevant",
+      "reluctant",
+      "ambiguous",
+      "consistent"
+    ],
+    "answer": "relevant",
+    "explanation": "relevant：相關的。完整句：Please include only information relevant to this application, leaving out unrelated details.",
+    "distractors": [
+      {
+        "word": "reluctant",
+        "meaning": "不情願的"
+      },
+      {
+        "word": "ambiguous",
+        "meaning": "模稜兩可的"
+      },
+      {
+        "word": "consistent",
+        "meaning": "一致的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-adequate",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "adequate",
+    "meaning": "足夠的",
+    "q": "The shelter provides ___ protection to meet the minimum safety standard.",
+    "options": [
+      "adequate",
+      "comprehensive",
+      "sustainable",
+      "potential"
+    ],
+    "answer": "adequate",
+    "explanation": "adequate：足夠的。完整句：The shelter provides adequate protection to meet the minimum safety standard.",
+    "distractors": [
+      {
+        "word": "comprehensive",
+        "meaning": "全面的"
+      },
+      {
+        "word": "sustainable",
+        "meaning": "可持續的；永續的"
+      },
+      {
+        "word": "potential",
+        "meaning": "潛在的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-sufficient",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "sufficient",
+    "meaning": "充分的",
+    "q": "There is ___ evidence to support the claim; no further proof is needed.",
+    "options": [
+      "sufficient",
+      "inevitable",
+      "reluctant",
+      "ambiguous"
+    ],
+    "answer": "sufficient",
+    "explanation": "sufficient：充分的。完整句：There is sufficient evidence to support the claim; no further proof is needed.",
+    "distractors": [
+      {
+        "word": "inevitable",
+        "meaning": "不可避免的"
+      },
+      {
+        "word": "reluctant",
+        "meaning": "不情願的"
+      },
+      {
+        "word": "ambiguous",
+        "meaning": "模稜兩可的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-significant",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "significant",
+    "meaning": "顯著的；重要的",
+    "q": "The treatment produced a statistically ___ improvement, unlikely to be due to chance.",
+    "options": [
+      "significant",
+      "consistent",
+      "comprehensive",
+      "sustainable"
+    ],
+    "answer": "significant",
+    "explanation": "significant：顯著的；重要的。完整句：The treatment produced a statistically significant improvement, unlikely to be due to chance.",
+    "distractors": [
+      {
+        "word": "consistent",
+        "meaning": "一致的"
+      },
+      {
+        "word": "comprehensive",
+        "meaning": "全面的"
+      },
+      {
+        "word": "sustainable",
+        "meaning": "可持續的；永續的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-substantial",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "substantial",
+    "meaning": "可觀的；大量的",
+    "q": "The flood caused ___ damage, destroying most of the building.",
+    "options": [
+      "substantial",
+      "potential",
+      "inevitable",
+      "reluctant"
+    ],
+    "answer": "substantial",
+    "explanation": "substantial：可觀的；大量的。完整句：The flood caused substantial damage, destroying most of the building.",
+    "distractors": [
+      {
+        "word": "potential",
+        "meaning": "潛在的"
+      },
+      {
+        "word": "inevitable",
+        "meaning": "不可避免的"
+      },
+      {
+        "word": "reluctant",
+        "meaning": "不情願的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-potential",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "potential",
+    "meaning": "潛在的",
+    "q": "The idea has several ___ benefits, although none has been demonstrated yet.",
+    "options": [
+      "potential",
+      "consistent",
+      "comprehensive",
+      "crucial"
+    ],
+    "answer": "potential",
+    "explanation": "potential：潛在的。完整句：The idea has several potential benefits, although none has been demonstrated yet.",
+    "distractors": [
+      {
+        "word": "consistent",
+        "meaning": "一致的"
+      },
+      {
+        "word": "comprehensive",
+        "meaning": "全面的"
+      },
+      {
+        "word": "crucial",
+        "meaning": "至關重要的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-inevitable",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "inevitable",
+    "meaning": "不可避免的",
+    "q": "With all escape routes closed and the fire spreading, serious damage was ___ .",
+    "options": [
+      "inevitable",
+      "valid",
+      "relevant",
+      "adequate"
+    ],
+    "answer": "inevitable",
+    "explanation": "inevitable：不可避免的。完整句：With all escape routes closed and the fire spreading, serious damage was inevitable.",
+    "distractors": [
+      {
+        "word": "valid",
+        "meaning": "有效的；有根據的"
+      },
+      {
+        "word": "relevant",
+        "meaning": "相關的"
+      },
+      {
+        "word": "adequate",
+        "meaning": "足夠的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-reluctant",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "reluctant",
+    "meaning": "不情願的",
+    "q": "He was ___ to speak in public and agreed only after much persuasion.",
+    "options": [
+      "reluctant",
+      "significant",
+      "substantial",
+      "potential"
+    ],
+    "answer": "reluctant",
+    "explanation": "reluctant：不情願的。完整句：He was reluctant to speak in public and agreed only after much persuasion.",
+    "distractors": [
+      {
+        "word": "significant",
+        "meaning": "顯著的；重要的"
+      },
+      {
+        "word": "substantial",
+        "meaning": "可觀的；大量的"
+      },
+      {
+        "word": "potential",
+        "meaning": "潛在的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-ambiguous",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "ambiguous",
+    "meaning": "模稜兩可的",
+    "q": "The instruction was ___ ; it could reasonably be understood in two different ways.",
+    "options": [
+      "ambiguous",
+      "reluctant",
+      "consistent",
+      "comprehensive"
+    ],
+    "answer": "ambiguous",
+    "explanation": "ambiguous：模稜兩可的。完整句：The instruction was ambiguous ; it could reasonably be understood in two different ways.",
+    "distractors": [
+      {
+        "word": "reluctant",
+        "meaning": "不情願的"
+      },
+      {
+        "word": "consistent",
+        "meaning": "一致的"
+      },
+      {
+        "word": "comprehensive",
+        "meaning": "全面的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-consistent",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "consistent",
+    "meaning": "一致的",
+    "q": "Her account is ___ with the video evidence; the two match throughout.",
+    "options": [
+      "consistent",
+      "sustainable",
+      "valid",
+      "relevant"
+    ],
+    "answer": "consistent",
+    "explanation": "consistent：一致的。完整句：Her account is consistent with the video evidence; the two match throughout.",
+    "distractors": [
+      {
+        "word": "sustainable",
+        "meaning": "可持續的；永續的"
+      },
+      {
+        "word": "valid",
+        "meaning": "有效的；有根據的"
+      },
+      {
+        "word": "relevant",
+        "meaning": "相關的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-comprehensive",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "comprehensive",
+    "meaning": "全面的",
+    "q": "The guide is ___ , covering every stage of the process in detail.",
+    "options": [
+      "comprehensive",
+      "sufficient",
+      "significant",
+      "substantial"
+    ],
+    "answer": "comprehensive",
+    "explanation": "comprehensive：全面的。完整句：The guide is comprehensive , covering every stage of the process in detail.",
+    "distractors": [
+      {
+        "word": "sufficient",
+        "meaning": "充分的"
+      },
+      {
+        "word": "significant",
+        "meaning": "顯著的；重要的"
+      },
+      {
+        "word": "substantial",
+        "meaning": "可觀的；大量的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-crucial",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "crucial",
+    "meaning": "至關重要的",
+    "q": "A reliable oxygen supply is ___ to the patient's survival.",
+    "options": [
+      "crucial",
+      "potential",
+      "inevitable",
+      "reluctant"
+    ],
+    "answer": "crucial",
+    "explanation": "crucial：至關重要的。完整句：A reliable oxygen supply is crucial to the patient's survival.",
+    "distractors": [
+      {
+        "word": "potential",
+        "meaning": "潛在的"
+      },
+      {
+        "word": "inevitable",
+        "meaning": "不可避免的"
+      },
+      {
+        "word": "reluctant",
+        "meaning": "不情願的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-sustainable",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "sustainable",
+    "meaning": "可持續的；永續的",
+    "q": "The plan is financially ___ because its running costs can be covered long term.",
+    "options": [
+      "sustainable",
+      "comprehensive",
+      "crucial",
+      "valid"
+    ],
+    "answer": "sustainable",
+    "explanation": "sustainable：可持續的；永續的。完整句：The plan is financially sustainable because its running costs can be covered long term.",
+    "distractors": [
+      {
+        "word": "comprehensive",
+        "meaning": "全面的"
+      },
+      {
+        "word": "crucial",
+        "meaning": "至關重要的"
+      },
+      {
+        "word": "valid",
+        "meaning": "有效的；有根據的"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-evaluate",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "evaluate",
+    "meaning": "評估",
+    "q": "We will ___ the course by comparing its outcomes with its original goals.",
+    "options": [
+      "evaluate",
+      "acknowledge",
+      "distinguish",
+      "implement"
+    ],
+    "answer": "evaluate",
+    "explanation": "evaluate：評估。完整句：We will evaluate the course by comparing its outcomes with its original goals.",
+    "distractors": [
+      {
+        "word": "acknowledge",
+        "meaning": "承認；認可"
+      },
+      {
+        "word": "distinguish",
+        "meaning": "區分"
+      },
+      {
+        "word": "implement",
+        "meaning": "實施；執行"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-implement",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "implement",
+    "meaning": "實施；執行",
+    "q": "The team will ___ the approved plan starting next Monday.",
+    "options": [
+      "implement",
+      "evaluate",
+      "allocate",
+      "justify"
+    ],
+    "answer": "implement",
+    "explanation": "implement：實施；執行。完整句：The team will implement the approved plan starting next Monday.",
+    "distractors": [
+      {
+        "word": "evaluate",
+        "meaning": "評估"
+      },
+      {
+        "word": "allocate",
+        "meaning": "分配；配置"
+      },
+      {
+        "word": "justify",
+        "meaning": "證明合理；提出理由"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-allocate",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "allocate",
+    "meaning": "分配；配置",
+    "q": "We must ___ the available budget among the three departments.",
+    "options": [
+      "allocate",
+      "justify",
+      "acknowledge",
+      "distinguish"
+    ],
+    "answer": "allocate",
+    "explanation": "allocate：分配；配置。完整句：We must allocate the available budget among the three departments.",
+    "distractors": [
+      {
+        "word": "justify",
+        "meaning": "證明合理；提出理由"
+      },
+      {
+        "word": "acknowledge",
+        "meaning": "承認；認可"
+      },
+      {
+        "word": "distinguish",
+        "meaning": "區分"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-justify",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "justify",
+    "meaning": "證明合理；提出理由",
+    "q": "Can you ___ the extra expense by explaining why it is necessary?",
+    "options": [
+      "justify",
+      "distinguish",
+      "evaluate",
+      "implement"
+    ],
+    "answer": "justify",
+    "explanation": "justify：證明合理；提出理由。完整句：Can you justify the extra expense by explaining why it is necessary?",
+    "distractors": [
+      {
+        "word": "distinguish",
+        "meaning": "區分"
+      },
+      {
+        "word": "evaluate",
+        "meaning": "評估"
+      },
+      {
+        "word": "implement",
+        "meaning": "實施；執行"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-acknowledge",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "acknowledge",
+    "meaning": "承認；認可",
+    "q": "The director agreed to ___ the mistake publicly and accept that it happened.",
+    "options": [
+      "acknowledge",
+      "implement",
+      "allocate",
+      "justify"
+    ],
+    "answer": "acknowledge",
+    "explanation": "acknowledge：承認；認可。完整句：The director agreed to acknowledge the mistake publicly and accept that it happened.",
+    "distractors": [
+      {
+        "word": "implement",
+        "meaning": "實施；執行"
+      },
+      {
+        "word": "allocate",
+        "meaning": "分配；配置"
+      },
+      {
+        "word": "justify",
+        "meaning": "證明合理；提出理由"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-v-B2-distinguish",
+    "level": "B2",
+    "kind": "vocabulary",
+    "topic": "情境單字",
+    "word": "distinguish",
+    "meaning": "區分",
+    "q": "The twins look alike, but their different voices help me ___ between them.",
+    "options": [
+      "distinguish",
+      "justify",
+      "acknowledge",
+      "evaluate"
+    ],
+    "answer": "distinguish",
+    "explanation": "distinguish：區分。完整句：The twins look alike, but their different voices help me distinguish between them.",
+    "distractors": [
+      {
+        "word": "justify",
+        "meaning": "證明合理；提出理由"
+      },
+      {
+        "word": "acknowledge",
+        "meaning": "承認；認可"
+      },
+      {
+        "word": "evaluate",
+        "meaning": "評估"
+      }
+    ],
+    "sourceBasis": "CEFR Companion Volume 2020; English Profile research; Cambridge B2 First Use of English specifications (no official B2 vocabulary list)",
+    "cefrFocus": "less concrete topics, precise distinctions and formal or semi-formal contexts"
+  },
+  {
+    "id": "v2-g-A1-00-0",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "be 動詞：複數主詞",
+    "q": "My parents ___ both teachers.",
+    "options": [
+      "are",
+      "is",
+      "am",
+      "be"
+    ],
+    "answer": "are",
+    "explanation": "複數主詞搭配 are；注意主詞不只一個人或物。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-00-1",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "be 動詞：複數主詞",
+    "q": "These apples ___ fresh.",
+    "options": [
+      "are",
+      "is",
+      "am",
+      "be"
+    ],
+    "answer": "are",
+    "explanation": "複數主詞搭配 are；注意主詞不只一個人或物。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-00-2",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "be 動詞：複數主詞",
+    "q": "The children ___ in the garden.",
+    "options": [
+      "are",
+      "is",
+      "am",
+      "be"
+    ],
+    "answer": "are",
+    "explanation": "複數主詞搭配 are；注意主詞不只一個人或物。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-00-3",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "be 動詞：複數主詞",
+    "q": "Tom and Lucy ___ classmates.",
+    "options": [
+      "are",
+      "is",
+      "am",
+      "be"
+    ],
+    "answer": "are",
+    "explanation": "複數主詞搭配 are；注意主詞不只一個人或物。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-00-4",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "be 動詞：複數主詞",
+    "q": "Our offices ___ on the second floor.",
+    "options": [
+      "are",
+      "is",
+      "am",
+      "be"
+    ],
+    "answer": "are",
+    "explanation": "複數主詞搭配 are；注意主詞不只一個人或物。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-01-0",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "第三人稱單數",
+    "q": "My sister ___ at a bank every weekday.",
+    "options": [
+      "works",
+      "work",
+      "working",
+      "is work"
+    ],
+    "answer": "works",
+    "explanation": "一般現在式中，第三人稱單數的肯定句通常在動詞後加 s。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-01-1",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "第三人稱單數",
+    "q": "The new nurse ___ at night every Monday.",
+    "options": [
+      "works",
+      "work",
+      "working",
+      "is work"
+    ],
+    "answer": "works",
+    "explanation": "一般現在式中，第三人稱單數的肯定句通常在動詞後加 s。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-01-2",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "第三人稱單數",
+    "q": "Our father ___ from home on Fridays.",
+    "options": [
+      "works",
+      "work",
+      "working",
+      "is work"
+    ],
+    "answer": "works",
+    "explanation": "一般現在式中，第三人稱單數的肯定句通常在動詞後加 s。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-01-3",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "第三人稱單數",
+    "q": "This machine ___ well when we turn it on.",
+    "options": [
+      "works",
+      "work",
+      "working",
+      "is work"
+    ],
+    "answer": "works",
+    "explanation": "一般現在式中，第三人稱單數的肯定句通常在動詞後加 s。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-01-4",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "第三人稱單數",
+    "q": "Leo ___ in a small bakery every weekend.",
+    "options": [
+      "works",
+      "work",
+      "working",
+      "is work"
+    ],
+    "answer": "works",
+    "explanation": "一般現在式中，第三人稱單數的肯定句通常在動詞後加 s。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-02-0",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "現在式否定",
+    "q": "We ___ eat meat; we are vegetarians.",
+    "options": [
+      "don't",
+      "doesn't",
+      "isn't",
+      "aren't"
+    ],
+    "answer": "don't",
+    "explanation": "I、you、we、they 的一般現在式否定用 don't 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-02-1",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "現在式否定",
+    "q": "I ___ know his phone number.",
+    "options": [
+      "don't",
+      "doesn't",
+      "isn't",
+      "aren't"
+    ],
+    "answer": "don't",
+    "explanation": "I、you、we、they 的一般現在式否定用 don't 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-02-2",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "現在式否定",
+    "q": "They ___ live near the station.",
+    "options": [
+      "don't",
+      "doesn't",
+      "isn't",
+      "aren't"
+    ],
+    "answer": "don't",
+    "explanation": "I、you、we、they 的一般現在式否定用 don't 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-02-3",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "現在式否定",
+    "q": "You ___ need a ticket for this free event.",
+    "options": [
+      "don't",
+      "doesn't",
+      "isn't",
+      "aren't"
+    ],
+    "answer": "don't",
+    "explanation": "I、you、we、they 的一般現在式否定用 don't 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-02-4",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "現在式否定",
+    "q": "My friends ___ drive to work; they take the bus.",
+    "options": [
+      "don't",
+      "doesn't",
+      "isn't",
+      "aren't"
+    ],
+    "answer": "don't",
+    "explanation": "I、you、we、they 的一般現在式否定用 don't 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-03-0",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "一般現在式問句",
+    "q": "___ your brother play the piano?",
+    "options": [
+      "Does",
+      "Do",
+      "Is",
+      "Are"
+    ],
+    "answer": "Does",
+    "explanation": "第三人稱單數的一般現在式問句以 Does 開頭，後接原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-03-1",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "一般現在式問句",
+    "q": "___ Mia speak Japanese?",
+    "options": [
+      "Does",
+      "Do",
+      "Is",
+      "Are"
+    ],
+    "answer": "Does",
+    "explanation": "第三人稱單數的一般現在式問句以 Does 開頭，後接原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-03-2",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "一般現在式問句",
+    "q": "___ this shop sell bread?",
+    "options": [
+      "Does",
+      "Do",
+      "Is",
+      "Are"
+    ],
+    "answer": "Does",
+    "explanation": "第三人稱單數的一般現在式問句以 Does 開頭，後接原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-03-3",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "一般現在式問句",
+    "q": "___ the train stop at this station?",
+    "options": [
+      "Does",
+      "Do",
+      "Is",
+      "Are"
+    ],
+    "answer": "Does",
+    "explanation": "第三人稱單數的一般現在式問句以 Does 開頭，後接原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-03-4",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "一般現在式問句",
+    "q": "___ your father cook dinner every day?",
+    "options": [
+      "Does",
+      "Do",
+      "Is",
+      "Are"
+    ],
+    "answer": "Does",
+    "explanation": "第三人稱單數的一般現在式問句以 Does 開頭，後接原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-04-0",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "受格代名詞",
+    "q": "Anna is outside. Please call ___ .",
+    "options": [
+      "her",
+      "she",
+      "hers",
+      "herself's"
+    ],
+    "answer": "her",
+    "explanation": "動詞或介系詞後，指一名女性時用受格 her。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-04-1",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "受格代名詞",
+    "q": "I like Emma. Do you know ___ ?",
+    "options": [
+      "her",
+      "she",
+      "hers",
+      "herself's"
+    ],
+    "answer": "her",
+    "explanation": "動詞或介系詞後，指一名女性時用受格 her。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-04-2",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "受格代名詞",
+    "q": "Lisa needs help. Can you help ___ ?",
+    "options": [
+      "her",
+      "she",
+      "hers",
+      "herself's"
+    ],
+    "answer": "her",
+    "explanation": "動詞或介系詞後，指一名女性時用受格 her。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-04-3",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "受格代名詞",
+    "q": "Our daughter is hungry. This sandwich is for ___ .",
+    "options": [
+      "her",
+      "she",
+      "hers",
+      "herself's"
+    ],
+    "answer": "her",
+    "explanation": "動詞或介系詞後，指一名女性時用受格 her。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-04-4",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "受格代名詞",
+    "q": "Mum is at the station. Please meet ___ there.",
+    "options": [
+      "her",
+      "she",
+      "hers",
+      "herself's"
+    ],
+    "answer": "her",
+    "explanation": "動詞或介系詞後，指一名女性時用受格 her。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-05-0",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "不定冠詞",
+    "q": "He is ___ engineer.",
+    "options": [
+      "an",
+      "a",
+      "some",
+      "many"
+    ],
+    "answer": "an",
+    "explanation": "單數可數名詞前，下一個字以母音音素開頭時使用 an。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-05-1",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "不定冠詞",
+    "q": "I ate ___ orange after lunch.",
+    "options": [
+      "an",
+      "a",
+      "some",
+      "many"
+    ],
+    "answer": "an",
+    "explanation": "單數可數名詞前，下一個字以母音音素開頭時使用 an。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-05-2",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "不定冠詞",
+    "q": "She bought ___ umbrella yesterday.",
+    "options": [
+      "an",
+      "a",
+      "some",
+      "many"
+    ],
+    "answer": "an",
+    "explanation": "單數可數名詞前，下一個字以母音音素開頭時使用 an。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-05-3",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "不定冠詞",
+    "q": "There is ___ egg on the plate.",
+    "options": [
+      "an",
+      "a",
+      "some",
+      "many"
+    ],
+    "answer": "an",
+    "explanation": "單數可數名詞前，下一個字以母音音素開頭時使用 an。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-05-4",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "不定冠詞",
+    "q": "We saw ___ elephant at the zoo.",
+    "options": [
+      "an",
+      "a",
+      "some",
+      "many"
+    ],
+    "answer": "an",
+    "explanation": "單數可數名詞前，下一個字以母音音素開頭時使用 an。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-06-0",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "時間介系詞：鐘點",
+    "q": "The film starts ___ seven o'clock.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "to"
+    ],
+    "answer": "at",
+    "explanation": "明確的鐘點前使用 at。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-06-1",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "時間介系詞：鐘點",
+    "q": "Our train leaves ___ 6:30.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "to"
+    ],
+    "answer": "at",
+    "explanation": "明確的鐘點前使用 at。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-06-2",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "時間介系詞：鐘點",
+    "q": "Meet me ___ noon.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "to"
+    ],
+    "answer": "at",
+    "explanation": "明確的鐘點前使用 at。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-06-3",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "時間介系詞：鐘點",
+    "q": "The shop closes ___ midnight.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "to"
+    ],
+    "answer": "at",
+    "explanation": "明確的鐘點前使用 at。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-06-4",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "時間介系詞：鐘點",
+    "q": "Breakfast is served ___ eight in the morning.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "to"
+    ],
+    "answer": "at",
+    "explanation": "明確的鐘點前使用 at。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-07-0",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "時間介系詞：日期",
+    "q": "We have English lessons ___ Tuesdays.",
+    "options": [
+      "on",
+      "at",
+      "in",
+      "to"
+    ],
+    "answer": "on",
+    "explanation": "星期、日期或特定某天的早上、下午、晚上，使用 on。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-07-1",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "時間介系詞：日期",
+    "q": "My birthday is ___ 12 May.",
+    "options": [
+      "on",
+      "at",
+      "in",
+      "to"
+    ],
+    "answer": "on",
+    "explanation": "星期、日期或特定某天的早上、下午、晚上，使用 on。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-07-2",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "時間介系詞：日期",
+    "q": "The meeting is ___ Monday morning.",
+    "options": [
+      "on",
+      "at",
+      "in",
+      "to"
+    ],
+    "answer": "on",
+    "explanation": "星期、日期或特定某天的早上、下午、晚上，使用 on。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-07-3",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "時間介系詞：日期",
+    "q": "They arrived ___ Christmas Day.",
+    "options": [
+      "on",
+      "at",
+      "in",
+      "to"
+    ],
+    "answer": "on",
+    "explanation": "星期、日期或特定某天的早上、下午、晚上，使用 on。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-07-4",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "時間介系詞：日期",
+    "q": "The library is closed ___ Sundays.",
+    "options": [
+      "on",
+      "at",
+      "in",
+      "to"
+    ],
+    "answer": "on",
+    "explanation": "星期、日期或特定某天的早上、下午、晚上，使用 on。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-08-0",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "過去式否定",
+    "q": "I ___ see Ben yesterday.",
+    "options": [
+      "didn't",
+      "don't",
+      "doesn't",
+      "weren't"
+    ],
+    "answer": "didn't",
+    "explanation": "一般過去式否定使用 didn't 加原形動詞；yesterday、last 等是過去時間線索。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-08-1",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "過去式否定",
+    "q": "They ___ visit us last weekend.",
+    "options": [
+      "didn't",
+      "don't",
+      "doesn't",
+      "weren't"
+    ],
+    "answer": "didn't",
+    "explanation": "一般過去式否定使用 didn't 加原形動詞；yesterday、last 等是過去時間線索。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-08-2",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "過去式否定",
+    "q": "She ___ finish her homework last night.",
+    "options": [
+      "didn't",
+      "don't",
+      "doesn't",
+      "weren't"
+    ],
+    "answer": "didn't",
+    "explanation": "一般過去式否定使用 didn't 加原形動詞；yesterday、last 等是過去時間線索。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-08-3",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "過去式否定",
+    "q": "We ___ buy anything at the market yesterday.",
+    "options": [
+      "didn't",
+      "don't",
+      "doesn't",
+      "weren't"
+    ],
+    "answer": "didn't",
+    "explanation": "一般過去式否定使用 didn't 加原形動詞；yesterday、last 等是過去時間線索。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-08-4",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "過去式否定",
+    "q": "He ___ call me last Friday.",
+    "options": [
+      "didn't",
+      "don't",
+      "doesn't",
+      "weren't"
+    ],
+    "answer": "didn't",
+    "explanation": "一般過去式否定使用 didn't 加原形動詞；yesterday、last 等是過去時間線索。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-09-0",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "情態動詞後的原形",
+    "q": "Can you ___ across this pool?",
+    "options": [
+      "swim",
+      "swims",
+      "swimming",
+      "to swim"
+    ],
+    "answer": "swim",
+    "explanation": "can 或 can't 後接原形動詞，不加 s 或 to。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-09-1",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "情態動詞後的原形",
+    "q": "My brother can ___ very fast.",
+    "options": [
+      "swim",
+      "swims",
+      "swimming",
+      "to swim"
+    ],
+    "answer": "swim",
+    "explanation": "can 或 can't 後接原形動詞，不加 s 或 to。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-09-2",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "情態動詞後的原形",
+    "q": "The baby can't ___ yet.",
+    "options": [
+      "swim",
+      "swims",
+      "swimming",
+      "to swim"
+    ],
+    "answer": "swim",
+    "explanation": "can 或 can't 後接原形動詞，不加 s 或 to。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-09-3",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "情態動詞後的原形",
+    "q": "We can ___ in the sea here.",
+    "options": [
+      "swim",
+      "swims",
+      "swimming",
+      "to swim"
+    ],
+    "answer": "swim",
+    "explanation": "can 或 can't 後接原形動詞，不加 s 或 to。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-09-4",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "情態動詞後的原形",
+    "q": "Dolphins can ___ long distances.",
+    "options": [
+      "swim",
+      "swims",
+      "swimming",
+      "to swim"
+    ],
+    "answer": "swim",
+    "explanation": "can 或 can't 後接原形動詞，不加 s 或 to。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-10-0",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "數量問句",
+    "q": "How ___ students are in your class?",
+    "options": [
+      "many",
+      "much",
+      "little",
+      "any"
+    ],
+    "answer": "many",
+    "explanation": "how many 用來詢問可數名詞複數的數量。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-10-1",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "數量問句",
+    "q": "How ___ books did you buy?",
+    "options": [
+      "many",
+      "much",
+      "little",
+      "any"
+    ],
+    "answer": "many",
+    "explanation": "how many 用來詢問可數名詞複數的數量。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-10-2",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "數量問句",
+    "q": "How ___ eggs do we need?",
+    "options": [
+      "many",
+      "much",
+      "little",
+      "any"
+    ],
+    "answer": "many",
+    "explanation": "how many 用來詢問可數名詞複數的數量。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-10-3",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "數量問句",
+    "q": "How ___ people live in this house?",
+    "options": [
+      "many",
+      "much",
+      "little",
+      "any"
+    ],
+    "answer": "many",
+    "explanation": "how many 用來詢問可數名詞複數的數量。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-10-4",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "數量問句",
+    "q": "How ___ tickets would you like?",
+    "options": [
+      "many",
+      "much",
+      "little",
+      "any"
+    ],
+    "answer": "many",
+    "explanation": "how many 用來詢問可數名詞複數的數量。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-11-0",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "現在進行式",
+    "q": "Please don't interrupt Anna. She ___ a report right now.",
+    "options": [
+      "is reading",
+      "reads",
+      "read",
+      "reading"
+    ],
+    "answer": "is reading",
+    "explanation": "單數第三人稱當下正在做的動作，使用 is 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-11-1",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "現在進行式",
+    "q": "Look at Ben. He ___ a magazine.",
+    "options": [
+      "is reading",
+      "reads",
+      "read",
+      "reading"
+    ],
+    "answer": "is reading",
+    "explanation": "單數第三人稱當下正在做的動作，使用 is 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-11-2",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "現在進行式",
+    "q": "My mother ___ the newspaper at this moment.",
+    "options": [
+      "is reading",
+      "reads",
+      "read",
+      "reading"
+    ],
+    "answer": "is reading",
+    "explanation": "單數第三人稱當下正在做的動作，使用 is 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-11-3",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "現在進行式",
+    "q": "Be quiet; the teacher ___ the instructions aloud now.",
+    "options": [
+      "is reading",
+      "reads",
+      "read",
+      "reading"
+    ],
+    "answer": "is reading",
+    "explanation": "單數第三人稱當下正在做的動作，使用 is 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A1-11-4",
+    "level": "A1",
+    "kind": "grammar",
+    "topic": "現在進行式",
+    "q": "Leo can't answer the phone; he ___ a story to his daughter right now.",
+    "options": [
+      "is reading",
+      "reads",
+      "read",
+      "reading"
+    ],
+    "answer": "is reading",
+    "explanation": "單數第三人稱當下正在做的動作，使用 is 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "basic sentence patterns, be/do, articles, pronouns, time and place expressions"
+  },
+  {
+    "id": "v2-g-A2-12-0",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "比較級",
+    "q": "This hotel is ___ than the hostel.",
+    "options": [
+      "more expensive",
+      "most expensive",
+      "expensiver",
+      "the expensive"
+    ],
+    "answer": "more expensive",
+    "explanation": "多音節形容詞 expensive 的比較級使用 more expensive，搭配 than。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-12-1",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "比較級",
+    "q": "Travelling by taxi is ___ than taking the bus.",
+    "options": [
+      "more expensive",
+      "most expensive",
+      "expensiver",
+      "the expensive"
+    ],
+    "answer": "more expensive",
+    "explanation": "多音節形容詞 expensive 的比較級使用 more expensive，搭配 than。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-12-2",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "比較級",
+    "q": "The leather bag is ___ than the cotton one.",
+    "options": [
+      "more expensive",
+      "most expensive",
+      "expensiver",
+      "the expensive"
+    ],
+    "answer": "more expensive",
+    "explanation": "多音節形容詞 expensive 的比較級使用 more expensive，搭配 than。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-12-3",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "比較級",
+    "q": "Fresh cherries are ___ than bananas here.",
+    "options": [
+      "more expensive",
+      "most expensive",
+      "expensiver",
+      "the expensive"
+    ],
+    "answer": "more expensive",
+    "explanation": "多音節形容詞 expensive 的比較級使用 more expensive，搭配 than。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-12-4",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "比較級",
+    "q": "The larger apartment is ___ than our current flat.",
+    "options": [
+      "more expensive",
+      "most expensive",
+      "expensiver",
+      "the expensive"
+    ],
+    "answer": "more expensive",
+    "explanation": "多音節形容詞 expensive 的比較級使用 more expensive，搭配 than。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-13-0",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "最高級",
+    "q": "Of all the cafés here, this one has ___ coffee.",
+    "options": [
+      "the best",
+      "better",
+      "the better",
+      "best than"
+    ],
+    "answer": "the best",
+    "explanation": "在一個範圍中比較最高程度時，使用 the 加最高級；good 的最高級是 best。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-13-1",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "最高級",
+    "q": "She is ___ player on the team.",
+    "options": [
+      "the best",
+      "better",
+      "the better",
+      "best than"
+    ],
+    "answer": "the best",
+    "explanation": "在一個範圍中比較最高程度時，使用 the 加最高級；good 的最高級是 best。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-13-2",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "最高級",
+    "q": "That was ___ meal of our whole trip.",
+    "options": [
+      "the best",
+      "better",
+      "the better",
+      "best than"
+    ],
+    "answer": "the best",
+    "explanation": "在一個範圍中比較最高程度時，使用 the 加最高級；good 的最高級是 best。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-13-3",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "最高級",
+    "q": "Which is ___ hotel in the city?",
+    "options": [
+      "the best",
+      "better",
+      "the better",
+      "best than"
+    ],
+    "answer": "the best",
+    "explanation": "在一個範圍中比較最高程度時，使用 the 加最高級；good 的最高級是 best。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-13-4",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "最高級",
+    "q": "This is ___ result we have ever achieved.",
+    "options": [
+      "the best",
+      "better",
+      "the better",
+      "best than"
+    ],
+    "answer": "the best",
+    "explanation": "在一個範圍中比較最高程度時，使用 the 加最高級；good 的最高級是 best。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-14-0",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "不可數名詞量詞",
+    "q": "How ___ information do you need?",
+    "options": [
+      "much",
+      "many",
+      "a few",
+      "several"
+    ],
+    "answer": "much",
+    "explanation": "much 修飾不可數名詞，常用於疑問句或否定句。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-14-1",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "不可數名詞量詞",
+    "q": "There isn't ___ milk in the fridge.",
+    "options": [
+      "much",
+      "many",
+      "a few",
+      "several"
+    ],
+    "answer": "much",
+    "explanation": "much 修飾不可數名詞，常用於疑問句或否定句。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-14-2",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "不可數名詞量詞",
+    "q": "How ___ money did the ticket cost?",
+    "options": [
+      "much",
+      "many",
+      "a few",
+      "several"
+    ],
+    "answer": "much",
+    "explanation": "much 修飾不可數名詞，常用於疑問句或否定句。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-14-3",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "不可數名詞量詞",
+    "q": "We don't have ___ time left.",
+    "options": [
+      "much",
+      "many",
+      "a few",
+      "several"
+    ],
+    "answer": "much",
+    "explanation": "much 修飾不可數名詞，常用於疑問句或否定句。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-14-4",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "不可數名詞量詞",
+    "q": "How ___ flour should I add?",
+    "options": [
+      "much",
+      "many",
+      "a few",
+      "several"
+    ],
+    "answer": "much",
+    "explanation": "much 修飾不可數名詞，常用於疑問句或否定句。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-15-0",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "現在完成式：經驗",
+    "q": "Have you ___ visited New Zealand?",
+    "options": [
+      "ever",
+      "yesterday",
+      "ago",
+      "last night"
+    ],
+    "answer": "ever",
+    "explanation": "現在完成式的經驗問句中，ever 表示曾經；不與明確結束的過去時間搭配。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-15-1",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "現在完成式：經驗",
+    "q": "Has she ___ tried surfing?",
+    "options": [
+      "ever",
+      "yesterday",
+      "ago",
+      "last night"
+    ],
+    "answer": "ever",
+    "explanation": "現在完成式的經驗問句中，ever 表示曾經；不與明確結束的過去時間搭配。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-15-2",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "現在完成式：經驗",
+    "q": "Have they ___ eaten Taiwanese food?",
+    "options": [
+      "ever",
+      "yesterday",
+      "ago",
+      "last night"
+    ],
+    "answer": "ever",
+    "explanation": "現在完成式的經驗問句中，ever 表示曾經；不與明確結束的過去時間搭配。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-15-3",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "現在完成式：經驗",
+    "q": "Has your brother ___ lived abroad?",
+    "options": [
+      "ever",
+      "yesterday",
+      "ago",
+      "last night"
+    ],
+    "answer": "ever",
+    "explanation": "現在完成式的經驗問句中，ever 表示曾經；不與明確結束的過去時間搭配。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-15-4",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "現在完成式：經驗",
+    "q": "Have we ___ met before?",
+    "options": [
+      "ever",
+      "yesterday",
+      "ago",
+      "last night"
+    ],
+    "answer": "ever",
+    "explanation": "現在完成式的經驗問句中，ever 表示曾經；不與明確結束的過去時間搭配。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-16-0",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "since 起始時間",
+    "q": "I have lived here ___ 2020.",
+    "options": [
+      "since",
+      "for",
+      "during",
+      "ago"
+    ],
+    "answer": "since",
+    "explanation": "since 後接動作開始的時間點；for 後接持續的時間長度。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-16-1",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "since 起始時間",
+    "q": "She has worked at the clinic ___ last April.",
+    "options": [
+      "since",
+      "for",
+      "during",
+      "ago"
+    ],
+    "answer": "since",
+    "explanation": "since 後接動作開始的時間點；for 後接持續的時間長度。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-16-2",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "since 起始時間",
+    "q": "They have been married ___ 2015.",
+    "options": [
+      "since",
+      "for",
+      "during",
+      "ago"
+    ],
+    "answer": "since",
+    "explanation": "since 後接動作開始的時間點；for 後接持續的時間長度。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-16-3",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "since 起始時間",
+    "q": "We haven't seen him ___ Monday.",
+    "options": [
+      "since",
+      "for",
+      "during",
+      "ago"
+    ],
+    "answer": "since",
+    "explanation": "since 後接動作開始的時間點；for 後接持續的時間長度。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-16-4",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "since 起始時間",
+    "q": "He has known Mia ___ childhood.",
+    "options": [
+      "since",
+      "for",
+      "during",
+      "ago"
+    ],
+    "answer": "since",
+    "explanation": "since 後接動作開始的時間點；for 後接持續的時間長度。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-17-0",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "for 持續時間",
+    "q": "We have waited here ___ two hours.",
+    "options": [
+      "for",
+      "since",
+      "at",
+      "from ago"
+    ],
+    "answer": "for",
+    "explanation": "for 後接一段持續時間，例如 two hours、six months。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-17-1",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "for 持續時間",
+    "q": "She has studied English ___ six months.",
+    "options": [
+      "for",
+      "since",
+      "at",
+      "from ago"
+    ],
+    "answer": "for",
+    "explanation": "for 後接一段持續時間，例如 two hours、six months。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-17-2",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "for 持續時間",
+    "q": "He has owned this car ___ ten years.",
+    "options": [
+      "for",
+      "since",
+      "at",
+      "from ago"
+    ],
+    "answer": "for",
+    "explanation": "for 後接一段持續時間，例如 two hours、six months。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-17-3",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "for 持續時間",
+    "q": "They have lived together ___ a long time.",
+    "options": [
+      "for",
+      "since",
+      "at",
+      "from ago"
+    ],
+    "answer": "for",
+    "explanation": "for 後接一段持續時間，例如 two hours、six months。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-17-4",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "for 持續時間",
+    "q": "I haven't had a holiday ___ three years.",
+    "options": [
+      "for",
+      "since",
+      "at",
+      "from ago"
+    ],
+    "answer": "for",
+    "explanation": "for 後接一段持續時間，例如 two hours、six months。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-18-0",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "動名詞搭配",
+    "q": "I enjoy ___ along the river.",
+    "options": [
+      "cycling",
+      "to cycling",
+      "cycle",
+      "cycled"
+    ],
+    "answer": "cycling",
+    "explanation": "enjoy、avoid、finish、介系詞後等結構可接動名詞 cycling。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-18-1",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "動名詞搭配",
+    "q": "She goes ___ every Sunday.",
+    "options": [
+      "cycling",
+      "to cycling",
+      "cycle",
+      "cycled"
+    ],
+    "answer": "cycling",
+    "explanation": "enjoy、avoid、finish、介系詞後等結構可接動名詞 cycling。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-18-2",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "動名詞搭配",
+    "q": "He avoids ___ on busy roads.",
+    "options": [
+      "cycling",
+      "to cycling",
+      "cycle",
+      "cycled"
+    ],
+    "answer": "cycling",
+    "explanation": "enjoy、avoid、finish、介系詞後等結構可接動名詞 cycling。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-18-3",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "動名詞搭配",
+    "q": "They are interested in ___ around Taiwan.",
+    "options": [
+      "cycling",
+      "to cycling",
+      "cycle",
+      "cycled"
+    ],
+    "answer": "cycling",
+    "explanation": "enjoy、avoid、finish、介系詞後等結構可接動名詞 cycling。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-18-4",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "動名詞搭配",
+    "q": "We spent the morning ___ through the park.",
+    "options": [
+      "cycling",
+      "to cycling",
+      "cycle",
+      "cycled"
+    ],
+    "answer": "cycling",
+    "explanation": "enjoy、avoid、finish、介系詞後等結構可接動名詞 cycling。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-19-0",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "to 不定詞搭配",
+    "q": "I want ___ the English club.",
+    "options": [
+      "to join",
+      "joining",
+      "join",
+      "joined"
+    ],
+    "answer": "to join",
+    "explanation": "want、hope、decide、plan、would like 後可接 to 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-19-1",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "to 不定詞搭配",
+    "q": "She hopes ___ the project team.",
+    "options": [
+      "to join",
+      "joining",
+      "join",
+      "joined"
+    ],
+    "answer": "to join",
+    "explanation": "want、hope、decide、plan、would like 後可接 to 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-19-2",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "to 不定詞搭配",
+    "q": "They decided ___ the guided tour.",
+    "options": [
+      "to join",
+      "joining",
+      "join",
+      "joined"
+    ],
+    "answer": "to join",
+    "explanation": "want、hope、decide、plan、would like 後可接 to 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-19-3",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "to 不定詞搭配",
+    "q": "We plan ___ the charity walk.",
+    "options": [
+      "to join",
+      "joining",
+      "join",
+      "joined"
+    ],
+    "answer": "to join",
+    "explanation": "want、hope、decide、plan、would like 後可接 to 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-19-4",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "to 不定詞搭配",
+    "q": "He would like ___ our cooking class.",
+    "options": [
+      "to join",
+      "joining",
+      "join",
+      "joined"
+    ],
+    "answer": "to join",
+    "explanation": "want、hope、decide、plan、would like 後可接 to 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-20-0",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "過去進行式",
+    "q": "I ___ to work when the tyre burst.",
+    "options": [
+      "was driving",
+      "drives",
+      "has driven",
+      "is driving"
+    ],
+    "answer": "was driving",
+    "explanation": "描述過去某個時間正在進行的單數主詞動作，使用 was 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-20-1",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "過去進行式",
+    "q": "At eight yesterday morning, she ___ to the airport.",
+    "options": [
+      "was driving",
+      "drives",
+      "has driven",
+      "is driving"
+    ],
+    "answer": "was driving",
+    "explanation": "描述過去某個時間正在進行的單數主詞動作，使用 was 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-20-2",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "過去進行式",
+    "q": "He ___ home when he heard the news on the radio.",
+    "options": [
+      "was driving",
+      "drives",
+      "has driven",
+      "is driving"
+    ],
+    "answer": "was driving",
+    "explanation": "描述過去某個時間正在進行的單數主詞動作，使用 was 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-20-3",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "過去進行式",
+    "q": "My father ___ through the mountains when it started snowing.",
+    "options": [
+      "was driving",
+      "drives",
+      "has driven",
+      "is driving"
+    ],
+    "answer": "was driving",
+    "explanation": "描述過去某個時間正在進行的單數主詞動作，使用 was 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-20-4",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "過去進行式",
+    "q": "The taxi driver ___ slowly when we saw the deer.",
+    "options": [
+      "was driving",
+      "drives",
+      "has driven",
+      "is driving"
+    ],
+    "answer": "was driving",
+    "explanation": "描述過去某個時間正在進行的單數主詞動作，使用 was 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-21-0",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "不必做某事",
+    "q": "It's a free event, so you ___ pay to enter.",
+    "options": [
+      "don't have to",
+      "mustn't",
+      "can't to",
+      "don't must"
+    ],
+    "answer": "don't have to",
+    "explanation": "don't have to 表示沒有必要；mustn't 表示禁止，意思不同。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-21-1",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "不必做某事",
+    "q": "Breakfast is included, so we ___ pay extra for it.",
+    "options": [
+      "don't have to",
+      "mustn't",
+      "can't to",
+      "don't must"
+    ],
+    "answer": "don't have to",
+    "explanation": "don't have to 表示沒有必要；mustn't 表示禁止，意思不同。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-21-2",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "不必做某事",
+    "q": "Tomorrow is a holiday, so I ___ go to work.",
+    "options": [
+      "don't have to",
+      "mustn't",
+      "can't to",
+      "don't must"
+    ],
+    "answer": "don't have to",
+    "explanation": "don't have to 表示沒有必要；mustn't 表示禁止，意思不同。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-21-3",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "不必做某事",
+    "q": "The hotel provides towels, so you ___ bring your own.",
+    "options": [
+      "don't have to",
+      "mustn't",
+      "can't to",
+      "don't must"
+    ],
+    "answer": "don't have to",
+    "explanation": "don't have to 表示沒有必要；mustn't 表示禁止，意思不同。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-21-4",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "不必做某事",
+    "q": "Attendance is optional, so they ___ come if they are busy.",
+    "options": [
+      "don't have to",
+      "mustn't",
+      "can't to",
+      "don't must"
+    ],
+    "answer": "don't have to",
+    "explanation": "don't have to 表示沒有必要；mustn't 表示禁止，意思不同。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-22-0",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "第一類條件句",
+    "q": "If it rains, we ___ stay indoors.",
+    "options": [
+      "will",
+      "would",
+      "had",
+      "did"
+    ],
+    "answer": "will",
+    "explanation": "可能發生的未來條件，if 子句使用現在式，主要子句可用 will 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-22-1",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "第一類條件句",
+    "q": "If you finish early, I ___ drive you home.",
+    "options": [
+      "will",
+      "would",
+      "had",
+      "did"
+    ],
+    "answer": "will",
+    "explanation": "可能發生的未來條件，if 子句使用現在式，主要子句可用 will 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-22-2",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "第一類條件句",
+    "q": "If the shop is open, she ___ buy some milk.",
+    "options": [
+      "will",
+      "would",
+      "had",
+      "did"
+    ],
+    "answer": "will",
+    "explanation": "可能發生的未來條件，if 子句使用現在式，主要子句可用 will 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-22-3",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "第一類條件句",
+    "q": "If they invite us, we ___ attend the party.",
+    "options": [
+      "will",
+      "would",
+      "had",
+      "did"
+    ],
+    "answer": "will",
+    "explanation": "可能發生的未來條件，if 子句使用現在式，主要子句可用 will 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-22-4",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "第一類條件句",
+    "q": "If I save enough money, I ___ book the course.",
+    "options": [
+      "will",
+      "would",
+      "had",
+      "did"
+    ],
+    "answer": "will",
+    "explanation": "可能發生的未來條件，if 子句使用現在式，主要子句可用 will 加原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-23-0",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "used to 過去習慣",
+    "q": "I ___ walk to school, but now I take the bus.",
+    "options": [
+      "used to",
+      "use to",
+      "am used to",
+      "was use to"
+    ],
+    "answer": "used to",
+    "explanation": "used to 加原形動詞表示過去有、現在可能已改變的習慣或狀態。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-23-1",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "used to 過去習慣",
+    "q": "She ___ live in Taipei, but she moved last year.",
+    "options": [
+      "used to",
+      "use to",
+      "am used to",
+      "was use to"
+    ],
+    "answer": "used to",
+    "explanation": "used to 加原形動詞表示過去有、現在可能已改變的習慣或狀態。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-23-2",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "used to 過去習慣",
+    "q": "We ___ play football every Friday when we were children.",
+    "options": [
+      "used to",
+      "use to",
+      "am used to",
+      "was use to"
+    ],
+    "answer": "used to",
+    "explanation": "used to 加原形動詞表示過去有、現在可能已改變的習慣或狀態。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-23-3",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "used to 過去習慣",
+    "q": "He ___ wear glasses, but he no longer needs them.",
+    "options": [
+      "used to",
+      "use to",
+      "am used to",
+      "was use to"
+    ],
+    "answer": "used to",
+    "explanation": "used to 加原形動詞表示過去有、現在可能已改變的習慣或狀態。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-A2-23-4",
+    "level": "A2",
+    "kind": "grammar",
+    "topic": "used to 過去習慣",
+    "q": "There ___ be a bakery here, but it closed.",
+    "options": [
+      "used to",
+      "use to",
+      "am used to",
+      "was use to"
+    ],
+    "answer": "used to",
+    "explanation": "used to 加原形動詞表示過去有、現在可能已改變的習慣或狀態。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "past and future reference, comparison, quantity, obligation and common verb patterns"
+  },
+  {
+    "id": "v2-g-B1-24-0",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "第二類條件句",
+    "q": "If I had more time, I ___ learn Italian.",
+    "options": [
+      "would",
+      "will",
+      "had",
+      "did"
+    ],
+    "answer": "would",
+    "explanation": "對現在或未來較不可能、與事實不同的假設，可用 if 過去式，主句 would 加原形。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-24-1",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "第二類條件句",
+    "q": "If she lived closer, we ___ see her more often.",
+    "options": [
+      "would",
+      "will",
+      "had",
+      "did"
+    ],
+    "answer": "would",
+    "explanation": "對現在或未來較不可能、與事實不同的假設，可用 if 過去式，主句 would 加原形。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-24-2",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "第二類條件句",
+    "q": "If they offered me the job, I ___ accept it.",
+    "options": [
+      "would",
+      "will",
+      "had",
+      "did"
+    ],
+    "answer": "would",
+    "explanation": "對現在或未來較不可能、與事實不同的假設，可用 if 過去式，主句 would 加原形。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-24-3",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "第二類條件句",
+    "q": "If we owned a car, we ___ drive to the coast.",
+    "options": [
+      "would",
+      "will",
+      "had",
+      "did"
+    ],
+    "answer": "would",
+    "explanation": "對現在或未來較不可能、與事實不同的假設，可用 if 過去式，主句 would 加原形。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-24-4",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "第二類條件句",
+    "q": "If he knew the answer, he ___ tell us.",
+    "options": [
+      "would",
+      "will",
+      "had",
+      "did"
+    ],
+    "answer": "would",
+    "explanation": "對現在或未來較不可能、與事實不同的假設，可用 if 過去式，主句 would 加原形。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-25-0",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "過去被動語態",
+    "q": "This bridge ___ in 1980.",
+    "options": [
+      "was built",
+      "built",
+      "has building",
+      "is build"
+    ],
+    "answer": "was built",
+    "explanation": "主詞是被建造的物，且時間是過去，使用 was 加過去分詞 built。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-25-1",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "過去被動語態",
+    "q": "Our school ___ more than a century ago.",
+    "options": [
+      "was built",
+      "built",
+      "has building",
+      "is build"
+    ],
+    "answer": "was built",
+    "explanation": "主詞是被建造的物，且時間是過去，使用 was 加過去分詞 built。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-25-2",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "過去被動語態",
+    "q": "The stadium ___ for the games last year.",
+    "options": [
+      "was built",
+      "built",
+      "has building",
+      "is build"
+    ],
+    "answer": "was built",
+    "explanation": "主詞是被建造的物，且時間是過去，使用 was 加過去分詞 built。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-25-3",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "過去被動語態",
+    "q": "The original station ___ during the nineteenth century.",
+    "options": [
+      "was built",
+      "built",
+      "has building",
+      "is build"
+    ],
+    "answer": "was built",
+    "explanation": "主詞是被建造的物，且時間是過去，使用 was 加過去分詞 built。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-25-4",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "過去被動語態",
+    "q": "Their house ___ before we moved to this town.",
+    "options": [
+      "was built",
+      "built",
+      "has building",
+      "is build"
+    ],
+    "answer": "was built",
+    "explanation": "主詞是被建造的物，且時間是過去，使用 was 加過去分詞 built。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-26-0",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "現在完成進行式",
+    "q": "I ___ on this report for three hours and still haven't finished.",
+    "options": [
+      "have been working",
+      "am work",
+      "worked tomorrow",
+      "have work"
+    ],
+    "answer": "have been working",
+    "explanation": "從過去持續至今且仍在進行的複數或 I 主詞活動，可用 have been 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-26-1",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "現在完成進行式",
+    "q": "We ___ together since nine this morning and need a break.",
+    "options": [
+      "have been working",
+      "am work",
+      "worked tomorrow",
+      "have work"
+    ],
+    "answer": "have been working",
+    "explanation": "從過去持續至今且仍在進行的複數或 I 主詞活動，可用 have been 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-26-2",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "現在完成進行式",
+    "q": "They ___ on the repairs all day and are still busy.",
+    "options": [
+      "have been working",
+      "am work",
+      "worked tomorrow",
+      "have work"
+    ],
+    "answer": "have been working",
+    "explanation": "從過去持續至今且仍在進行的複數或 I 主詞活動，可用 have been 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-26-3",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "現在完成進行式",
+    "q": "You ___ without a break since lunch; please rest.",
+    "options": [
+      "have been working",
+      "am work",
+      "worked tomorrow",
+      "have work"
+    ],
+    "answer": "have been working",
+    "explanation": "從過去持續至今且仍在進行的複數或 I 主詞活動，可用 have been 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-26-4",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "現在完成進行式",
+    "q": "My colleagues ___ on the system since Monday and are still testing it.",
+    "options": [
+      "have been working",
+      "am work",
+      "worked tomorrow",
+      "have work"
+    ],
+    "answer": "have been working",
+    "explanation": "從過去持續至今且仍在進行的複數或 I 主詞活動，可用 have been 加動詞 ing。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-27-0",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "間接問句語序",
+    "q": "Could you tell me where ___ ?",
+    "options": [
+      "the station is",
+      "is the station",
+      "does the station",
+      "the station does"
+    ],
+    "answer": "the station is",
+    "explanation": "間接問句使用直述句語序，也就是主詞 the station 放在動詞 is 前。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-27-1",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "間接問句語序",
+    "q": "Do you know how far away ___ ?",
+    "options": [
+      "the station is",
+      "is the station",
+      "does the station",
+      "the station does"
+    ],
+    "answer": "the station is",
+    "explanation": "間接問句使用直述句語序，也就是主詞 the station 放在動詞 is 前。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-27-2",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "間接問句語序",
+    "q": "I wonder how old ___ .",
+    "options": [
+      "the station is",
+      "is the station",
+      "does the station",
+      "the station does"
+    ],
+    "answer": "the station is",
+    "explanation": "間接問句使用直述句語序，也就是主詞 the station 放在動詞 is 前。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-27-3",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "間接問句語序",
+    "q": "Can you explain why ___ closed today?",
+    "options": [
+      "the station is",
+      "is the station",
+      "does the station",
+      "the station does"
+    ],
+    "answer": "the station is",
+    "explanation": "間接問句使用直述句語序，也就是主詞 the station 放在動詞 is 前。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-27-4",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "間接問句語序",
+    "q": "Please tell me which side of the river ___ on.",
+    "options": [
+      "the station is",
+      "is the station",
+      "does the station",
+      "the station does"
+    ],
+    "answer": "the station is",
+    "explanation": "間接問句使用直述句語序，也就是主詞 the station 放在動詞 is 前。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-28-0",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "人的關係代名詞",
+    "q": "The woman ___ called you is my manager.",
+    "options": [
+      "who",
+      "which",
+      "whose",
+      "where"
+    ],
+    "answer": "who",
+    "explanation": "先行詞是人，且關係代名詞在子句中當主詞時，可使用 who。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-28-1",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "人的關係代名詞",
+    "q": "Anyone ___ needs help can ask me.",
+    "options": [
+      "who",
+      "which",
+      "whose",
+      "where"
+    ],
+    "answer": "who",
+    "explanation": "先行詞是人，且關係代名詞在子句中當主詞時，可使用 who。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-28-2",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "人的關係代名詞",
+    "q": "I know a guide ___ speaks four languages.",
+    "options": [
+      "who",
+      "which",
+      "whose",
+      "where"
+    ],
+    "answer": "who",
+    "explanation": "先行詞是人，且關係代名詞在子句中當主詞時，可使用 who。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-28-3",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "人的關係代名詞",
+    "q": "The students ___ passed the exam were delighted.",
+    "options": [
+      "who",
+      "which",
+      "whose",
+      "where"
+    ],
+    "answer": "who",
+    "explanation": "先行詞是人，且關係代名詞在子句中當主詞時，可使用 who。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-28-4",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "人的關係代名詞",
+    "q": "She is the colleague ___ arranged our visit.",
+    "options": [
+      "who",
+      "which",
+      "whose",
+      "where"
+    ],
+    "answer": "who",
+    "explanation": "先行詞是人，且關係代名詞在子句中當主詞時，可使用 who。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-29-0",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "物的關係代名詞",
+    "q": "The device ___ measures water quality is expensive.",
+    "options": [
+      "which",
+      "who",
+      "whose",
+      "where"
+    ],
+    "answer": "which",
+    "explanation": "先行詞是物，且在關係子句中作主詞或受詞，可使用 which。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-29-1",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "物的關係代名詞",
+    "q": "I need a bag ___ can hold my laptop.",
+    "options": [
+      "which",
+      "who",
+      "whose",
+      "where"
+    ],
+    "answer": "which",
+    "explanation": "先行詞是物，且在關係子句中作主詞或受詞，可使用 which。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-29-2",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "物的關係代名詞",
+    "q": "The book ___ you lent me was fascinating.",
+    "options": [
+      "which",
+      "who",
+      "whose",
+      "where"
+    ],
+    "answer": "which",
+    "explanation": "先行詞是物，且在關係子句中作主詞或受詞，可使用 which。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-29-3",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "物的關係代名詞",
+    "q": "This is the train ___ goes directly to the airport.",
+    "options": [
+      "which",
+      "who",
+      "whose",
+      "where"
+    ],
+    "answer": "which",
+    "explanation": "先行詞是物，且在關係子句中作主詞或受詞，可使用 which。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-29-4",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "物的關係代名詞",
+    "q": "They designed a system ___ saves electricity.",
+    "options": [
+      "which",
+      "who",
+      "whose",
+      "where"
+    ],
+    "answer": "which",
+    "explanation": "先行詞是物，且在關係子句中作主詞或受詞，可使用 which。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-30-0",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "習慣於：to 是介系詞",
+    "q": "I am used to ___ at night.",
+    "options": [
+      "working",
+      "work",
+      "to work",
+      "worked"
+    ],
+    "answer": "working",
+    "explanation": "be used to、get used to 的 to 是介系詞，後接名詞或動名詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-30-1",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "習慣於：to 是介系詞",
+    "q": "She is getting used to ___ from home.",
+    "options": [
+      "working",
+      "work",
+      "to work",
+      "worked"
+    ],
+    "answer": "working",
+    "explanation": "be used to、get used to 的 to 是介系詞，後接名詞或動名詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-30-2",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "習慣於：to 是介系詞",
+    "q": "They aren't used to ___ in such hot weather.",
+    "options": [
+      "working",
+      "work",
+      "to work",
+      "worked"
+    ],
+    "answer": "working",
+    "explanation": "be used to、get used to 的 to 是介系詞，後接名詞或動名詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-30-3",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "習慣於：to 是介系詞",
+    "q": "Are you used to ___ with a large team?",
+    "options": [
+      "working",
+      "work",
+      "to work",
+      "worked"
+    ],
+    "answer": "working",
+    "explanation": "be used to、get used to 的 to 是介系詞，後接名詞或動名詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-30-4",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "習慣於：to 是介系詞",
+    "q": "We quickly got used to ___ with the new software.",
+    "options": [
+      "working",
+      "work",
+      "to work",
+      "worked"
+    ],
+    "answer": "working",
+    "explanation": "be used to、get used to 的 to 是介系詞，後接名詞或動名詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-31-0",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "推測的 must",
+    "q": "You've walked 30 kilometres without resting. You ___ be exhausted.",
+    "options": [
+      "must",
+      "mustn't",
+      "needn't",
+      "should to"
+    ],
+    "answer": "must",
+    "explanation": "根據明確跡象作高度肯定的推測，使用 must 加原形動詞；不是表示義務。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-31-1",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "推測的 must",
+    "q": "The only car key is in her hand, so it ___ be her key.",
+    "options": [
+      "must",
+      "mustn't",
+      "needn't",
+      "should to"
+    ],
+    "answer": "must",
+    "explanation": "根據明確跡象作高度肯定的推測，使用 must 加原形動詞；不是表示義務。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-31-2",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "推測的 must",
+    "q": "Every table is occupied and people are queuing outside. The restaurant ___ be popular.",
+    "options": [
+      "must",
+      "mustn't",
+      "needn't",
+      "should to"
+    ],
+    "answer": "must",
+    "explanation": "根據明確跡象作高度肯定的推測，使用 must 加原形動詞；不是表示義務。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-31-3",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "推測的 must",
+    "q": "The clock is ticking, so its battery ___ still be working.",
+    "options": [
+      "must",
+      "mustn't",
+      "needn't",
+      "should to"
+    ],
+    "answer": "must",
+    "explanation": "根據明確跡象作高度肯定的推測，使用 must 加原形動詞；不是表示義務。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-31-4",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "推測的 must",
+    "q": "He speaks about every detail of the place from memory. He ___ know it very well.",
+    "options": [
+      "must",
+      "mustn't",
+      "needn't",
+      "should to"
+    ],
+    "answer": "must",
+    "explanation": "根據明確跡象作高度肯定的推測，使用 must 加原形動詞；不是表示義務。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-32-0",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "過去完成式",
+    "q": "When I arrived at the platform, the train ___ already.",
+    "options": [
+      "had left",
+      "has left",
+      "leaves",
+      "was leave"
+    ],
+    "answer": "had left",
+    "explanation": "在一個過去動作之前已完成的動作，使用 had 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-32-1",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "過去完成式",
+    "q": "By the time she called, he ___ the office.",
+    "options": [
+      "had left",
+      "has left",
+      "leaves",
+      "was leave"
+    ],
+    "answer": "had left",
+    "explanation": "在一個過去動作之前已完成的動作，使用 had 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-32-2",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "過去完成式",
+    "q": "We couldn't meet the guide because she ___ before we arrived.",
+    "options": [
+      "had left",
+      "has left",
+      "leaves",
+      "was leave"
+    ],
+    "answer": "had left",
+    "explanation": "在一個過去動作之前已完成的動作，使用 had 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-32-3",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "過去完成式",
+    "q": "The bus ___ by the time we reached the stop.",
+    "options": [
+      "had left",
+      "has left",
+      "leaves",
+      "was leave"
+    ],
+    "answer": "had left",
+    "explanation": "在一個過去動作之前已完成的動作，使用 had 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-32-4",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "過去完成式",
+    "q": "I went to their old house, but they ___ a week earlier.",
+    "options": [
+      "had left",
+      "has left",
+      "leaves",
+      "was leave"
+    ],
+    "answer": "had left",
+    "explanation": "在一個過去動作之前已完成的動作，使用 had 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-33-0",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "讓步連接詞",
+    "q": "___ it was raining, we went for a walk.",
+    "options": [
+      "Although",
+      "Despite",
+      "Because of",
+      "In spite"
+    ],
+    "answer": "Although",
+    "explanation": "Although 後接完整子句；despite 和 in spite of 後接名詞或動名詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-33-1",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "讓步連接詞",
+    "q": "___ she was tired, she finished the report.",
+    "options": [
+      "Although",
+      "Despite",
+      "Because of",
+      "In spite"
+    ],
+    "answer": "Although",
+    "explanation": "Although 後接完整子句；despite 和 in spite of 後接名詞或動名詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-33-2",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "讓步連接詞",
+    "q": "___ the flat is small, it is comfortable.",
+    "options": [
+      "Although",
+      "Despite",
+      "Because of",
+      "In spite"
+    ],
+    "answer": "Although",
+    "explanation": "Although 後接完整子句；despite 和 in spite of 後接名詞或動名詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-33-3",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "讓步連接詞",
+    "q": "___ he studied hard, he didn't pass.",
+    "options": [
+      "Although",
+      "Despite",
+      "Because of",
+      "In spite"
+    ],
+    "answer": "Although",
+    "explanation": "Although 後接完整子句；despite 和 in spite of 後接名詞或動名詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-33-4",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "讓步連接詞",
+    "q": "___ they were nervous, they gave a clear presentation.",
+    "options": [
+      "Although",
+      "Despite",
+      "Because of",
+      "In spite"
+    ],
+    "answer": "Although",
+    "explanation": "Although 後接完整子句；despite 和 in spite of 後接名詞或動名詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-34-0",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "介系詞後動名詞",
+    "q": "Thank you for ___ the time to help.",
+    "options": [
+      "taking",
+      "take",
+      "to take",
+      "taken"
+    ],
+    "answer": "taking",
+    "explanation": "介系詞後的動詞通常要用 ing 形式；注意 to 有時也是介系詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-34-1",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "介系詞後動名詞",
+    "q": "She left without ___ her umbrella.",
+    "options": [
+      "taking",
+      "take",
+      "to take",
+      "taken"
+    ],
+    "answer": "taking",
+    "explanation": "介系詞後的動詞通常要用 ing 形式；注意 to 有時也是介系詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-34-2",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "介系詞後動名詞",
+    "q": "We talked about ___ a language course.",
+    "options": [
+      "taking",
+      "take",
+      "to take",
+      "taken"
+    ],
+    "answer": "taking",
+    "explanation": "介系詞後的動詞通常要用 ing 形式；注意 to 有時也是介系詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-34-3",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "介系詞後動名詞",
+    "q": "I look forward to ___ part in the workshop.",
+    "options": [
+      "taking",
+      "take",
+      "to take",
+      "taken"
+    ],
+    "answer": "taking",
+    "explanation": "介系詞後的動詞通常要用 ing 形式；注意 to 有時也是介系詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-34-4",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "介系詞後動名詞",
+    "q": "He apologised for ___ my seat by mistake.",
+    "options": [
+      "taking",
+      "take",
+      "to take",
+      "taken"
+    ],
+    "answer": "taking",
+    "explanation": "介系詞後的動詞通常要用 ing 形式；注意 to 有時也是介系詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-35-0",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "附加問句",
+    "q": "The weather is lovely today, ___ ?",
+    "options": [
+      "isn't it",
+      "doesn't it",
+      "wasn't it",
+      "is it"
+    ],
+    "answer": "isn't it",
+    "explanation": "主要子句是肯定的現在式 it is，附加問句使用否定 isn't it。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-35-1",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "附加問句",
+    "q": "This is your first visit, ___ ?",
+    "options": [
+      "isn't it",
+      "doesn't it",
+      "wasn't it",
+      "is it"
+    ],
+    "answer": "isn't it",
+    "explanation": "主要子句是肯定的現在式 it is，附加問句使用否定 isn't it。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-35-2",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "附加問句",
+    "q": "The station is quite close, ___ ?",
+    "options": [
+      "isn't it",
+      "doesn't it",
+      "wasn't it",
+      "is it"
+    ],
+    "answer": "isn't it",
+    "explanation": "主要子句是肯定的現在式 it is，附加問句使用否定 isn't it。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-35-3",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "附加問句",
+    "q": "Your flight is tomorrow, ___ ?",
+    "options": [
+      "isn't it",
+      "doesn't it",
+      "wasn't it",
+      "is it"
+    ],
+    "answer": "isn't it",
+    "explanation": "主要子句是肯定的現在式 it is，附加問句使用否定 isn't it。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B1-35-4",
+    "level": "B1",
+    "kind": "grammar",
+    "topic": "附加問句",
+    "q": "The new system is easier to use, ___ ?",
+    "options": [
+      "isn't it",
+      "doesn't it",
+      "wasn't it",
+      "is it"
+    ],
+    "answer": "isn't it",
+    "explanation": "主要子句是肯定的現在式 it is，附加問句使用否定 isn't it。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "hypothetical meaning, passive, reported/embedded questions, relative clauses and cohesion"
+  },
+  {
+    "id": "v2-g-B2-36-0",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "第三類條件句",
+    "q": "If we had booked earlier, we ___ paid less.",
+    "options": [
+      "would have",
+      "will have",
+      "would",
+      "had"
+    ],
+    "answer": "would have",
+    "explanation": "對過去未發生的事作相反假設，if had 加過去分詞，主句用 would have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-36-1",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "第三類條件句",
+    "q": "If she had seen the message, she ___ replied.",
+    "options": [
+      "would have",
+      "will have",
+      "would",
+      "had"
+    ],
+    "answer": "would have",
+    "explanation": "對過去未發生的事作相反假設，if had 加過去分詞，主句用 would have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-36-2",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "第三類條件句",
+    "q": "If I had known about the delay, I ___ stayed at home.",
+    "options": [
+      "would have",
+      "will have",
+      "would",
+      "had"
+    ],
+    "answer": "would have",
+    "explanation": "對過去未發生的事作相反假設，if had 加過去分詞，主句用 would have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-36-3",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "第三類條件句",
+    "q": "If they had followed the instructions, they ___ avoided the error.",
+    "options": [
+      "would have",
+      "will have",
+      "would",
+      "had"
+    ],
+    "answer": "would have",
+    "explanation": "對過去未發生的事作相反假設，if had 加過去分詞，主句用 would have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-36-4",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "第三類條件句",
+    "q": "If he had trained harder, he ___ finished the race.",
+    "options": [
+      "would have",
+      "will have",
+      "would",
+      "had"
+    ],
+    "answer": "would have",
+    "explanation": "對過去未發生的事作相反假設，if had 加過去分詞，主句用 would have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-37-0",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "否定副詞倒裝",
+    "q": "Never ___ such a crowded station before.",
+    "options": [
+      "have I seen",
+      "I have seen",
+      "did I seen",
+      "I saw"
+    ],
+    "answer": "have I seen",
+    "explanation": "Never 放句首時，助動詞須移到主詞前；此處使用現在完成式 have I seen。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-37-1",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "否定副詞倒裝",
+    "q": "Never ___ the sea look so calm.",
+    "options": [
+      "have I seen",
+      "I have seen",
+      "did I seen",
+      "I saw"
+    ],
+    "answer": "have I seen",
+    "explanation": "Never 放句首時，助動詞須移到主詞前；此處使用現在完成式 have I seen。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-37-2",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "否定副詞倒裝",
+    "q": "Never ___ anyone solve the puzzle so quickly.",
+    "options": [
+      "have I seen",
+      "I have seen",
+      "did I seen",
+      "I saw"
+    ],
+    "answer": "have I seen",
+    "explanation": "Never 放句首時，助動詞須移到主詞前；此處使用現在完成式 have I seen。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-37-3",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "否定副詞倒裝",
+    "q": "Never ___ a clearer explanation of this topic.",
+    "options": [
+      "have I seen",
+      "I have seen",
+      "did I seen",
+      "I saw"
+    ],
+    "answer": "have I seen",
+    "explanation": "Never 放句首時，助動詞須移到主詞前；此處使用現在完成式 have I seen。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-37-4",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "否定副詞倒裝",
+    "q": "Never ___ so many stars in the night sky.",
+    "options": [
+      "have I seen",
+      "I have seen",
+      "did I seen",
+      "I saw"
+    ],
+    "answer": "have I seen",
+    "explanation": "Never 放句首時，助動詞須移到主詞前；此處使用現在完成式 have I seen。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-38-0",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "過去不可能的推測",
+    "q": "She ___ sent that email at noon; she had no internet access all day.",
+    "options": [
+      "can't have",
+      "must have",
+      "should have",
+      "may have"
+    ],
+    "answer": "can't have",
+    "explanation": "根據已知證據判斷過去不可能發生時，使用 can't have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-38-1",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "過去不可能的推測",
+    "q": "You ___ met my brother in London yesterday; he was in Taiwan.",
+    "options": [
+      "can't have",
+      "must have",
+      "should have",
+      "may have"
+    ],
+    "answer": "can't have",
+    "explanation": "根據已知證據判斷過去不可能發生時，使用 can't have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-38-2",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "過去不可能的推測",
+    "q": "They ___ used the front door; it had been sealed shut for weeks.",
+    "options": [
+      "can't have",
+      "must have",
+      "should have",
+      "may have"
+    ],
+    "answer": "can't have",
+    "explanation": "根據已知證據判斷過去不可能發生時，使用 can't have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-38-3",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "過去不可能的推測",
+    "q": "He ___ driven here himself; he has never learned to drive.",
+    "options": [
+      "can't have",
+      "must have",
+      "should have",
+      "may have"
+    ],
+    "answer": "can't have",
+    "explanation": "根據已知證據判斷過去不可能發生時，使用 can't have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-38-4",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "過去不可能的推測",
+    "q": "We ___ ordered this meal; the restaurant had already closed before we arrived.",
+    "options": [
+      "can't have",
+      "must have",
+      "should have",
+      "may have"
+    ],
+    "answer": "can't have",
+    "explanation": "根據已知證據判斷過去不可能發生時，使用 can't have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-39-0",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "使役結構",
+    "q": "I had my bicycle ___ at the local shop.",
+    "options": [
+      "repaired",
+      "repair",
+      "repairing",
+      "to repair"
+    ],
+    "answer": "repaired",
+    "explanation": "have 或 get 加物加過去分詞，表示讓別人替自己處理該物。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-39-1",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "使役結構",
+    "q": "She got her phone ___ after dropping it.",
+    "options": [
+      "repaired",
+      "repair",
+      "repairing",
+      "to repair"
+    ],
+    "answer": "repaired",
+    "explanation": "have 或 get 加物加過去分詞，表示讓別人替自己處理該物。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-39-2",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "使役結構",
+    "q": "We are having the roof ___ this week.",
+    "options": [
+      "repaired",
+      "repair",
+      "repairing",
+      "to repair"
+    ],
+    "answer": "repaired",
+    "explanation": "have 或 get 加物加過去分詞，表示讓別人替自己處理該物。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-39-3",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "使役結構",
+    "q": "He wants to get his watch ___ before the trip.",
+    "options": [
+      "repaired",
+      "repair",
+      "repairing",
+      "to repair"
+    ],
+    "answer": "repaired",
+    "explanation": "have 或 get 加物加過去分詞，表示讓別人替自己處理該物。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-39-4",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "使役結構",
+    "q": "They had the damaged door ___ by a carpenter.",
+    "options": [
+      "repaired",
+      "repair",
+      "repairing",
+      "to repair"
+    ],
+    "answer": "repaired",
+    "explanation": "have 或 get 加物加過去分詞，表示讓別人替自己處理該物。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-40-0",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "wish 對現在的願望",
+    "q": "I wish I ___ more confident, but I feel nervous.",
+    "options": [
+      "were",
+      "am",
+      "will be",
+      "have been"
+    ],
+    "answer": "were",
+    "explanation": "wish 對現在不滿或與事實不同的願望，使用過去式；be 動詞可用 were。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-40-1",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "wish 對現在的願望",
+    "q": "She wishes she ___ taller, but she is quite short.",
+    "options": [
+      "were",
+      "am",
+      "will be",
+      "have been"
+    ],
+    "answer": "were",
+    "explanation": "wish 對現在不滿或與事實不同的願望，使用過去式；be 動詞可用 were。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-40-2",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "wish 對現在的願望",
+    "q": "He wishes he ___ at home now instead of in the office.",
+    "options": [
+      "were",
+      "am",
+      "will be",
+      "have been"
+    ],
+    "answer": "were",
+    "explanation": "wish 對現在不滿或與事實不同的願望，使用過去式；be 動詞可用 were。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-40-3",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "wish 對現在的願望",
+    "q": "We wish the room ___ larger, but it is very small.",
+    "options": [
+      "were",
+      "am",
+      "will be",
+      "have been"
+    ],
+    "answer": "were",
+    "explanation": "wish 對現在不滿或與事實不同的願望，使用過去式；be 動詞可用 were。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-40-4",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "wish 對現在的願望",
+    "q": "I wish the station ___ closer to my house, but it is far away.",
+    "options": [
+      "were",
+      "am",
+      "will be",
+      "have been"
+    ],
+    "answer": "were",
+    "explanation": "wish 對現在不滿或與事實不同的願望，使用過去式；be 動詞可用 were。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-41-0",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "would rather 不同主詞",
+    "q": "I'd rather you ___ smoke in this room.",
+    "options": [
+      "didn't",
+      "don't",
+      "won't",
+      "haven't"
+    ],
+    "answer": "didn't",
+    "explanation": "would rather 後接另一個主詞時，表達現在或未來的偏好使用過去式。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-41-1",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "would rather 不同主詞",
+    "q": "She'd rather we ___ discuss it during dinner.",
+    "options": [
+      "didn't",
+      "don't",
+      "won't",
+      "haven't"
+    ],
+    "answer": "didn't",
+    "explanation": "would rather 後接另一個主詞時，表達現在或未來的偏好使用過去式。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-41-2",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "would rather 不同主詞",
+    "q": "They'd rather he ___ bring his dog tomorrow.",
+    "options": [
+      "didn't",
+      "don't",
+      "won't",
+      "haven't"
+    ],
+    "answer": "didn't",
+    "explanation": "would rather 後接另一個主詞時，表達現在或未來的偏好使用過去式。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-41-3",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "would rather 不同主詞",
+    "q": "We'd rather you ___ share these photos online.",
+    "options": [
+      "didn't",
+      "don't",
+      "won't",
+      "haven't"
+    ],
+    "answer": "didn't",
+    "explanation": "would rather 後接另一個主詞時，表達現在或未來的偏好使用過去式。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-41-4",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "would rather 不同主詞",
+    "q": "He'd rather I ___ call him before nine tomorrow.",
+    "options": [
+      "didn't",
+      "don't",
+      "won't",
+      "haven't"
+    ],
+    "answer": "didn't",
+    "explanation": "would rather 後接另一個主詞時，表達現在或未來的偏好使用過去式。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-42-0",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "完成式分詞構句",
+    "q": "___ the report, she sent it to her manager.",
+    "options": [
+      "Having finished",
+      "Have finished",
+      "To having finished",
+      "Finish"
+    ],
+    "answer": "Having finished",
+    "explanation": "Having 加過去分詞可表示先完成的動作，分詞構句與主句須有相同主詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-42-1",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "完成式分詞構句",
+    "q": "___ his meal, he asked for the bill.",
+    "options": [
+      "Having finished",
+      "Have finished",
+      "To having finished",
+      "Finish"
+    ],
+    "answer": "Having finished",
+    "explanation": "Having 加過去分詞可表示先完成的動作，分詞構句與主句須有相同主詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-42-2",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "完成式分詞構句",
+    "q": "___ their exams, the students went on holiday.",
+    "options": [
+      "Having finished",
+      "Have finished",
+      "To having finished",
+      "Finish"
+    ],
+    "answer": "Having finished",
+    "explanation": "Having 加過去分詞可表示先完成的動作，分詞構句與主句須有相同主詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-42-3",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "完成式分詞構句",
+    "q": "___ the repairs, the engineer tested the device.",
+    "options": [
+      "Having finished",
+      "Have finished",
+      "To having finished",
+      "Finish"
+    ],
+    "answer": "Having finished",
+    "explanation": "Having 加過去分詞可表示先完成的動作，分詞構句與主句須有相同主詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-42-4",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "完成式分詞構句",
+    "q": "___ our discussion, we agreed on the next steps.",
+    "options": [
+      "Having finished",
+      "Have finished",
+      "To having finished",
+      "Finish"
+    ],
+    "answer": "Having finished",
+    "explanation": "Having 加過去分詞可表示先完成的動作，分詞構句與主句須有相同主詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-43-0",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "非限定關係子句",
+    "q": "The report, ___ was published yesterday, raised several concerns.",
+    "options": [
+      "which",
+      "that",
+      "what",
+      "where"
+    ],
+    "answer": "which",
+    "explanation": "逗號分隔的非限定關係子句中，先行詞是物且需要主詞或受詞，使用 which。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-43-1",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "非限定關係子句",
+    "q": "Our new office, ___ opened in June, has excellent facilities.",
+    "options": [
+      "which",
+      "that",
+      "what",
+      "where"
+    ],
+    "answer": "which",
+    "explanation": "逗號分隔的非限定關係子句中，先行詞是物且需要主詞或受詞，使用 which。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-43-2",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "非限定關係子句",
+    "q": "The device, ___ I bought last month, has stopped working.",
+    "options": [
+      "which",
+      "that",
+      "what",
+      "where"
+    ],
+    "answer": "which",
+    "explanation": "逗號分隔的非限定關係子句中，先行詞是物且需要主詞或受詞，使用 which。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-43-3",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "非限定關係子句",
+    "q": "Her proposal, ___ we discussed earlier, was approved.",
+    "options": [
+      "which",
+      "that",
+      "what",
+      "where"
+    ],
+    "answer": "which",
+    "explanation": "逗號分隔的非限定關係子句中，先行詞是物且需要主詞或受詞，使用 which。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-43-4",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "非限定關係子句",
+    "q": "The bridge, ___ connects the two villages, is being repaired.",
+    "options": [
+      "which",
+      "that",
+      "what",
+      "where"
+    ],
+    "answer": "which",
+    "explanation": "逗號分隔的非限定關係子句中，先行詞是物且需要主詞或受詞，使用 which。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-44-0",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "未來完成式",
+    "q": "By next Friday, I ___ the report.",
+    "options": [
+      "will have finished",
+      "will finish yesterday",
+      "have finished last week",
+      "am finish"
+    ],
+    "answer": "will have finished",
+    "explanation": "by 加未來時間，強調到那時之前已完成，使用 will have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-44-1",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "未來完成式",
+    "q": "By the time you arrive tomorrow, we ___ dinner.",
+    "options": [
+      "will have finished",
+      "will finish yesterday",
+      "have finished last week",
+      "am finish"
+    ],
+    "answer": "will have finished",
+    "explanation": "by 加未來時間，強調到那時之前已完成，使用 will have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-44-2",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "未來完成式",
+    "q": "By noon tomorrow, they ___ the installation.",
+    "options": [
+      "will have finished",
+      "will finish yesterday",
+      "have finished last week",
+      "am finish"
+    ],
+    "answer": "will have finished",
+    "explanation": "by 加未來時間，強調到那時之前已完成，使用 will have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-44-3",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "未來完成式",
+    "q": "By the end of this month, she ___ the course.",
+    "options": [
+      "will have finished",
+      "will finish yesterday",
+      "have finished last week",
+      "am finish"
+    ],
+    "answer": "will have finished",
+    "explanation": "by 加未來時間，強調到那時之前已完成，使用 will have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-44-4",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "未來完成式",
+    "q": "By this time next week, you ___ all the interviews.",
+    "options": [
+      "will have finished",
+      "will finish yesterday",
+      "have finished last week",
+      "am finish"
+    ],
+    "answer": "will have finished",
+    "explanation": "by 加未來時間，強調到那時之前已完成，使用 will have 加過去分詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-45-0",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "過去本應做到",
+    "q": "I ___ checked the address before leaving; now I'm lost.",
+    "options": [
+      "should have",
+      "should",
+      "must to have",
+      "ought have"
+    ],
+    "answer": "should have",
+    "explanation": "should have 加過去分詞表示過去應該做而未做到，常帶有懊悔或批評。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-45-1",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "過去本應做到",
+    "q": "You ___ backed up the file; now your work is gone.",
+    "options": [
+      "should have",
+      "should",
+      "must to have",
+      "ought have"
+    ],
+    "answer": "should have",
+    "explanation": "should have 加過去分詞表示過去應該做而未做到，常帶有懊悔或批評。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-45-2",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "過去本應做到",
+    "q": "We ___ booked a table; now the restaurant is full.",
+    "options": [
+      "should have",
+      "should",
+      "must to have",
+      "ought have"
+    ],
+    "answer": "should have",
+    "explanation": "should have 加過去分詞表示過去應該做而未做到，常帶有懊悔或批評。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-45-3",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "過去本應做到",
+    "q": "She ___ left earlier; now she has missed the train.",
+    "options": [
+      "should have",
+      "should",
+      "must to have",
+      "ought have"
+    ],
+    "answer": "should have",
+    "explanation": "should have 加過去分詞表示過去應該做而未做到，常帶有懊悔或批評。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-45-4",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "過去本應做到",
+    "q": "They ___ tested the update; now the system has crashed.",
+    "options": [
+      "should have",
+      "should",
+      "must to have",
+      "ought have"
+    ],
+    "answer": "should have",
+    "explanation": "should have 加過去分詞表示過去應該做而未做到，常帶有懊悔或批評。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-46-0",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "no sooner 倒裝",
+    "q": "No sooner ___ we arrived than it started to rain.",
+    "options": [
+      "had",
+      "have",
+      "did",
+      "was"
+    ],
+    "answer": "had",
+    "explanation": "No sooner 放句首時，過去完成式用 had 主詞 過去分詞，後接 than 子句。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-46-1",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "no sooner 倒裝",
+    "q": "No sooner ___ she sat down than the phone rang.",
+    "options": [
+      "had",
+      "have",
+      "did",
+      "was"
+    ],
+    "answer": "had",
+    "explanation": "No sooner 放句首時，過去完成式用 had 主詞 過去分詞，後接 than 子句。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-46-2",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "no sooner 倒裝",
+    "q": "No sooner ___ I opened the door than the dog ran out.",
+    "options": [
+      "had",
+      "have",
+      "did",
+      "was"
+    ],
+    "answer": "had",
+    "explanation": "No sooner 放句首時，過去完成式用 had 主詞 過去分詞，後接 than 子句。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-46-3",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "no sooner 倒裝",
+    "q": "No sooner ___ they announced the result than everyone cheered.",
+    "options": [
+      "had",
+      "have",
+      "did",
+      "was"
+    ],
+    "answer": "had",
+    "explanation": "No sooner 放句首時，過去完成式用 had 主詞 過去分詞，後接 than 子句。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-46-4",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "no sooner 倒裝",
+    "q": "No sooner ___ he finished speaking than the questions began.",
+    "options": [
+      "had",
+      "have",
+      "did",
+      "was"
+    ],
+    "answer": "had",
+    "explanation": "No sooner 放句首時，過去完成式用 had 主詞 過去分詞，後接 than 子句。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-47-0",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "使役與允許：不帶 to 的原形",
+    "q": "The guard made us ___ the building immediately.",
+    "options": [
+      "leave",
+      "to leave",
+      "leaving",
+      "left"
+    ],
+    "answer": "leave",
+    "explanation": "make 或 let 在主動語態中，後接受詞再接不帶 to 的原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-47-1",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "使役與允許：不帶 to 的原形",
+    "q": "Her parents let her ___ early.",
+    "options": [
+      "leave",
+      "to leave",
+      "leaving",
+      "left"
+    ],
+    "answer": "leave",
+    "explanation": "make 或 let 在主動語態中，後接受詞再接不帶 to 的原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-47-2",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "使役與允許：不帶 to 的原形",
+    "q": "The alarm made everyone ___ the office.",
+    "options": [
+      "leave",
+      "to leave",
+      "leaving",
+      "left"
+    ],
+    "answer": "leave",
+    "explanation": "make 或 let 在主動語態中，後接受詞再接不帶 to 的原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-47-3",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "使役與允許：不帶 to 的原形",
+    "q": "They wouldn't let me ___ before the interview ended.",
+    "options": [
+      "leave",
+      "to leave",
+      "leaving",
+      "left"
+    ],
+    "answer": "leave",
+    "explanation": "make 或 let 在主動語態中，後接受詞再接不帶 to 的原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  },
+  {
+    "id": "v2-g-B2-47-4",
+    "level": "B2",
+    "kind": "grammar",
+    "topic": "使役與允許：不帶 to 的原形",
+    "q": "The teacher let the class ___ five minutes early.",
+    "options": [
+      "leave",
+      "to leave",
+      "leaving",
+      "left"
+    ],
+    "answer": "leave",
+    "explanation": "make 或 let 在主動語態中，後接受詞再接不帶 to 的原形動詞。",
+    "sourceBasis": "CEFR Companion Volume 2020 descriptors; English Grammar Profile-informed progression",
+    "cefrFocus": "complex conditionals, inversion, deduction, causative, participle clauses and nuanced modality"
+  }
+];

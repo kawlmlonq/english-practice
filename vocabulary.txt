@@ -1,0 +1,260 @@
+A1|apple|蘋果|She packed a red ___ in her lunch box.
+A1|bread|麵包|He spread butter on a slice of ___ for breakfast.
+A1|water|水|After the run, I drank a glass of cold ___ .
+A1|milk|牛奶|The baby drinks ___ from a bottle.
+A1|egg|蛋|The chicken laid an ___ this morning.
+A1|rice|米飯|We eat steamed ___ with vegetables and fish.
+A1|cheese|起司|Please put some ___ on my pizza before baking it.
+A1|coffee|咖啡|She orders a cup of black ___ at the café every morning.
+A1|banana|香蕉|A ___ is a long yellow fruit that you peel before eating.
+A1|orange|柳橙|He squeezed an ___ to make fresh citrus juice.
+A1|carrot|紅蘿蔔|A rabbit was eating a long orange ___ .
+A1|potato|馬鈴薯|We baked a ___ and served it with butter.
+A1|sugar|糖|This tea isn't sweet. Please add a spoonful of ___ .
+A1|salt|鹽|The soup tastes bland. Add a little ___ to make it salty.
+A1|kitchen|廚房|Dad is cooking dinner in the ___ .
+A1|bedroom|臥室|She went to her ___ and got into bed.
+A1|bathroom|浴室|The shower and toilet are in the ___ .
+A1|garden|花園|They grow flowers in the ___ behind their house.
+A1|window|窗戶|Open the ___ to let some fresh air into the room.
+A1|door|門|Someone is knocking on the front ___ .
+A1|chair|椅子|Pull up a ___ and sit beside me.
+A1|table|桌子|Please put the dinner plates on the dining ___ .
+A1|clock|時鐘|The ___ on the wall says it is three o'clock.
+A1|mirror|鏡子|He looked at his face in the ___ while shaving.
+A1|towel|毛巾|Dry your hands with this clean ___ .
+A1|teacher|老師|Our ___ explains the lesson and gives us homework.
+A1|student|學生|Each ___ in the class needs a notebook.
+A1|doctor|醫師|The ___ examined my sore throat at the clinic.
+A1|nurse|護理師|The hospital ___ checked my temperature before the doctor arrived.
+A1|driver|駕駛|The bus ___ stopped to let us get on.
+A1|farmer|農夫|The ___ grows rice and keeps chickens on his land.
+A1|sister|姊妹|My parents have two children: me and my ___ , Anna.
+A1|brother|兄弟|My mother's only son is my ___ , Leo; I am her daughter.
+A1|daughter|女兒|Their only child is a girl. She is their ___ .
+A1|son|兒子|Their only child is a boy. He is their ___ .
+A1|friend|朋友|Mia is my best ___ ; we enjoy spending time together.
+A1|school|學校|The children go to ___ to attend classes every weekday.
+A1|hospital|醫院|The ambulance took the injured man to the ___ .
+A1|supermarket|超市|We buy groceries at the large ___ near our home.
+A1|library|圖書館|You can borrow books for free from the public ___ .
+A1|station|車站|We waited for our train at the ___ .
+A1|airport|機場|Our flight leaves from the international ___ at noon.
+A1|beach|海灘|We built sandcastles on the ___ beside the sea.
+A1|park|公園|We walk our dog in the public ___ with trees and playgrounds.
+A1|mountain|山|Snow covered the top of the high ___ .
+A1|river|河流|The ___ flows through the city and into the sea.
+A1|sunny|晴朗的|There are no clouds today. It is warm and ___ .
+A1|rainy|下雨的|Take an umbrella; it will be ___ all afternoon.
+A1|cold|寒冷的|It is so ___ outside that the water has turned to ice.
+A1|hot|炎熱的|It is extremely ___ today, with temperatures above 35 degrees.
+A1|happy|開心的|She felt ___ when she received the wonderful news.
+A1|sad|難過的|He felt ___ and cried when his pet died.
+A1|tired|疲倦的|After working all night, she felt too ___ to stay awake.
+A1|hungry|飢餓的|I haven't eaten all day, so I am very ___ .
+A1|thirsty|口渴的|After walking in the heat, I was ___ and needed a drink.
+A1|expensive|昂貴的|This watch costs more than my monthly salary. It is too ___ for me.
+A1|cheap|便宜的|The tickets cost only one dollar each. They were very ___ .
+A1|clean|乾淨的|I washed the dishes, and now they are ___ .
+A1|dirty|髒的|His shoes are ___ because he walked through mud.
+A1|early|提早的|We arrived thirty minutes before the event, so we were ___ .
+A1|late|遲到的|The class began at nine, but I arrived at ten. I was ___ .
+A1|small|小的|The box is too ___ to hold this large television.
+A1|young|年輕的|The puppy is only six weeks old and still very ___ .
+A1|beautiful|美麗的|We stopped to admire the ___ flowers and their lovely colours.
+A1|quiet|安靜的|Please keep the room ___ ; the baby is sleeping.
+A2|appointment|預約|I have a dental ___ at ten tomorrow morning.
+A2|receipt|收據|Keep your ___ as proof that you paid for the shoes.
+A2|refund|退款|The shop returned my money and gave me a full ___ .
+A2|discount|折扣|With a 20 percent ___ , the jacket costs less than usual.
+A2|customer|顧客|The shop assistant helped a ___ choose a pair of shoes.
+A2|cashier|收銀員|The ___ at the checkout scanned my groceries and took my payment.
+A2|colleague|同事|My ___ and I work in the same office.
+A2|neighbour|鄰居|Our next-door ___ lives in the house beside ours.
+A2|passenger|乘客|Each bus ___ must show a valid ticket.
+A2|tourist|觀光客|The ___ visited the city's museums during her holiday.
+A2|luggage|行李|We checked in our suitcases and collected our ___ after the flight.
+A2|passport|護照|Show your ___ to the immigration officer when entering the country.
+A2|platform|月臺|The train to Oxford leaves from ___ six.
+A2|journey|旅程|The train ___ from our town to the capital takes three hours.
+A2|traffic|交通車流|Heavy ___ made the drive much slower during rush hour.
+A2|entrance|入口|Buy your ticket at the ___ before going into the museum.
+A2|exit|出口|In an emergency, leave through the nearest ___ .
+A2|corner|街角；角落|Turn left at the street ___ where the two roads meet.
+A2|crossroads|十字路口|The four roads meet at a busy ___ with traffic lights.
+A2|distance|距離|What is the ___ in kilometres between Taipei and Kaohsiung?
+A2|direction|方向|We were walking north, but the hotel was south; we had the wrong ___ .
+A2|temperature|溫度|The thermometer shows that the water's ___ is 40 degrees.
+A2|forecast|預報|The weather ___ says it will rain tomorrow.
+A2|season|季節|Spring is my favourite ___ because the flowers bloom.
+A2|storm|暴風雨|A violent ___ brought strong winds, thunder and heavy rain.
+A2|medicine|藥物|The pharmacist told me to take this ___ twice a day.
+A2|headache|頭痛|My head hurts badly. I have a ___ .
+A2|fever|發燒|Her body temperature is 39 degrees, so she has a ___ .
+A2|exercise|運動|Walking and swimming are good forms of ___ .
+A2|healthy|健康的|A balanced diet and regular exercise help you stay ___ .
+A2|recipe|食譜|Follow this ___ to make the chocolate cake.
+A2|ingredient|食材；成分|Flour is an essential ___ in this bread.
+A2|oven|烤箱|Bake the bread in the ___ at 180 degrees.
+A2|boil|煮沸|Heat the water until bubbles form and it starts to ___ .
+A2|fry|油煎；油炸|Use a pan and a little oil to ___ the eggs.
+A2|slice|切片|Use a knife to ___ the loaf into thin pieces.
+A2|stir|攪拌|Use a spoon to ___ the soup so the ingredients mix evenly.
+A2|delicious|美味的|This cake tastes wonderful. It is absolutely ___ .
+A2|fresh|新鮮的|The fish was caught this morning, so it is very ___ .
+A2|spicy|辛辣的|This curry contains many chillies and is too ___ for me.
+A2|comfortable|舒適的|This soft chair is so ___ that I could sit here for hours.
+A2|crowded|擁擠的|The bus was so ___ that there was no room for another passenger.
+A2|polite|有禮貌的|Saying please and thank you is a ___ way to speak.
+A2|friendly|友善的|The staff were warm and ___ , making us feel welcome.
+A2|nervous|緊張的|Before my first speech, I felt ___ and my hands shook.
+A2|excited|興奮的|The children were ___ and couldn't wait to open their presents.
+A2|surprised|驚訝的|I didn't expect a party, so I was ___ when everyone appeared.
+A2|boring|無聊的|The film was so ___ that I nearly fell asleep.
+A2|dangerous|危險的|Swimming here is ___ because of the strong currents.
+A2|careful|小心的|Be ___ with that sharp knife so you don't cut yourself.
+A2|improve|改善；進步|I practise daily because I want to ___ my English.
+A2|explain|解釋|Could you ___ this rule so I can understand it?
+A2|invite|邀請|We plan to ___ our friends to dinner next Saturday.
+A2|decide|決定|I can't ___ which course to take; both look interesting.
+A2|promise|承諾|I ___ I will return your book tomorrow; you have my word.
+A2|borrow|借入|Could I ___ your pen? I'll give it back in a minute.
+A2|lend|借出|Could you ___ me your pen? I'll return it shortly.
+A2|repair|修理|A mechanic will ___ the broken engine.
+A2|replace|更換；取代|The battery is completely dead, so we need to ___ it with a new one.
+A2|cancel|取消|They decided to ___ the match, so it will not take place.
+A2|collect|收集|My hobby is to ___ stamps from different countries.
+A2|prepare|準備|We need to ___ the meeting room before everyone arrives.
+A2|arrive|抵達|Our plane will ___ in Auckland at six in the morning.
+A2|leave|離開|We must ___ home by seven to catch the train.
+A2|choose|選擇|You may ___ either tea or coffee, but not both.
+B1|achievement|成就|Winning the national award was her greatest professional ___ .
+B1|advantage|優勢|Speaking two languages gives you an ___ when applying for this job.
+B1|disadvantage|劣勢；缺點|A major ___ of this flat is its distance from public transport.
+B1|opportunity|機會|The internship gave me an ___ to gain practical experience.
+B1|challenge|挑戰|Finishing the difficult project in one week was a real ___ .
+B1|solution|解決方法|We finally found a ___ to the problem and fixed it.
+B1|evidence|證據|The police found fingerprints as ___ linking the suspect to the scene.
+B1|research|研究|The scientists carried out ___ to understand the disease.
+B1|survey|調查|We asked 500 customers to complete a ___ about our service.
+B1|result|結果|The test ___ showed that her blood sugar was normal.
+B1|purpose|目的|The main ___ of the meeting is to agree on a timetable.
+B1|decision|決定|After considering both offers, she made a ___ to accept the first.
+B1|suggestion|建議|Your ___ to start earlier was useful, so we followed it.
+B1|recommendation|推薦；建議|I booked the hotel on my friend's ___ because she loved staying there.
+B1|permission|許可|You need your manager's ___ before taking a day off.
+B1|responsibility|責任|Checking that the doors are locked is your ___ tonight.
+B1|experience|經驗|The job requires three years of practical ___ in software development.
+B1|knowledge|知識|Reading widely has increased her ___ of world history.
+B1|skill|技能|Clear communication is an important ___ for a project manager.
+B1|confidence|信心|Regular speaking practice has given me more ___ in my English ability.
+B1|progress|進展；進步|Your pronunciation is getting better; you are making good ___ .
+B1|effort|努力|Learning a language takes time and ___ ; improvement is not automatic.
+B1|behaviour|行為|The teacher praised the class for its polite ___ during the visit.
+B1|attitude|態度|Her positive ___ helps her remain optimistic when problems arise.
+B1|relationship|關係|Trust is important in the ___ between a manager and a team.
+B1|community|社區；社群|People in our local ___ work together to keep the neighbourhood clean.
+B1|environment|環境|Recycling can help protect the natural ___ from pollution.
+B1|pollution|污染|Factory smoke is a major source of air ___ .
+B1|wildlife|野生動物|The reserve protects local ___ , including birds and deer.
+B1|climate|氣候|The region has a warm, dry ___ throughout much of the year.
+B1|resource|資源|Fresh water is a valuable natural ___ that we must conserve.
+B1|waste|浪費|Throwing away edible food is a terrible ___ of money and resources.
+B1|benefit|益處|Better sleep is one ___ of regular exercise.
+B1|risk|風險|Driving too fast increases the ___ of an accident.
+B1|safety|安全|Everyone must wear a helmet for their own ___ .
+B1|quality|品質|The company checks every product to maintain high ___ .
+B1|quantity|數量|The recipe gives the exact ___ of flour needed in grams.
+B1|budget|預算|Our spending ___ is limited to 50,000 dollars this month.
+B1|deadline|截止期限|Friday is the final ___ for submitting the application.
+B1|schedule|時程表|The timetable lists our full daily ___ of meetings and activities.
+B1|delay|延誤|A technical fault caused a two-hour ___ to our flight.
+B1|complaint|抱怨；申訴|The guest made a formal ___ about the noisy room.
+B1|apology|道歉|He offered a sincere ___ for arriving late.
+B1|arrangement|安排|We have made an ___ for someone to collect you from the airport.
+B1|application|申請|Please submit your job ___ with a CV and covering letter.
+B1|qualification|資格；學歷|A teaching certificate is a required ___ for this position.
+B1|interview|面試|The employer invited me to an ___ to discuss my application.
+B1|salary|薪資|The company pays my monthly ___ into my bank account.
+B1|income|收入|Her total ___ includes her salary and rent from a flat she owns.
+B1|expense|支出；費用|Rent is our largest monthly ___ .
+B1|afford|負擔得起|We don't have enough money to ___ a new car.
+B1|achieve|達成|With regular practice, you can ___ your learning goals.
+B1|avoid|避免|Leave early to ___ getting stuck in rush-hour traffic.
+B1|consider|考慮|Please ___ both the price and the quality before buying.
+B1|encourage|鼓勵|Teachers should ___ students to keep trying after mistakes.
+B1|manage|設法做到|Despite the heavy rain, we did ___ to finish the work on time.
+B1|prevent|預防；阻止|Regular checks can ___ small faults from becoming serious problems.
+B1|reduce|減少|Turning off unused lights helps ___ electricity consumption.
+B1|require|需要；要求|All visitors must show ID because the rules ___ it.
+B1|support|支持；支援|My family will ___ me and stand by my decision.
+B1|suggest|建議|I ___ taking the train; it is faster than driving.
+B1|depend|依賴；取決於|Whether we go hiking will ___ on the weather.
+B1|involve|涉及；包含|The role will ___ travelling abroad several times a year.
+B1|provide|提供|The hotel will ___ breakfast at no extra charge.
+B1|develop|發展；開發|The engineers plan to ___ a new water-monitoring system from scratch.
+B2|assumption|假設|We planned on the ___ that everyone would attend, although no one had confirmed.
+B2|implication|可能影響；含意|One serious ___ of the policy is that smaller firms may face higher costs.
+B2|perspective|觀點|Try looking at the disagreement from your colleague's ___ .
+B2|priority|優先事項|Patient safety is our top ___ and comes before everything else.
+B2|constraint|限制條件|A lack of funding is the main ___ limiting how much we can build.
+B2|criterion|標準|Cost is only one ___ ; we also judge each supplier on quality and reliability.
+B2|assessment|評估|The engineer's ___ of the damage concluded that repairs were necessary.
+B2|evaluation|成效評量|After the programme ended, an independent ___ examined how effective it had been.
+B2|implementation|實施；落實|The design is approved; the next stage is its practical ___ across all offices.
+B2|innovation|創新|The award recognises technological ___ and genuinely new ideas.
+B2|sustainability|永續性|Using resources without exhausting them is central to environmental ___ .
+B2|accountability|課責；負責機制|Public ___ means officials must explain their decisions and accept responsibility.
+B2|transparency|透明度|Publishing the full spending records improves financial ___ .
+B2|consistency|一致性|Using the same rules in every case helps maintain ___ .
+B2|accuracy|準確性|We checked every figure to ensure the ___ of the report.
+B2|reliability|可靠性|The machine rarely breaks down and is known for its ___ .
+B2|efficiency|效率|The new process uses less time and energy, improving operational ___ .
+B2|flexibility|彈性|Remote working gives staff more ___ to choose when and where they work.
+B2|feasibility|可行性|Before investing, we must assess the technical ___ of building it with existing tools.
+B2|relevance|關聯性；切題程度|The panel questioned the ___ of his example because it did not relate to the topic.
+B2|consequence|後果|A possible ___ of missing the deadline is losing the contract.
+B2|discrepancy|差異；不一致|We found a ___ between the invoice total and the amount actually paid.
+B2|consensus|共識|After hours of discussion, the group reached a ___ that all members accepted.
+B2|compromise|折衷；妥協|Both sides accepted a ___ , giving up some demands to reach an agreement.
+B2|negotiation|協商；談判|The two companies began a ___ to agree on the contract price.
+B2|obstacle|障礙|The locked gate was a physical ___ blocking the path.
+B2|incentive|誘因|The company offers a cash bonus as an ___ to improve performance.
+B2|initiative|主動性|She showed ___ by solving the problem without being asked.
+B2|commitment|承諾；投入|Training every day shows her strong ___ to achieving her goal.
+B2|resilience|韌性；復原力|Her ___ helped her recover quickly after several professional setbacks.
+B2|awareness|意識；認知|The campaign aims to raise public ___ of the dangers of smoking.
+B2|adaptation|適應；調適|Moving to a very different climate required a period of ___ .
+B2|distribution|分配；配送|The charity organised the ___ of food parcels to families across the region.
+B2|allocation|配置；分配|The manager approved the ___ of two extra engineers to this project.
+B2|consumption|消耗；消費|The chart shows household electricity ___ in kilowatt-hours.
+B2|emission|排放物；排放|The new filter reduces the ___ of harmful gases from the factory.
+B2|conservation|保育；保存|The protection of endangered species is a major goal of wildlife ___ .
+B2|biodiversity|生物多樣性|A forest with many different plant and animal species has rich ___ .
+B2|infrastructure|基礎設施|Roads, bridges and water networks are essential public ___ .
+B2|capacity|容量；產能|The hall has a maximum seating ___ of 600 people.
+B2|proportion|比例|What ___ of the total budget is spent on staff salaries?
+B2|trend|趨勢|Sales have risen steadily for five years, showing a clear upward ___ .
+B2|fluctuation|波動|The graph shows a sharp ___ in prices, with repeated rises and falls.
+B2|estimate|估計值|We do not have an exact figure, but our rough ___ is about 200 guests.
+B2|forecast|預測|The economic ___ predicts slower growth next year.
+B2|valid|有效的；有根據的|Your ticket is ___ until midnight; after that it cannot be used.
+B2|relevant|相關的|Please include only information ___ to this application, leaving out unrelated details.
+B2|adequate|足夠的|The shelter provides ___ protection to meet the minimum safety standard.
+B2|sufficient|充分的|There is ___ evidence to support the claim; no further proof is needed.
+B2|significant|顯著的；重要的|The treatment produced a statistically ___ improvement, unlikely to be due to chance.
+B2|substantial|可觀的；大量的|The flood caused ___ damage, destroying most of the building.
+B2|potential|潛在的|The idea has several ___ benefits, although none has been demonstrated yet.
+B2|inevitable|不可避免的|With all escape routes closed and the fire spreading, serious damage was ___ .
+B2|reluctant|不情願的|He was ___ to speak in public and agreed only after much persuasion.
+B2|ambiguous|模稜兩可的|The instruction was ___ ; it could reasonably be understood in two different ways.
+B2|consistent|一致的|Her account is ___ with the video evidence; the two match throughout.
+B2|comprehensive|全面的|The guide is ___ , covering every stage of the process in detail.
+B2|crucial|至關重要的|A reliable oxygen supply is ___ to the patient's survival.
+B2|sustainable|可持續的；永續的|The plan is financially ___ because its running costs can be covered long term.
+B2|evaluate|評估|We will ___ the course by comparing its outcomes with its original goals.
+B2|implement|實施；執行|The team will ___ the approved plan starting next Monday.
+B2|allocate|分配；配置|We must ___ the available budget among the three departments.
+B2|justify|證明合理；提出理由|Can you ___ the extra expense by explaining why it is necessary?
+B2|acknowledge|承認；認可|The director agreed to ___ the mistake publicly and accept that it happened.
+B2|distinguish|區分|The twins look alike, but their different voices help me ___ between them.
